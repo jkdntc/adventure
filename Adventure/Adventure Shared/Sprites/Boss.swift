@@ -19,7 +19,7 @@ let kBossGetHitFrames = 22
 let kBossCollisionRadius: CGFloat = 40.0
 let kBossChaseRadius: CGFloat = kBossCollisionRadius * 4.0
 
-var kLoadSharedBossAssetsOnceToken: dispatch_once_t = 0
+var kLoadSharedBossAssetsOnceToken = 0
 
 var sSharedBossIdleAnimationFrames = [SKTexture]()
 var sSharedBossWalkAnimationFrames = [SKTexture]()
@@ -49,7 +49,11 @@ class Boss: EnemyCharacter {
         chaseIntelligence.maxAlertRadius = kBossChaseRadius * 4.0
             intelligence = chaseIntelligence
     }
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 	// Overidden Methods
 	override func configurePhysicsBody() {
         // Assign the physics body; unwrap the physics body to configure it.
@@ -66,14 +70,14 @@ class Boss: EnemyCharacter {
 	}
 
   override
-	func animationDidComplete(animationState: AnimationState) {
-		super.animationDidComplete(animationState)
+    func animationDidComplete(animation animationState: AnimationState) {
+    super.animationDidComplete(animation: animationState)
 
 		if animationState == AnimationState.Death {
 			removeAllActions()
 			let actions = [
-				SKAction.waitForDuration(3.0),
-				SKAction.fadeOutWithDuration(2.0),
+                SKAction.wait(forDuration: 3.0),
+                SKAction.fadeOut(withDuration: 2.0),
 				SKAction.removeFromParent()
 				/*,
 				SKAction.runBlock {
@@ -82,7 +86,7 @@ class Boss: EnemyCharacter {
 				*/
 			]
 
-			runAction(SKAction.sequence(actions))
+            run(SKAction.sequence(actions))
 		}
 	}
 
@@ -94,7 +98,7 @@ class Boss: EnemyCharacter {
 		if (other.categoryBitMask & ColliderType.Projectile.rawValue) == ColliderType.Projectile.rawValue {
 			requestedAnimation = AnimationState.GetHit
             let damage = 2.0
-            let killed = applyDamage(damage, projectile: other.node)
+            let killed = applyDamage(damage: damage, projectile: other.node)
 
 			if killed {
                 // Give the player some points
@@ -109,27 +113,27 @@ class Boss: EnemyCharacter {
 
 	// Shared Assets.
 	class func loadSharedAssets() {
-        dispatch_once(&kLoadSharedBossAssetsOnceToken) {
-            sSharedBossIdleAnimationFrames = loadFramesFromAtlasWithName("Boss_Idle", baseFileName: "boss_idle_", numberOfFrames: kBossIdleFrames)
+        //dispatch_once(&kLoadSharedBossAssetsOnceToken) {
+        sSharedBossIdleAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Boss_Idle", baseFileName: "boss_idle_", numberOfFrames: kBossIdleFrames)
 
-            sSharedBossWalkAnimationFrames = loadFramesFromAtlasWithName("Boss_Walk", baseFileName: "boss_walk_", numberOfFrames: kBossWalkFrames)
+        sSharedBossWalkAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Boss_Walk", baseFileName: "boss_walk_", numberOfFrames: kBossWalkFrames)
 
-            sSharedBossAttackAnimationFrames = loadFramesFromAtlasWithName("Boss_Attack", baseFileName: "boss_attack_", numberOfFrames: kBossAttackFrames)
+        sSharedBossAttackAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Boss_Attack", baseFileName: "boss_attack_", numberOfFrames: kBossAttackFrames)
 
-            sSharedBossGetHitAnimationFrames = loadFramesFromAtlasWithName("Boss_GetHit", baseFileName: "boss_getHit_", numberOfFrames: kBossGetHitFrames)
+        sSharedBossGetHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Boss_GetHit", baseFileName: "boss_getHit_", numberOfFrames: kBossGetHitFrames)
 
-            sSharedBossDeathAnimationFrames = loadFramesFromAtlasWithName("Boss_Death", baseFileName: "boss_death_", numberOfFrames: kBossDeathFrames)
+        sSharedBossDeathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Boss_Death", baseFileName: "boss_death_", numberOfFrames: kBossDeathFrames)
 
-            sSharedBossDamageEmitter = SKEmitterNode.emitterNodeWithName("BossDamage")
+        sSharedBossDamageEmitter = SKEmitterNode.emitterNodeWithName(name: "BossDamage")
 
             let actions = [
-                SKAction.colorizeWithColor(SKColor.whiteColor(), colorBlendFactor: 1.0, duration: 0.0),
-                SKAction.waitForDuration(0.5),
-                SKAction.colorizeWithColorBlendFactor(0.0, duration: 0.1)
+                SKAction.colorize(with: SKColor.white, colorBlendFactor: 1.0, duration: 0.0),
+                SKAction.wait(forDuration: 0.5),
+                SKAction.colorize(withColorBlendFactor: 0.0, duration: 0.1)
             ]
 
             sSharedBossDamageAction = SKAction.sequence(actions)
-        }
+        //}
 	}
 
     override func damageEmitter() -> SKEmitterNode {

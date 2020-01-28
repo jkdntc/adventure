@@ -21,7 +21,7 @@ class ChaseAI: ArtificialIntelligence {
         super.init(character: character, target: target)
     }
 
-    override func updateWithTimeSinceLastUpdate(interval: NSTimeInterval) {
+    override func updateWithTimeSinceLastUpdate(interval: TimeInterval) {
     	if character.dying {
     		target = nil
     		return
@@ -29,10 +29,10 @@ class ChaseAI: ArtificialIntelligence {
 
 		let position = character.position
 
-		var closestHeroDistance = CGFloat.max
+        var closestHeroDistance = CGFloat.greatestFiniteMagnitude
 
 		for hero in character.characterScene.heroes {
-			let distance = position.distanceTo(hero.position)
+            let distance = position.distanceTo(p: hero.position)
 
 			if distance < kEnemyAlertRadius && distance < closestHeroDistance && !hero.dying {
 				closestHeroDistance = distance
@@ -44,9 +44,9 @@ class ChaseAI: ArtificialIntelligence {
             if closestHeroDistance > maxAlertRadius {
                 target = nil
             } else if closestHeroDistance > chaseRadius {
-                character.moveTowards(heroPosition, withTimeInterval: interval)
+                character.moveTowards(targetPosition: heroPosition, withTimeInterval: interval)
             } else if closestHeroDistance < chaseRadius {
-                character.faceTo(heroPosition)
+                character.faceTo(position: heroPosition)
                 character.performAttackAction()
             }
         }

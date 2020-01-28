@@ -10,7 +10,7 @@
 
 
 import SpriteKit
-
+import Combine
 
 var sSharedWarriorIdleAnimationFrames = [SKTexture]()
 var sSharedWarriorWalkAnimationFrames = [SKTexture]()
@@ -21,7 +21,7 @@ var sSharedProjectile = SKSpriteNode()
 var sSharedProjectileEmitter = SKEmitterNode()
 let kProjectileCollisionRadius: CGFloat = 15.0
 
-var kLoadSharedWarriorAssetsOnceToken: dispatch_once_t = 0
+var kLoadSharedWarriorAssetsOnceToken = 0
 
 class Warrior: HeroCharacter {
     init(atPosition position: CGPoint, withPlayer player: Player) {
@@ -36,14 +36,14 @@ class Warrior: HeroCharacter {
     }
 
     class func loadSharedAssets() {
-        dispatch_once(&kLoadSharedWarriorAssetsOnceToken) {
+        //dispatch_once(&kLoadSharedWarriorAssetsOnceToken) {
             let atlas = SKTextureAtlas(named: "Environment")
 
-            sSharedWarriorIdleAnimationFrames = loadFramesFromAtlasWithName("Warrior_Idle", baseFileName: "warrior_idle_", numberOfFrames: 29)
-            sSharedWarriorWalkAnimationFrames = loadFramesFromAtlasWithName("Warrior_Walk", baseFileName: "warrior_walk_", numberOfFrames: 28)
-            sSharedWarriorAttackAnimationFrames = loadFramesFromAtlasWithName("Warrior_Attack", baseFileName: "warrior_attack_", numberOfFrames: 10)
-            sSharedWarriorGetHitAnimationFrames = loadFramesFromAtlasWithName("Warrior_GetHit", baseFileName: "warrior_getHit_", numberOfFrames: 20)
-            sSharedWarriorDeathAnimationFrames = loadFramesFromAtlasWithName("Warrior_Death", baseFileName: "warrior_death_", numberOfFrames: 90)
+        sSharedWarriorIdleAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_Idle", baseFileName: "warrior_idle_", numberOfFrames: 29)
+        sSharedWarriorWalkAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_Walk", baseFileName: "warrior_walk_", numberOfFrames: 28)
+        sSharedWarriorAttackAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_Attack", baseFileName: "warrior_attack_", numberOfFrames: 10)
+        sSharedWarriorGetHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_GetHit", baseFileName: "warrior_getHit_", numberOfFrames: 20)
+        sSharedWarriorDeathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_Death", baseFileName: "warrior_death_", numberOfFrames: 90)
 
             sSharedProjectile = SKSpriteNode(texture: atlas.textureNamed("warrior_throw_hammer.png"))
             sSharedProjectile.name = "Projectile"
@@ -54,8 +54,8 @@ class Warrior: HeroCharacter {
             sSharedProjectile.physicsBody!.collisionBitMask = ColliderType.Wall.rawValue
             sSharedProjectile.physicsBody!.contactTestBitMask = ColliderType.Wall.rawValue
 
-            sSharedProjectileEmitter = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("WarriorProjectile", ofType: "sks")!) as SKEmitterNode
-        }
+        sSharedProjectileEmitter = NSKeyedUnarchiver.unarchiveObject(withFile: Bundle.main.path(forResource: "WarriorProjectile", ofType: "sks")!) as! SKEmitterNode
+        //}
     }
 
     override func idleAnimationFrames() -> [SKTexture] {
@@ -92,11 +92,20 @@ func loadFramesFromAtlas(atlas: SKTextureAtlas) -> [SKTexture] {
     return (atlas.textureNames as [String]).map { atlas.textureNamed($0) }
 }
 
-func loadFramesFromAtlasWithName(atlasName: String, #baseFileName: String, #numberOfFrames: Int) -> [SKTexture] {
+func loadFramesFromAtlasWithName(atlasName: String, baseFileName: String, numberOfFrames: Int) -> [SKTexture] {
     let atlas = SKTextureAtlas(named: atlasName)
-    return [SKTexture](map(1...numberOfFrames) { i in
+    var tempSKTextture = [SKTexture]()
+    for i in 1...numberOfFrames {
+        let extraZero = (i < 10) ? "0" : ""
+        let fileName = "\(baseFileName)00\(extraZero)\(i).png"
+        tempSKTextture.append(atlas.textureNamed(fileName))
+    }
+    return tempSKTextture
+    /*
+    return [SKTexture]().map(1...numberOfFrames) { i in
         let extraZero = (i < 10) ? "0" : ""
         let fileName = "\(baseFileName)00\(extraZero)\(i).png"
         return atlas.textureNamed(fileName)
     })
+    */
 }

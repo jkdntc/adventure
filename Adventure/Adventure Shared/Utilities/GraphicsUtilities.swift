@@ -19,9 +19,9 @@ func createCGImageFromFile(path: String) -> CGImage! {
     }
 #else
     let nsimage = NSImage(contentsOfFile: path)
-    let destRect = NSZeroRect
+    //let destRect = NSZeroRect
     
-    return nsimage.CGImageForProposedRect(nil, context: nil, hints: nil).takeUnretainedValue()
+    return nsimage!.cgImage(forProposedRect: nil, context: nil, hints: nil)  //.takeUnretainedValue()
 #endif
 }
 
@@ -39,19 +39,19 @@ func getCGImageNamed(name: String) -> CGImage! {
     if name.hasPrefix("/") {
         path = name
     } else {
-        let directory = name.stringByDeletingLastPathComponent
-        var newName = name.lastPathComponent
-        let fileExtension = newName.pathExtension
-        newName = newName.stringByDeletingPathExtension
-        path = NSBundle.mainBundle().pathForResource(newName, ofType: fileExtension, inDirectory: directory)!
+        let directory = NSString(string: name).deletingLastPathComponent
+        var newName = NSString(string: name).lastPathComponent
+        let fileExtension = NSString(string: newName).pathExtension
+        newName = NSString(string: newName).deletingPathExtension
+        path = Bundle.main.path(forResource: newName, ofType: fileExtension, inDirectory: directory)!
     }
-    return createCGImageFromFile(path)
+    return createCGImageFromFile(path: path)
 #endif
 }
 
 extension SKEmitterNode {
     class func emitterNodeWithName(name: String) -> SKEmitterNode {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource(name, ofType: "sks")!) as SKEmitterNode
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Bundle.main.path(forResource: name, ofType: "sks")!) as! SKEmitterNode
     }
 }
 
@@ -65,35 +65,35 @@ func createARGBBitmapContext(inImage: CGImage) -> CGContext {
     var bitmapByteCount = 0
     var bitmapBytesPerRow = 0
 
-    let pixelsWide = CGImageGetWidth(inImage)
-    let pixelsHigh = CGImageGetHeight(inImage)
+    let pixelsWide = inImage.width
+    let pixelsHigh = inImage.height
 
     bitmapBytesPerRow = Int(pixelsWide) * 4
     bitmapByteCount = bitmapBytesPerRow * Int(pixelsHigh)
 
     let colorSpace = CGColorSpaceCreateDeviceRGB()
-    let bitmapData = malloc(CUnsignedLong(bitmapByteCount))
-    let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.PremultipliedFirst.rawValue)
+    let bitmapData = malloc(bitmapByteCount)
+    let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedFirst.rawValue)
 
-    let context = CGBitmapContextCreate(bitmapData, pixelsWide, pixelsHigh, CUnsignedLong(8), CUnsignedLong(bitmapBytesPerRow), colorSpace, bitmapInfo)
+    let context = CGContext(data: bitmapData, width: pixelsWide, height: pixelsHigh, bitsPerComponent: Int(CUnsignedLong(8)), bytesPerRow: bitmapBytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo.rawValue)!
 
     return context
 }
 
-func createDataMap(mapName: String) -> UnsafeMutablePointer<Void> {
-    let inImage = getCGImageNamed(mapName)
-    let cgContext = createARGBBitmapContext(inImage)
+func createDataMap(mapName: String) -> UnsafeMutableRawPointer  {
+    let inImage = getCGImageNamed(name: mapName)
+    let cgContext = createARGBBitmapContext(inImage: inImage!)
 
-    let width = CGImageGetWidth(inImage)
-    let height = CGImageGetHeight(inImage)
+    let width = inImage!.width
+    let height = inImage!.height
 
-    var rect = CGRectZero
+    var rect = CGRect.zero
     rect.size.width = CGFloat(width)
     rect.size.height = CGFloat(height)
 
-    CGContextDrawImage(cgContext, rect, inImage)
+    cgContext.draw(inImage!, in: rect, byTiling: false)
 
-    return CGBitmapContextGetData(cgContext)
+    return cgContext.data!
 }
 
 // The assets are all facing Y down, so offset by half pi to get into X right facing
@@ -107,8 +107,8 @@ extension CGPoint : Equatable {
     }
 
     func radiansToPoint(p: CGPoint) -> CGFloat {
-        var deltaX = p.x - self.x
-        var deltaY = p.y - self.y
+        let deltaX = p.x - self.x
+        let deltaY = p.y - self.y
 
         return atan2(deltaY, deltaX)
     }
@@ -119,11 +119,11 @@ extension CGPoint : Equatable {
 }
 
 func runOneShotEmitter(emitter: SKEmitterNode, withDuration duration: CGFloat) {
-    let waitAction = SKAction.waitForDuration(NSTimeInterval(duration))
-    let birthRateSet = SKAction.runBlock { emitter.particleBirthRate = 0.0 }
-    let waitAction2 = SKAction.waitForDuration(NSTimeInterval(emitter.particleLifetime + emitter.particleLifetimeRange))
+    let waitAction = SKAction.wait(forDuration: TimeInterval(duration))
+    let birthRateSet = SKAction.run { emitter.particleBirthRate = 0.0 }
+    let waitAction2 = SKAction.wait(forDuration: TimeInterval(emitter.particleLifetime + emitter.particleLifetimeRange))
     let removeAction = SKAction.removeFromParent()
 
-    var sequence = [ waitAction, birthRateSet, waitAction2, removeAction]
-    emitter.runAction(SKAction.sequence(sequence))
+    let sequence = [ waitAction, birthRateSet, waitAction2, removeAction]
+    emitter.run(SKAction.sequence(sequence))
 }

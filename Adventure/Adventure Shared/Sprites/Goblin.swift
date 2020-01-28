@@ -25,9 +25,9 @@ let kDefaultNumberOfWalkFrames = 28
 var sSharedGetHitAnimationFrames = [SKTexture]()
 var sSharedDeathAnimationFrames = [SKTexture]()
 
-var kLoadSharedGoblinAssetsOnceToken: dispatch_once_t = 0
+var kLoadSharedGoblinAssetsOnceToken = 0
 
-class Goblin: EnemyCharacter, Equatable {
+class Goblin: EnemyCharacter {
 	var cave: Cave?
 
     init(atPosition position: CGPoint) {
@@ -43,7 +43,11 @@ class Goblin: EnemyCharacter, Equatable {
 
 		intelligence = ChaseAI(character: self, target: nil)
 	}
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // Overridden methods
     override func configurePhysicsBody() {
         // Assign the physics body; unwrap the physics body to configure it.
@@ -61,27 +65,27 @@ class Goblin: EnemyCharacter, Equatable {
         configurePhysicsBody()
     }
 
-    override func animationDidComplete(animationState: AnimationState) {
-        super.animationDidComplete(animationState)
+    override func animationDidComplete(animation animationState: AnimationState) {
+        super.animationDidComplete(animation: animationState)
 
         if animationState == AnimationState.Death {
             removeAllActions()
 
             let actions = [
-                SKAction.waitForDuration(0.75),
-                SKAction.fadeOutWithDuration(1.0),
-                SKAction.runBlock {
+                SKAction.wait(forDuration: 0.75),
+                SKAction.fadeOut(withDuration: 1.0),
+                SKAction.run {
                     self.removeFromParent()
-                    self.cave?.recycle(self)
+                    self.cave?.recycle(goblin: self)
                 }
             ]
 
-            var actionSequence = SKAction.sequence(actions)
-            runAction(actionSequence)
+            let actionSequence = SKAction.sequence(actions)
+            run(actionSequence)
         }
     }
 
-    override func collidedWith(otherBody: SKPhysicsBody) {
+    override func collidedWith(other otherBody: SKPhysicsBody) {
         if dying  {
             return
         }
@@ -95,9 +99,9 @@ class Goblin: EnemyCharacter, Equatable {
                 damage = 50.0
             }
 
-            var killed = applyDamage(damage, projectile: otherBody.node)
+            let killed = applyDamage(damage: damage, projectile: otherBody.node)
             if killed {
-                characterScene.addToScore(10, afterEnemyKillWithProjectile: otherBody.node!)
+                characterScene.addToScore(amount: 10, afterEnemyKillWithProjectile: otherBody.node!)
             }
         }
     }
@@ -105,13 +109,13 @@ class Goblin: EnemyCharacter, Equatable {
     override func performDeath() {
         removeAllActions()
 
-        var splort = deathSplort().copy() as SKSpriteNode
+        let splort = deathSplort().copy() as! SKSpriteNode
         splort.zPosition = -1.0
         splort.zRotation = unitRandom() * CGFloat(M_PI)
         splort.position = position
         splort.alpha = 0.5
-        characterScene.addNode(splort, atWorldLayer: .Ground)
-        splort.runAction(SKAction.fadeOutWithDuration(10.0))
+        characterScene.addNode(node: splort, atWorldLayer: .Ground)
+        splort.run(SKAction.fadeOut(withDuration: 10.0))
 
         super.performDeath()
 
@@ -122,31 +126,31 @@ class Goblin: EnemyCharacter, Equatable {
     }
 
     class func loadSharedAssets() {
-        dispatch_once(&kLoadSharedGoblinAssetsOnceToken) {
+        //dispatch_once(&kLoadSharedGoblinAssetsOnceToken) {
             let atlas = SKTextureAtlas(named: "Environment")
 
-            sSharedGoblinIdleAnimationFrames = loadFramesFromAtlasWithName("Goblin_Idle", baseFileName: "goblin_idle_", numberOfFrames: kDefaultNumberOfIdleFrames)
+        sSharedGoblinIdleAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Idle", baseFileName: "goblin_idle_", numberOfFrames: kDefaultNumberOfIdleFrames)
 
-            sSharedGoblinWalkAnimationFrames = loadFramesFromAtlasWithName("Goblin_Walk", baseFileName: "goblin_walk_", numberOfFrames: kDefaultNumberOfWalkFrames)
+        sSharedGoblinWalkAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Walk", baseFileName: "goblin_walk_", numberOfFrames: kDefaultNumberOfWalkFrames)
 
-            sSharedGoblinAttackAnimationFrames = loadFramesFromAtlasWithName("Goblin_Attack", baseFileName: "goblin_attack_", numberOfFrames: kGoblinAttackFrames)
+        sSharedGoblinAttackAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Attack", baseFileName: "goblin_attack_", numberOfFrames: kGoblinAttackFrames)
 
-            sSharedGoblinGetHitAnimationFrames = loadFramesFromAtlasWithName("Goblin_GetHit", baseFileName: "goblin_getHit_", numberOfFrames: kGoblinGetHitFrames)
+        sSharedGoblinGetHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_GetHit", baseFileName: "goblin_getHit_", numberOfFrames: kGoblinGetHitFrames)
 
-            sSharedGoblinDeathAnimationFrames = loadFramesFromAtlasWithName("Goblin_Death", baseFileName: "goblin_death_", numberOfFrames: kGoblinDeathFrames)
+        sSharedGoblinDeathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Death", baseFileName: "goblin_death_", numberOfFrames: kGoblinDeathFrames)
 
-            sSharedGoblinDamageEmitter = SKEmitterNode.emitterNodeWithName("Damage")
+        sSharedGoblinDamageEmitter = SKEmitterNode.emitterNodeWithName(name: "Damage")
 
             sSharedGoblinDeathSplort = SKSpriteNode(texture: atlas.textureNamed("minionSplort.png"))
 
             let actions = [
-                SKAction.colorizeWithColor(SKColor.whiteColor(), colorBlendFactor: 1.0, duration: 0.0),
-                SKAction.waitForDuration(0.75),
-                SKAction.colorizeWithColorBlendFactor(0.0, duration: 0.1)
+                SKAction.colorize(with: SKColor.white, colorBlendFactor: 1.0, duration: 0.0),
+                SKAction.wait(forDuration: 0.75),
+                SKAction.colorize(withColorBlendFactor: 0.0, duration: 0.1)
             ]
 
             sSharedGoblinDamageAction = SKAction.sequence(actions)
-        }
+        //}
     }
 
     override func damageEmitter() -> SKEmitterNode {

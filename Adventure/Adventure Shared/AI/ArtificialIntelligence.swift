@@ -19,7 +19,7 @@ class ArtificialIntelligence {
         self.target = target
     }
 
-    func updateWithTimeSinceLastUpdate(interval: NSTimeInterval) {
+    func updateWithTimeSinceLastUpdate(interval: TimeInterval) {
         // Overridden by subclasses
     }
 

@@ -11,37 +11,38 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: NSViewController {
-
+    var scene: AdventureScene!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 //        let scene = GameScene.newGameScene()
 //
 //        // Present the scene
-//        let skView = self.view as! SKView
-//        skView.presentScene(scene)
+        let skView = self.view as! SKView
+        skView.presentScene(scene)
 //
-//        skView.ignoresSiblingOrder = true
+        skView.ignoresSiblingOrder = true
 //
 //        skView.showsFPS = true
 //        skView.showsNodeCount = true
         
         AdventureScene.loadSceneAssetsWithCompletionHandler {
             self.scene = AdventureScene(size: CGSize(width: 1024, height: 768))
-            self.scene.scaleMode = SKSceneScaleMode.AspectFit
+            self.scene.scaleMode = SKSceneScaleMode.aspectFit
 
-            self.skView.presentScene(self.scene)
+            skView.presentScene(self.scene)
 
-            self.loadingProgressIndicator.stopAnimation(self)
-            self.loadingProgressIndicator.hidden = true
-
-            self.archerButton.alphaValue = 1.0
-            self.warriorButton.alphaValue = 1.0
+//            self.loadingProgressIndicator.stopAnimation(self)
+//            self.loadingProgressIndicator.hidden = true
+//
+//            self.archerButton.alphaValue = 1.0
+//            self.warriorButton.alphaValue = 1.0
+            self.scene.startLevel(charClass: CharacterClass.Archer)
         }
 
         skView.showsFPS = true
         skView.showsNodeCount = true
         skView.showsDrawCount = true
+        //scene.startLevel(charClass: CharacterClass.Archer)
     }
 
 }

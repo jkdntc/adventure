@@ -19,8 +19,8 @@ enum CharacterClass {
 }
 
 class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
-    var levelMap = UnsafePointer<SpriteLocation>(createDataMap("map_level.png"))
-    var treeMap = UnsafeMutablePointer<TreeLocation>(createDataMap("map_trees.png"))
+    var levelMap = createDataMap(mapName: "map_level.png").assumingMemoryBound(to: SpriteLocation.self)
+    var treeMap = createDataMap(mapName: "map_trees.png").assumingMemoryBound(to: TreeLocation.self)
     var parallaxSprites = [ParallaxSprite]()
     var trees = [Tree]()
     var particleSystems = [SKEmitterNode]()
@@ -32,7 +32,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 
         buildWorld()
 
-        centerWorldOnPosition(defaultSpawnPoint)
+        centerWorldOnPosition(position: defaultSpawnPoint)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -53,7 +53,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 
     func addBackgroundTiles() {
         for tileNode in sBackgroundTiles {
-            addNode(tileNode, atWorldLayer: .Ground)
+            addNode(node: tileNode, atWorldLayer: .Ground)
         }
     }
 
@@ -61,18 +61,18 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
         for y in 0..<kLevelMapSize {
             for x in 0..<kLevelMapSize {
                 let location = CGPoint(x: x, y: y)
-                let spot = queryLevelMap(location)
+                let spot = queryLevelMap(point: location)
 
-                let worldPoint = convertLevelMapPointToWorldPoint(location)
+                let worldPoint = convertLevelMapPointToWorldPoint(location: location)
 
                 if spot.bossLocation <= 200 {
                     levelBoss = Boss(atPosition:worldPoint)
-                    levelBoss!.addToScene(self)
+                    levelBoss!.addToScene(scene: self)
                 } else if spot.goblinCaveLocation >= 200 {
                     let cave = Cave(atPosition: worldPoint)
                     goblinCaves.append(cave)
                     parallaxSprites.append(cave)
-                    cave.addToScene(self)
+                    cave.addToScene(scene: self)
                 } else if spot.heroSpawnLocation >= 200 {
                     defaultSpawnPoint = worldPoint
                 }
@@ -84,27 +84,27 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
         for y in 0..<kLevelMapSize {
             for x in 0..<kLevelMapSize {
                 let location = CGPoint(x: x, y: y)
-                let spot = queryTreeMap(location)
-                let treePos = convertLevelMapPointToWorldPoint(location)
+                let spot = queryTreeMap(point: location)
+                let treePos = convertLevelMapPointToWorldPoint(location: location)
                 var treeLayer = WorldLayer.Top
 
                 var tree: Tree
                 if spot.smallTreeLocation >= 200 {
                     treeLayer = .AboveCharacter
-                    tree = sSharedSmallTree.copy() as Tree
+                    tree = sSharedSmallTree.copy() as! Tree
                 } else if spot.bigTreeLocation >= 200 {
-                    tree = sSharedBigTree.copy() as Tree
+                    tree = sSharedBigTree.copy() as! Tree
 
                     var emitter: SKEmitterNode
                     if arc4random_uniform(2) == 1 {
-                        emitter = sSharedLeafEmitterA.copy() as SKEmitterNode
+                        emitter = sSharedLeafEmitterA.copy() as! SKEmitterNode
                     } else {
-                        emitter = sSharedLeafEmitterB.copy() as SKEmitterNode
+                        emitter = sSharedLeafEmitterB.copy() as! SKEmitterNode
                     }
 
                     emitter.position = treePos
-                    emitter.paused = true
-                    addNode(emitter, atWorldLayer: .AboveCharacter)
+                    emitter.isPaused = true
+                    addNode(node: emitter, atWorldLayer: .AboveCharacter)
                     particleSystems.append(emitter)
                 } else {
                     continue
@@ -112,7 +112,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 
                 tree.position = treePos
                 tree.zRotation = unitRandom()
-                addNode(tree, atWorldLayer: .Top)
+                addNode(node: tree, atWorldLayer: .Top)
                 parallaxSprites.append(tree)
                 trees.append(tree)
             }
@@ -122,16 +122,23 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
     }
 
     func addCollisionWalls() {
-        var filled = [UInt8](count: kLevelMapSize * kLevelMapSize, repeatedValue: 0)
+        var filled = [UInt8](unsafeUninitializedCapacity: kLevelMapSize * kLevelMapSize)
+        { buffer, initializedCount in
+//            for x in 1..<5 {
+//                buffer[x] = UInt8(x)
+//            }
+//            buffer[0] = 10
+            initializedCount = kLevelMapSize * kLevelMapSize
+        }
 
         var numVolumes = 0, numBlocks = 0
 
         for y in 0..<kLevelMapSize {
             for x in 0..<kLevelMapSize {
                 let location = CGPoint(x: x, y: y)
-                let spot = queryLevelMap(location)
+                let spot = queryLevelMap(point: location)
 
-                let worldPoint = convertLevelMapPointToWorldPoint(location)
+                let worldPoint = convertLevelMapPointToWorldPoint(location: location)
 
                 if spot.wall < 200 {
                     continue // no wall
@@ -141,8 +148,8 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
                 var nextSpot = spot
                 while (horizontalDistanceFromLeft < kLevelMapSize && nextSpot.wall >= 200 &&
                        filled[(y * kLevelMapSize) + horizontalDistanceFromLeft] < 1) {
-                    horizontalDistanceFromLeft++
-                    nextSpot = queryLevelMap(CGPoint(x: horizontalDistanceFromLeft, y: y))
+                    horizontalDistanceFromLeft += 1
+                        nextSpot = queryLevelMap(point: CGPoint(x: horizontalDistanceFromLeft, y: y))
                 }
 
                 let wallWidth = horizontalDistanceFromLeft - x
@@ -151,20 +158,20 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
                 if wallWidth > 8 {
                     nextSpot = spot
                     while verticalDistanceFromTop < kLevelMapSize && nextSpot.wall >= 200 {
-                        verticalDistanceFromTop++
-                        nextSpot = queryLevelMap(CGPoint(x: x + (wallWidth / 2), y: verticalDistanceFromTop))
+                        verticalDistanceFromTop += 1
+                        nextSpot = queryLevelMap(point: CGPoint(x: x + (wallWidth / 2), y: verticalDistanceFromTop))
                     }
 
                     var wallHeight = verticalDistanceFromTop - y
                     for j in y..<verticalDistanceFromTop {
                         for i in x..<horizontalDistanceFromLeft {
                             filled[(j * kLevelMapSize) + i] = 255
-                            numBlocks++
+                            numBlocks += 1
                         }
                     }
 
-                    addCollisionWallAtWorldPoint(worldPoint, width: CGFloat(kLevelMapDivisor * wallWidth), height: CGFloat(kLevelMapDivisor * wallHeight))
-                    numVolumes++
+                    addCollisionWallAtWorldPoint(worldPoint: worldPoint, width: CGFloat(kLevelMapDivisor * wallWidth), height: CGFloat(kLevelMapDivisor * wallHeight))
+                    numVolumes += 1
                 }
             }
         }
@@ -172,9 +179,9 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
         for x in 0..<kLevelMapSize {
             for y in 0..<kLevelMapSize {
                 let location = CGPoint(x: x, y: y)
-                let spot = queryLevelMap(location)
+                let spot = queryLevelMap(point: location)
 
-                let worldPoint = convertLevelMapPointToWorldPoint(location)
+                let worldPoint = convertLevelMapPointToWorldPoint(location: location)
 
                 if spot.wall < 200 || filled[(y * kLevelMapSize) + x] > 0 {
                     continue
@@ -183,8 +190,8 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
                 var verticalDistanceFromTop = y
                 var nextSpot = spot
                 while verticalDistanceFromTop < kLevelMapSize && nextSpot.wall >= 200 && filled[(verticalDistanceFromTop * kLevelMapSize) + x] < 1 {
-                    verticalDistanceFromTop++
-                    nextSpot = queryLevelMap(CGPoint(x: x, y: verticalDistanceFromTop))
+                    verticalDistanceFromTop += 1
+                    nextSpot = queryLevelMap(point: CGPoint(x: x, y: verticalDistanceFromTop))
                 }
 
                 let wallHeight = verticalDistanceFromTop - y
@@ -193,19 +200,19 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
                 if wallHeight > 8 {
                     nextSpot = spot
                     while horizontalDistanceFromLeft < kLevelMapSize && nextSpot.wall >= 200 {
-                        horizontalDistanceFromLeft++
-                        nextSpot = queryLevelMap(CGPoint(x: horizontalDistanceFromLeft, y: y + (wallHeight / 2)))
+                        horizontalDistanceFromLeft += 1
+                        nextSpot = queryLevelMap(point: CGPoint(x: horizontalDistanceFromLeft, y: y + (wallHeight / 2)))
                     }
 
                     let wallLength = horizontalDistanceFromLeft - x
                     for j in y..<verticalDistanceFromTop {
                         for i in x..<horizontalDistanceFromLeft {
                             filled[(j * kLevelMapSize) + i] = 255
-                            numBlocks++
+                            numBlocks += 1
                         }
                     }
-                    addCollisionWallAtWorldPoint(worldPoint, width: CGFloat(kLevelMapDivisor * wallLength), height: CGFloat(kLevelMapDivisor * wallHeight))
-                    numVolumes++
+                    addCollisionWallAtWorldPoint(worldPoint: worldPoint, width: CGFloat(kLevelMapDivisor * wallLength), height: CGFloat(kLevelMapDivisor * wallHeight))
+                    numVolumes += 1
                 }
             }
         }
@@ -217,12 +224,12 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
         wallNode.position = CGPoint(x: worldPoint.x + size.width * 0.5, y: worldPoint.y - size.height * 0.5)
         
         // Assign the physics body; unwrap the physics body to configure it.
-        wallNode.physicsBody = SKPhysicsBody(rectangleOfSize: size)
-        wallNode.physicsBody!.dynamic = false
+        wallNode.physicsBody = SKPhysicsBody(rectangleOf: size)
+        wallNode.physicsBody!.isDynamic = false
         wallNode.physicsBody!.categoryBitMask = ColliderType.Wall.rawValue
         wallNode.physicsBody!.collisionBitMask = 0
 
-        addNode(wallNode, atWorldLayer: .Ground)
+        addNode(node: wallNode, atWorldLayer: .Ground)
     }
 
     // MAPPING
@@ -252,20 +259,20 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
     }
 
     override func canSee(point: CGPoint, from vantagePoint: CGPoint) -> Bool {
-        let a = convertWorldPointToLevelMapPoint(point)
-        let b = convertWorldPointToLevelMapPoint(vantagePoint)
+        let a = convertWorldPointToLevelMapPoint(location: point)
+        let b = convertWorldPointToLevelMapPoint(location: vantagePoint)
 
         let deltaX = b.x - a.x
         let deltaY = b.y - a.y
-        let dist = a.distanceTo(b)
+        let dist = a.distanceTo(p: b)
         let inc = 1.0 / dist
-        var p = CGPointZero
-
-        for var i: CGFloat = 0.0; i < inc; i += inc {
+        var p = CGPoint.zero
+        for i in stride(from: 0.0, to: inc, by: inc) {
+        //for var i: CGFloat = 0.0; i < inc; i += inc {
             p.x = a.x + i * deltaX
             p.y = a.y + i * deltaY
 
-            let location = queryLevelMap(p)
+            let location = queryLevelMap(point: p)
             if (location.wall > 200) {
                 return false
             }
@@ -276,16 +283,16 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 // HEROES
     override func heroWasKilled(hero: HeroCharacter) {
         for cave in goblinCaves {
-            cave.stopGoblinsFromTargettingHero(hero)
+            cave.stopGoblinsFromTargettingHero(target: hero)
         }
         
-        super.heroWasKilled(hero)
+        super.heroWasKilled(hero: hero)
     }
     
 // LEVEL START
     func startLevel(charClass: CharacterClass) {
         defaultPlayer.charClass = charClass
-        addHeroForPlayer(defaultPlayer)
+        addHeroForPlayer(player: defaultPlayer)
 
         if cheat {
             var bossPosition = levelBoss!.position
@@ -296,24 +303,24 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
     }
 
 // LOOP UPDATE
-    override func updateWithTimeSinceLastUpdate(timeSinceLast: NSTimeInterval) {
+    override func updateWithTimeSinceLastUpdate(timeSinceLast: TimeInterval) {
         for hero in heroes {
-            hero.updateWithTimeSinceLastUpdate(timeSinceLast)
+            hero.updateWithTimeSinceLastUpdate(interval: timeSinceLast)
         }
 
-        levelBoss?.updateWithTimeSinceLastUpdate(timeSinceLast)
+        levelBoss?.updateWithTimeSinceLastUpdate(interval: timeSinceLast)
 
         for cave in goblinCaves {
-            cave.updateWithTimeSinceLastUpdate(timeSinceLast)
+            cave.updateWithTimeSinceLastUpdate(interval: timeSinceLast)
         }
     }
 
     override func updateAfterSimulatingPhysics() {
-        var position = defaultPlayer.hero!.position
+        let position = defaultPlayer.hero!.position
 
         for tree in trees {
-            if tree.position.distanceTo(position) < 1024 {
-                tree.updateAlphaWithScene(self)
+            if tree.position.distanceTo(p: position) < 1024 {
+                tree.updateAlphaWithScene(scene: self)
             }
         }
 
@@ -322,16 +329,16 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
         }
 
         for emitter in particleSystems {
-            var emitterIsVisible = (emitter.position.distanceTo(position) < 1024)
-            if !emitterIsVisible && !emitter.paused {
-                emitter.paused = true
-            } else if emitterIsVisible && emitter.paused {
-                emitter.paused = false
+            let emitterIsVisible = (emitter.position.distanceTo(p: position) < 1024)
+            if !emitterIsVisible && !emitter.isPaused {
+                emitter.isPaused = true
+            } else if emitterIsVisible && emitter.isPaused {
+                emitter.isPaused = false
             }
         }
 
         for sprite in parallaxSprites {
-            if sprite.position.distanceTo(position) < 1024 {
+            if sprite.position.distanceTo(p: position) < 1024 {
                 sprite.updateOffset()
             }
         }
@@ -340,24 +347,24 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 // PHYSICS DELEGATE
     func didBeginContact(contact: SKPhysicsContact) {
         if let character = contact.bodyA.node as? Character {
-            character.collidedWith(contact.bodyB)
+            character.collidedWith(other: contact.bodyB)
         }
 
         if let character = contact.bodyB.node as? Character {
-            character.collidedWith(contact.bodyA)
+            character.collidedWith(other: contact.bodyA)
         }
 
         let rawProjectileType = ColliderType.Projectile.rawValue
         // 导弹打到墙则爆炸消失,其他则穿透
         if (contact.bodyA.categoryBitMask & rawProjectileType == rawProjectileType || contact.bodyB.categoryBitMask & rawProjectileType == rawProjectileType) && (contact.bodyA.categoryBitMask & ColliderType.Wall.rawValue == ColliderType.Wall.rawValue || contact.bodyB.categoryBitMask & ColliderType.Wall.rawValue == ColliderType.Wall.rawValue) {
             if let projectile = (contact.bodyA.categoryBitMask & rawProjectileType) == rawProjectileType ? contact.bodyA.node : contact.bodyB.node {
-                projectile.runAction(SKAction.removeFromParent())
+                projectile.run(SKAction.removeFromParent())
 
-                let emitter = sSharedProjectileSparkEmitter.copy() as SKEmitterNode
-                addNode(emitter, atWorldLayer: .AboveCharacter)
+                let emitter = sSharedProjectileSparkEmitter.copy() as! SKEmitterNode
+                addNode(node: emitter, atWorldLayer: .AboveCharacter)
                 emitter.position = projectile.position
 
-                runOneShotEmitter(emitter, withDuration: 0.15)
+                runOneShotEmitter(emitter: emitter, withDuration: 0.15)
             }
         }
     }
@@ -374,10 +381,10 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
         HeroCharacter.loadSharedHeroAssets()
         Boss.loadSharedAssets()
 
-        sSharedLeafEmitterA = .emitterNodeWithName("Leaves_01")
-        sSharedLeafEmitterB = .emitterNodeWithName("Leaves_02")
-        sSharedProjectileSparkEmitter = .emitterNodeWithName("ProjectileSplat")
-        sSharedSpawnEmitter = .emitterNodeWithName("Spawn")
+        sSharedLeafEmitterA = .emitterNodeWithName(name: "Leaves_01")
+        sSharedLeafEmitterB = .emitterNodeWithName(name: "Leaves_02")
+        sSharedProjectileSparkEmitter = .emitterNodeWithName(name: "ProjectileSplat")
+        sSharedSpawnEmitter = .emitterNodeWithName(name: "Spawn")
         
         // Load Trees
         let atlas = SKTextureAtlas(named: "Environment")
@@ -398,7 +405,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
     }
 
     class func loadBackgroundTiles() {
-        var tileAtlas = SKTextureAtlas(named: "Tiles")
+        let tileAtlas = SKTextureAtlas(named: "Tiles")
 
         for y in 0..<kWorldTileDivisor {
             for x in 0..<kWorldTileDivisor {
@@ -412,7 +419,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 
                 tileNode.position = position
                 tileNode.zPosition = -1.0
-                tileNode.blendMode = .Replace
+                tileNode.blendMode = .replace
                 sBackgroundTiles.append(tileNode)
             }
         }

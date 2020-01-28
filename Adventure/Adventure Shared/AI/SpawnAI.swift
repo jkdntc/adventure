@@ -16,8 +16,8 @@ class SpawnAI: ArtificialIntelligence {
     }
 
     // loop Update
-    override func updateWithTimeSinceLastUpdate(interval: NSTimeInterval) {
-        let cave = character as Cave
+    override func updateWithTimeSinceLastUpdate(interval: TimeInterval) {
+        let cave = character as! Cave
 
         if cave.health <= 0.0 {
             return
@@ -27,13 +27,13 @@ class SpawnAI: ArtificialIntelligence {
 
         // minimum hero distance
         var nearestHeroDistance: CGFloat = 500.0
-        var nearestHeroPosition = CGPointZero
+        var nearestHeroPosition = CGPoint.zero
 
         let cavePosition = cave.position
 
         for hero in scene.heroes {
             var heroPosition = hero.position
-            var distance = cavePosition.distanceTo(heroPosition)
+            var distance = cavePosition.distanceTo(p: heroPosition)
             if distance < nearestHeroDistance {
                 nearestHeroDistance = distance
                 nearestHeroPosition = heroPosition
@@ -49,8 +49,8 @@ class SpawnAI: ArtificialIntelligence {
         var goblinCount = cave.activeGoblins.count
 
         if (goblinCount < 1 || cave.timeUntilNextGenerate <= 0.0 || (distScale < 0.35 && cave.timeUntilNextGenerate > 5.0)) {
-            if goblinCount < 1 || (goblinCount < 4 && nearestHeroPosition != CGPointZero &&
-               scene.canSee(nearestHeroPosition, from: cavePosition)) {
+            if goblinCount < 1 || (goblinCount < 4 && nearestHeroPosition != CGPoint.zero &&
+                scene.canSee(point: nearestHeroPosition, from: cavePosition)) {
                 cave.generate()
             }
             cave.timeUntilNextGenerate = (4.0 * distScale);

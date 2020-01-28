@@ -15,12 +15,12 @@ class ParallaxSprite: SKSpriteNode {
     var virtualZRotation = CGFloat(0)
     var parallaxOffset = CGFloat(0)
 
-    convenience override init () {
-      self.init(texture: nil, color: SKColor.whiteColor(), size: CGSize(width: 0, height: 0))
+    init () {
+        super.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
     }
 
-    override init(texture: SKTexture?, color: SKColor?, size: CGSize) {
-      super.init(texture: texture, color:color, size:size)
+    override init(texture: SKTexture?, color: NSColor?, size: CGSize) {
+        super.init(texture: texture, color:color ?? NSColor(), size:size)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,14 +28,14 @@ class ParallaxSprite: SKSpriteNode {
     }
 
     init(sprites: [SKSpriteNode], usingOffset offset: CGFloat) {
-        super.init(texture: nil, color: SKColor.whiteColor(), size: CGSize(width: 0, height: 0))
+        super.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
 
         usesParallaxEffect = true
 
         let zOffset = 1.0 / CGFloat(sprites.count)
 
         let ourZPosition = zPosition
-        for (childNumber, node) in enumerate(sprites) {
+        for (childNumber, node) in sprites.enumerated() {
             node.zPosition = ourZPosition + (zOffset + (zOffset * CGFloat(childNumber)))
             addChild(node)
         }
@@ -43,13 +43,17 @@ class ParallaxSprite: SKSpriteNode {
         parallaxOffset = offset
     }
 
-    override func copyWithZone(zone: NSZone) -> AnyObject {
-        let sprite = super.copyWithZone(zone) as ParallaxSprite
+    override func copy(with zone: NSZone?) -> Any {
+        let sprite = super.copy(with:zone) as! ParallaxSprite
 
         sprite.parallaxOffset = parallaxOffset
         sprite.usesParallaxEffect = usesParallaxEffect
 
         return sprite
+    }
+    
+    func copyWithZone(with zone: NSZone?) -> Any {
+        return copy(with: zone)
     }
 
     override var zRotation: CGFloat {
@@ -79,14 +83,14 @@ class ParallaxSprite: SKSpriteNode {
             return
         }
 
-        let scenePos = scene!.convertPoint(position, fromNode: parent!)
+        let scenePos = scene!.convert(position, from: parent!)
 
         let offsetX = -1.0 + (2.0 * (scenePos.x / scene!.size.width))
         let offsetY = -1.0 + (2.0 * (scenePos.y / scene!.size.height))
 
         let delta = parallaxOffset / CGFloat(children.count)
 
-        for (childNumber, child) in enumerate(children as [SKNode]) {
+        for (childNumber, child) in (children as [SKNode]).enumerated() {
             child.position = CGPoint(x: offsetX * delta * CGFloat(childNumber), y: offsetY * delta * CGFloat(childNumber))
         }
 

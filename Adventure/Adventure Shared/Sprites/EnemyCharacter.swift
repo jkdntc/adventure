@@ -14,15 +14,15 @@ class EnemyCharacter: Character {
     // Subclasses always set the intelligence in their initializers.
     var intelligence: ArtificialIntelligence!
 
-    override func updateWithTimeSinceLastUpdate(interval: NSTimeInterval) {
-        super.updateWithTimeSinceLastUpdate(interval)
+    override func updateWithTimeSinceLastUpdate(interval: TimeInterval) {
+        super.updateWithTimeSinceLastUpdate(interval: interval)
 
-        intelligence.updateWithTimeSinceLastUpdate(interval)
+        intelligence.updateWithTimeSinceLastUpdate(interval: interval)
     }
 
-    override func animationDidComplete(animationState: AnimationState) {
+    override func animationDidComplete(animation animationState: AnimationState) {
         if animationState == AnimationState.Attack {
-            intelligence.target?.collidedWith(physicsBody!)
+            intelligence.target?.collidedWith(other: physicsBody!)
         }
     }
 }

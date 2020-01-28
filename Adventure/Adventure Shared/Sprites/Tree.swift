@@ -13,8 +13,8 @@ import SpriteKit
 class Tree: ParallaxSprite {
     var fadeAlpha = false
 
-    override func copyWithZone(zone: NSZone) -> AnyObject {
-        var tree = super.copyWithZone(zone) as Tree
+    override func copy(with zone: NSZone?) -> Any {
+        var tree = super.copy(with:zone) as! Tree
         tree.fadeAlpha = fadeAlpha
         return tree
     }
@@ -24,8 +24,8 @@ class Tree: ParallaxSprite {
             return
         }
 
-        let distance = position.distanceTo(scene.defaultPlayer.hero!.position)
-        alpha = alphaForDistance(distance)
+        let distance = position.distanceTo(p: scene.defaultPlayer.hero!.position)
+        alpha = alphaForDistance(distance: distance)
     }
 
     func alphaForDistance(distance: CGFloat) -> CGFloat {
@@ -34,7 +34,7 @@ class Tree: ParallaxSprite {
         if distance > opaqueDistance {
             return 1.0
         } else {
-            var multiplier = distance / opaqueDistance
+            let multiplier = distance / opaqueDistance
             return 0.1 + multiplier * multiplier * 0.9
         }
     }

@@ -24,7 +24,7 @@ var sSharedArcherGetHitAnimationFrames = [SKTexture]()
 var sSharedArcherDeathAnimationFrames = [SKTexture]()
 var sSharedArcherDamageAction = SKAction()
 
-var kLoadSharedArcherAssetsOnceToken: dispatch_once_t = 0
+var kLoadSharedArcherAssetsOnceToken = 0
 
 class Archer: HeroCharacter {
 
@@ -38,8 +38,8 @@ class Archer: HeroCharacter {
 
     // Shared Assets.
     class func loadSharedAssets() {
-        dispatch_once(&kLoadSharedArcherAssetsOnceToken) {
-            sSharedArcherProjectile = SKSpriteNode(color: SKColor.whiteColor(), size: CGSize(width: 2.0, height: 24.0))
+        //dispatch_once(&kLoadSharedArcherAssetsOnceToken) {
+        sSharedArcherProjectile = SKSpriteNode(color: SKColor.white, size: CGSize(width: 2.0, height: 24.0))
             sSharedArcherProjectile.name = "Projectile"
             
             // Assign the physics body; unwrap the physics body to configure it.
@@ -48,22 +48,22 @@ class Archer: HeroCharacter {
             sSharedArcherProjectile.physicsBody!.collisionBitMask = ColliderType.Wall.rawValue
             sSharedArcherProjectile.physicsBody!.contactTestBitMask = sSharedArcherProjectile.physicsBody!.collisionBitMask
 
-            sSharedArcherProjectileEmitter = SKEmitterNode.emitterNodeWithName("ArcherProjectile")
+        sSharedArcherProjectileEmitter = SKEmitterNode.emitterNodeWithName(name: "ArcherProjectile")
 
-            sSharedArcherIdleAnimationFrames = loadFramesFromAtlasWithName("Archer_Idle", baseFileName: "archer_idle_", numberOfFrames: kDefaultNumberOfIdleFrames)
-            sSharedArcherWalkAnimationFrames = loadFramesFromAtlasWithName("Archer_Walk", baseFileName: "archer_walk_", numberOfFrames: kDefaultNumberOfWalkFrames)
-            sSharedArcherAttackAnimationFrames = loadFramesFromAtlasWithName("Archer_Attack", baseFileName: "archer_attack_", numberOfFrames: kArcherAttackFrames)
-            sSharedArcherGetHitAnimationFrames = loadFramesFromAtlasWithName("Archer_GetHit", baseFileName: "archer_getHit_", numberOfFrames: kArcherGetHitFrames)
-            sSharedArcherDeathAnimationFrames = loadFramesFromAtlasWithName("Archer_Death", baseFileName: "archer_death_", numberOfFrames: kArcherDeathFrames)
+        sSharedArcherIdleAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_Idle", baseFileName: "archer_idle_", numberOfFrames: kDefaultNumberOfIdleFrames)
+        sSharedArcherWalkAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_Walk", baseFileName: "archer_walk_", numberOfFrames: kDefaultNumberOfWalkFrames)
+        sSharedArcherAttackAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_Attack", baseFileName: "archer_attack_", numberOfFrames: kArcherAttackFrames)
+        sSharedArcherGetHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_GetHit", baseFileName: "archer_getHit_", numberOfFrames: kArcherGetHitFrames)
+        sSharedArcherDeathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_Death", baseFileName: "archer_death_", numberOfFrames: kArcherDeathFrames)
 
             let actions = [
-                SKAction.colorizeWithColor(SKColor.whiteColor(), colorBlendFactor: 10.0, duration: 0.0),
-                SKAction.waitForDuration(0.75),
-                SKAction.colorizeWithColorBlendFactor(0.0, duration: 0.25)
+                SKAction.colorize(with: SKColor.white, colorBlendFactor: 10.0, duration: 0.0),
+                SKAction.wait(forDuration: 0.75),
+                SKAction.colorize(withColorBlendFactor: 0.0, duration: 0.25)
             ]
 
             sSharedArcherDamageAction = SKAction.sequence(actions)
-        }
+        //}
     }
 
     override func projectile() -> SKSpriteNode {

@@ -60,7 +60,7 @@ class LayeredCharacterScene: SKScene {
 
     var heroes = [HeroCharacter]()
 
-    var defaultSpawnPoint = CGPointZero
+    var defaultSpawnPoint = CGPoint.zero
     var worldMovedForUpdate = false
 
     var defaultPlayer = Player()
@@ -71,7 +71,7 @@ class LayeredCharacterScene: SKScene {
     var hudScore: SKLabelNode!
     var hudLifeHearts = [SKSpriteNode]()
 
-    var lastUpdateTimeInterval = NSTimeInterval(0)
+    var lastUpdateTimeInterval = TimeInterval(0)
 
     override init(size: CGSize) {
         super.init(size: size)
@@ -87,7 +87,7 @@ class LayeredCharacterScene: SKScene {
         addChild(world)
         
         buildHUD()
-        updateHUDForPlayer(defaultPlayer)
+        updateHUDForPlayer(player: defaultPlayer)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -119,13 +119,13 @@ class LayeredCharacterScene: SKScene {
                 hero = Archer(atPosition: spawnPos, withPlayer: player)
         }
 
-        let emitter = sSharedSpawnEmitter.copy() as SKEmitterNode
+        let emitter = sSharedSpawnEmitter.copy() as! SKEmitterNode
         emitter.position = spawnPos
-        addNode(emitter, atWorldLayer: .AboveCharacter)
-        runOneShotEmitter(emitter, withDuration: 0.15)
+        addNode(node: emitter, atWorldLayer: .AboveCharacter)
+        runOneShotEmitter(emitter: emitter, withDuration: 0.15)
 
-        hero.fadeIn(2.0)
-        hero.addToScene(self)
+        hero.fadeIn(duration: 2.0)
+        hero.addToScene(scene: self)
         heroes.append(hero)
 
         player.hero = hero
@@ -137,9 +137,9 @@ class LayeredCharacterScene: SKScene {
         let player = hero.player
     
         // Remove this hero from our list of heroes
-        for (idx, obj) in enumerate(heroes) {
+        for (idx, obj) in heroes.enumerated() {
             if obj === hero {
-                heroes.removeAtIndex(idx)
+                heroes.remove(at: idx)
                 break
             }
         }
@@ -149,24 +149,24 @@ class LayeredCharacterScene: SKScene {
         player.moveRequested = false
         #endif
 
-        let hero = addHeroForPlayer(player)
+        let hero = addHeroForPlayer(player: player!)
         
-        centerWorldOnCharacter(hero)
+        centerWorldOnCharacter(character: hero)
         //复活后将血条长满
-        player.livesLeft=kStartLives
+        player!.livesLeft=kStartLives
         for heart in hudLifeHearts {
-            heart.runAction(SKAction.fadeAlphaTo(1.0, duration: 3.0))
+            heart.run(SKAction.fadeAlpha(to: 1.0, duration: 3.0))
         }
     }
 
 // HUD and Scores
     func buildHUD() {
         let iconName = "iconWarrior_blue"
-        let color = SKColor.greenColor()
+        let color = SKColor.green
         let fontName = "Copperplate"
         let hudX: CGFloat = 30
         let hudY: CGFloat = self.frame.size.height - 30
-        let hudD: CGFloat = self.frame.size.width
+        let _: CGFloat = self.frame.size.width
     
         let hud = SKNode()
         
@@ -182,7 +182,7 @@ class LayeredCharacterScene: SKScene {
         hudLabel.text = "ME"
         hudLabel.fontColor = color
         hudLabel.fontSize = 16
-        hudLabel.horizontalAlignmentMode = .Left
+        hudLabel.horizontalAlignmentMode = .left
         hudLabel.position = CGPoint(x: hudX + (hudAvatar.size.width * 1.0), y: hudY + 10 )
         hud.addChild(hudLabel)
         
@@ -191,7 +191,7 @@ class LayeredCharacterScene: SKScene {
         hudScore.text = "SCORE: 0"
         hudScore.fontColor = color
         hudScore.fontSize = 16
-        hudScore.horizontalAlignmentMode = .Left
+        hudScore.horizontalAlignmentMode = .left
         hudScore.position = CGPoint(x: hudX + (hudAvatar.size.width * 1.0), y: hudY - 40 )
         hud.addChild(hudScore)
     
@@ -218,19 +218,19 @@ class LayeredCharacterScene: SKScene {
         let heartNumber = player.livesLeft
         
         let heart = hudLifeHearts[heartNumber]
-        heart.runAction(SKAction.fadeAlphaTo(0.0, duration: 3.0))
+        heart.run(SKAction.fadeAlpha(to: 0.0, duration: 3.0))
     }
 
     func addToScore(amount: Int, afterEnemyKillWithProjectile projectile: SKNode) {
         if let player = projectile.userData?[kPlayer] as? Player {
             player.score += amount
-            updateHUDForPlayer(player)
+            updateHUDForPlayer(player: player)
         }
     }
 
 
 // LOOP UPDATE
-    override func update(currentTime: NSTimeInterval) {
+    override func update(_ currentTime: TimeInterval) {
         var timeSinceLast = currentTime - lastUpdateTimeInterval
         lastUpdateTimeInterval = currentTime
 
@@ -239,7 +239,7 @@ class LayeredCharacterScene: SKScene {
             worldMovedForUpdate = true
         }
 
-        updateWithTimeSinceLastUpdate(timeSinceLast)
+        updateWithTimeSinceLastUpdate(timeSinceLast: timeSinceLast)
 
         if defaultPlayer.hero == nil {
             return
@@ -252,15 +252,15 @@ class LayeredCharacterScene: SKScene {
         }
         
         if defaultPlayer.moveForward {
-            hero.move(.Forward, withTimeInterval: timeSinceLast)
+            hero.move(direction: .Forward, withTimeInterval: timeSinceLast)
         } else if defaultPlayer.moveBack {
-            hero.move(.Back, withTimeInterval: timeSinceLast)
+            hero.move(direction: .Back, withTimeInterval: timeSinceLast)
         }
 
         if defaultPlayer.moveLeft {
-            hero.move(.Left, withTimeInterval: timeSinceLast)
+            hero.move(direction: .Left, withTimeInterval: timeSinceLast)
         } else if defaultPlayer.moveRight {
-            hero.move(.Right, withTimeInterval: timeSinceLast)
+            hero.move(direction: .Right, withTimeInterval: timeSinceLast)
         }
 
         if defaultPlayer.fireAction {
@@ -286,7 +286,7 @@ class LayeredCharacterScene: SKScene {
         #endif
     }
 
-    func updateWithTimeSinceLastUpdate(timeSinceLast: NSTimeInterval) {
+    func updateWithTimeSinceLastUpdate(timeSinceLast: TimeInterval) {
       // Overridden by subclasses
     }
 
@@ -324,15 +324,26 @@ class LayeredCharacterScene: SKScene {
     func updateAfterSimulatingPhysics() { }
 
 // ASSET LOADING
-    class func loadSceneAssetsWithCompletionHandler(completionHandler: () -> Void) {
-        let queue = dispatch_get_main_queue()
+    class func loadSceneAssetsWithCompletionHandler(completionHandler: @escaping () -> Void) {
+        DispatchQueue.global(qos: .background).async {
 
-        let backgroundQueue = dispatch_get_global_queue(CLong(DISPATCH_QUEUE_PRIORITY_HIGH), 0)
-        dispatch_async(backgroundQueue) {
+            // Background Thread
             self.loadSceneAssets()
-
-            dispatch_async(queue, completionHandler)
+            DispatchQueue.main.async {
+                // Run UI Updates
+               
+                completionHandler()
+            }
         }
+//
+//        let queue = dispatch_get_main_queue()
+//
+//        let backgroundQueue = DispatchQueue.global(CLong(DispatchQueue.GlobalQueuePriority.high), 0)
+//        backgroundQueue.async() {
+//            self.loadSceneAssets()
+//
+//            dispatch_async(queue, completionHandler)
+//        }
     }
 
     class func loadSceneAssets() {
@@ -341,13 +352,13 @@ class LayeredCharacterScene: SKScene {
 
 // MAPPING
     func centerWorldOnPosition(position: CGPoint) {
-        world.position = CGPoint(x: -position.x + CGRectGetMidX(frame),
-            y: -position.y + CGRectGetMidY(frame))
+        world.position = CGPoint(x: -position.x + frame.midX,
+                                 y: -position.y + frame.midY)
         worldMovedForUpdate = true
     }
     
     func centerWorldOnCharacter(character: Character) {
-        centerWorldOnPosition(character.position)
+        centerWorldOnPosition(position: character.position)
     }
     
     func canSee(point: CGPoint, from vantagePoint: CGPoint) -> Bool {
