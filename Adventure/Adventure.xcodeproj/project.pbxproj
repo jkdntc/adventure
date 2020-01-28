@@ -1,0 +1,1115 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97B116CB23E07BAA00AEEFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */; };
+		97B116CD23E07BAA00AEEFA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */; };
+		97B116D023E07BAA00AEEFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116CE23E07BAA00AEEFA6 /* Main.storyboard */; };
+		97B116D323E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116D123E07BAA00AEEFA6 /* LaunchScreen.storyboard */; };
+		97B116D823E07BAA00AEEFA6 /* Adventure.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 97B116D723E07BAA00AEEFA6 /* Adventure.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97B116DE23E07BAA00AEEFA6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116DC23E07BAA00AEEFA6 /* Interface.storyboard */; };
+		97B116E523E07BAA00AEEFA6 /* Adventure Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97B116E423E07BAA00AEEFA6 /* Adventure Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97B116EA23E07BAA00AEEFA6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116E923E07BAA00AEEFA6 /* InterfaceController.swift */; };
+		97B116EC23E07BAA00AEEFA6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116EB23E07BAA00AEEFA6 /* ExtensionDelegate.swift */; };
+		97B116F523E07BAA00AEEFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116F423E07BAA00AEEFA6 /* AppDelegate.swift */; };
+		97B116F723E07BAA00AEEFA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116F623E07BAA00AEEFA6 /* GameViewController.swift */; };
+		97B116FA23E07BAA00AEEFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116F823E07BAA00AEEFA6 /* Main.storyboard */; };
+		97B116FD23E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116FB23E07BAA00AEEFA6 /* LaunchScreen.storyboard */; };
+		97B1170623E07BAA00AEEFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1170523E07BAA00AEEFA6 /* AppDelegate.swift */; };
+		97B1170823E07BAA00AEEFA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1170723E07BAA00AEEFA6 /* GameViewController.swift */; };
+		97B1170B23E07BAA00AEEFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B1170923E07BAA00AEEFA6 /* Main.storyboard */; };
+		97B1170D23E07BAA00AEEFA6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116BF23E07BA800AEEFA6 /* Actions.sks */; };
+		97B1170E23E07BAA00AEEFA6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116BF23E07BA800AEEFA6 /* Actions.sks */; };
+		97B1170F23E07BAA00AEEFA6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116BF23E07BA800AEEFA6 /* Actions.sks */; };
+		97B1171023E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
+		97B1171123E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
+		97B1171223E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
+		97B1171323E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
+		97B1171423E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
+		97B1171523E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
+		97B1171623E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
+		97B1171723E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
+		97B1171823E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
+		97B1171923E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
+		97B1171A23E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
+		97B1171B23E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
+		97B1175223E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
+		97B1175323E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
+		97B1175423E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
+		97B1175523E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
+		97B1175623E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
+		97B1175723E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
+		97B1175823E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
+		97B1175923E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
+		97B1175A23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
+		97B1175B23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
+		97B1175C23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
+		97B1175D23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
+		97B1176F23E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
+		97B1177023E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
+		97B1177123E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
+		97B1177223E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
+		97B1177323E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
+		97B1177423E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
+		97B1177523E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
+		97B1177623E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
+		97B1177723E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
+		97B1177823E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
+		97B1177923E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
+		97B1177A23E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
+		97B1177B23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
+		97B1177C23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
+		97B1177D23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
+		97B1177E23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
+		97B1177F23E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
+		97B1178023E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
+		97B1178123E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
+		97B1178223E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
+		97B1178323E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
+		97B1178423E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
+		97B1178523E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
+		97B1178623E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
+		97B1178723E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
+		97B1178823E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
+		97B1178923E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
+		97B1178A23E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
+		97B1178B23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
+		97B1178C23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
+		97B1178D23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
+		97B1178E23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
+		97B1178F23E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
+		97B1179023E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
+		97B1179123E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
+		97B1179223E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
+		97B1179323E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
+		97B1179423E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
+		97B1179523E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
+		97B1179623E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
+		97B1179723E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
+		97B1179823E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
+		97B1179923E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
+		97B1179A23E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
+		97B1179B23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
+		97B1179C23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
+		97B1179D23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
+		97B1179E23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
+		97B1179F23E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
+		97B117A023E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
+		97B117A123E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
+		97B117A223E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
+		97B117A323E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
+		97B117A423E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
+		97B117A523E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
+		97B117A623E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
+		97B117A823E07F5300AEEFA6 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 97B117A723E07F5300AEEFA6 /* Assets */; };
+		97B117AA23E07F5300AEEFA6 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 97B117A723E07F5300AEEFA6 /* Assets */; };
+		97B117AB23E07F5300AEEFA6 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 97B117A723E07F5300AEEFA6 /* Assets */; };
+		97B117AC23E07F6800AEEFA6 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 97B117A723E07F5300AEEFA6 /* Assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97B116D923E07BAA00AEEFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97B116BA23E07BA700AEEFA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97B116D623E07BAA00AEEFA6;
+			remoteInfo = "Adventure watchOS App";
+		};
+		97B116E623E07BAA00AEEFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97B116BA23E07BA700AEEFA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97B116E323E07BAA00AEEFA6;
+			remoteInfo = "Adventure watchOS App Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97B1172123E07BAA00AEEFA6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97B116E523E07BAA00AEEFA6 /* Adventure Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B1172523E07BAA00AEEFA6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				97B116D823E07BAA00AEEFA6 /* Adventure.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97B116BF23E07BA800AEEFA6 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		97B116C023E07BA800AEEFA6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		97B116C123E07BA800AEEFA6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		97B116C223E07BAA00AEEFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97B116C723E07BAA00AEEFA6 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		97B116CF23E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97B116D223E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97B116D423E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B116D723E07BAA00AEEFA6 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B116DD23E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		97B116DF23E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B116E423E07BAA00AEEFA6 /* Adventure Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Adventure Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B116E923E07BAA00AEEFA6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		97B116EB23E07BAA00AEEFA6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		97B116ED23E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B116F223E07BAA00AEEFA6 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B116F423E07BAA00AEEFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97B116F623E07BAA00AEEFA6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		97B116F923E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97B116FC23E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97B116FE23E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B1170323E07BAA00AEEFA6 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B1170523E07BAA00AEEFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97B1170723E07BAA00AEEFA6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		97B1170A23E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97B1170C23E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureScene.swift; sourceTree = "<group>"; };
+		97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayeredCharacterScene.swift; sourceTree = "<group>"; };
+		97B1175123E07EAE00AEEFA6 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicsUtilities.swift; sourceTree = "<group>"; };
+		97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtificialIntelligence.swift; sourceTree = "<group>"; };
+		97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpawnAI.swift; sourceTree = "<group>"; };
+		97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseAI.swift; sourceTree = "<group>"; };
+		97B1176523E07ECB00AEEFA6 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyCharacter.swift; sourceTree = "<group>"; };
+		97B1176723E07ECB00AEEFA6 /* Goblin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goblin.swift; sourceTree = "<group>"; };
+		97B1176823E07ECB00AEEFA6 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		97B1176923E07ECB00AEEFA6 /* Cave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
+		97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxSprite.swift; sourceTree = "<group>"; };
+		97B1176B23E07ECB00AEEFA6 /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
+		97B1176C23E07ECB00AEEFA6 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCharacter.swift; sourceTree = "<group>"; };
+		97B1176E23E07ECB00AEEFA6 /* Archer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
+		97B117A723E07F5300AEEFA6 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97B116C423E07BAA00AEEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116E123E07BAA00AEEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116EF23E07BAA00AEEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B1170023E07BAA00AEEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97B116B923E07BA700AEEFA6 = {
+			isa = PBXGroup;
+			children = (
+				97B116BE23E07BA800AEEFA6 /* Adventure Shared */,
+				97B116C923E07BAA00AEEFA6 /* Adventure iOS */,
+				97B116DB23E07BAA00AEEFA6 /* Adventure watchOS App */,
+				97B116E823E07BAA00AEEFA6 /* Adventure watchOS App Extension */,
+				97B116F323E07BAA00AEEFA6 /* Adventure tvOS */,
+				97B1170423E07BAA00AEEFA6 /* Adventure macOS */,
+				97B116C823E07BAA00AEEFA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97B116BE23E07BA800AEEFA6 /* Adventure Shared */ = {
+			isa = PBXGroup;
+			children = (
+				97B117A723E07F5300AEEFA6 /* Assets */,
+				97B1176023E07ECB00AEEFA6 /* AI */,
+				97B1176423E07ECB00AEEFA6 /* Sprites */,
+				97B1175E23E07ECB00AEEFA6 /* Utilities */,
+				97B1174E23E07EAE00AEEFA6 /* Scene */,
+				97B116BF23E07BA800AEEFA6 /* Actions.sks */,
+				97B116C023E07BA800AEEFA6 /* GameScene.sks */,
+				97B116C123E07BA800AEEFA6 /* GameScene.swift */,
+				97B116C223E07BAA00AEEFA6 /* Assets.xcassets */,
+			);
+			path = "Adventure Shared";
+			sourceTree = "<group>";
+		};
+		97B116C823E07BAA00AEEFA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97B116C723E07BAA00AEEFA6 /* Adventure.app */,
+				97B116D723E07BAA00AEEFA6 /* Adventure.app */,
+				97B116E423E07BAA00AEEFA6 /* Adventure Extension.appex */,
+				97B116F223E07BAA00AEEFA6 /* Adventure.app */,
+				97B1170323E07BAA00AEEFA6 /* Adventure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97B116C923E07BAA00AEEFA6 /* Adventure iOS */ = {
+			isa = PBXGroup;
+			children = (
+				97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */,
+				97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */,
+				97B116CE23E07BAA00AEEFA6 /* Main.storyboard */,
+				97B116D123E07BAA00AEEFA6 /* LaunchScreen.storyboard */,
+				97B116D423E07BAA00AEEFA6 /* Info.plist */,
+			);
+			path = "Adventure iOS";
+			sourceTree = "<group>";
+		};
+		97B116DB23E07BAA00AEEFA6 /* Adventure watchOS App */ = {
+			isa = PBXGroup;
+			children = (
+				97B116DC23E07BAA00AEEFA6 /* Interface.storyboard */,
+				97B116DF23E07BAA00AEEFA6 /* Info.plist */,
+			);
+			path = "Adventure watchOS App";
+			sourceTree = "<group>";
+		};
+		97B116E823E07BAA00AEEFA6 /* Adventure watchOS App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97B116E923E07BAA00AEEFA6 /* InterfaceController.swift */,
+				97B116EB23E07BAA00AEEFA6 /* ExtensionDelegate.swift */,
+				97B116ED23E07BAA00AEEFA6 /* Info.plist */,
+			);
+			path = "Adventure watchOS App Extension";
+			sourceTree = "<group>";
+		};
+		97B116F323E07BAA00AEEFA6 /* Adventure tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				97B116F423E07BAA00AEEFA6 /* AppDelegate.swift */,
+				97B116F623E07BAA00AEEFA6 /* GameViewController.swift */,
+				97B116F823E07BAA00AEEFA6 /* Main.storyboard */,
+				97B116FB23E07BAA00AEEFA6 /* LaunchScreen.storyboard */,
+				97B116FE23E07BAA00AEEFA6 /* Info.plist */,
+			);
+			path = "Adventure tvOS";
+			sourceTree = "<group>";
+		};
+		97B1170423E07BAA00AEEFA6 /* Adventure macOS */ = {
+			isa = PBXGroup;
+			children = (
+				97B1170523E07BAA00AEEFA6 /* AppDelegate.swift */,
+				97B1170723E07BAA00AEEFA6 /* GameViewController.swift */,
+				97B1170923E07BAA00AEEFA6 /* Main.storyboard */,
+				97B1170C23E07BAA00AEEFA6 /* Info.plist */,
+			);
+			path = "Adventure macOS";
+			sourceTree = "<group>";
+		};
+		97B1174E23E07EAE00AEEFA6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */,
+				97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */,
+				97B1175123E07EAE00AEEFA6 /* Player.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		97B1175E23E07ECB00AEEFA6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		97B1176023E07ECB00AEEFA6 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */,
+				97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */,
+				97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		97B1176423E07ECB00AEEFA6 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				97B1176523E07ECB00AEEFA6 /* Warrior.swift */,
+				97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */,
+				97B1176723E07ECB00AEEFA6 /* Goblin.swift */,
+				97B1176823E07ECB00AEEFA6 /* Character.swift */,
+				97B1176923E07ECB00AEEFA6 /* Cave.swift */,
+				97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */,
+				97B1176B23E07ECB00AEEFA6 /* Boss.swift */,
+				97B1176C23E07ECB00AEEFA6 /* Tree.swift */,
+				97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */,
+				97B1176E23E07ECB00AEEFA6 /* Archer.swift */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97B116C623E07BAA00AEEFA6 /* Adventure iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B1172623E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure iOS" */;
+			buildPhases = (
+				97B116C323E07BAA00AEEFA6 /* Sources */,
+				97B116C423E07BAA00AEEFA6 /* Frameworks */,
+				97B116C523E07BAA00AEEFA6 /* Resources */,
+				97B1172523E07BAA00AEEFA6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97B116DA23E07BAA00AEEFA6 /* PBXTargetDependency */,
+			);
+			name = "Adventure iOS";
+			productName = "Adventure iOS";
+			productReference = 97B116C723E07BAA00AEEFA6 /* Adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97B116D623E07BAA00AEEFA6 /* Adventure watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B1172223E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure watchOS App" */;
+			buildPhases = (
+				97B116D523E07BAA00AEEFA6 /* Resources */,
+				97B1172123E07BAA00AEEFA6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97B116E723E07BAA00AEEFA6 /* PBXTargetDependency */,
+			);
+			name = "Adventure watchOS App";
+			productName = "Adventure watchOS App";
+			productReference = 97B116D723E07BAA00AEEFA6 /* Adventure.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		97B116E323E07BAA00AEEFA6 /* Adventure watchOS App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B1171E23E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure watchOS App Extension" */;
+			buildPhases = (
+				97B116E023E07BAA00AEEFA6 /* Sources */,
+				97B116E123E07BAA00AEEFA6 /* Frameworks */,
+				97B116E223E07BAA00AEEFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adventure watchOS App Extension";
+			productName = "Adventure watchOS App Extension";
+			productReference = 97B116E423E07BAA00AEEFA6 /* Adventure Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		97B116F123E07BAA00AEEFA6 /* Adventure tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B1172923E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure tvOS" */;
+			buildPhases = (
+				97B116EE23E07BAA00AEEFA6 /* Sources */,
+				97B116EF23E07BAA00AEEFA6 /* Frameworks */,
+				97B116F023E07BAA00AEEFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adventure tvOS";
+			productName = "Adventure tvOS";
+			productReference = 97B116F223E07BAA00AEEFA6 /* Adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97B1170223E07BAA00AEEFA6 /* Adventure macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97B1172C23E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure macOS" */;
+			buildPhases = (
+				97B116FF23E07BAA00AEEFA6 /* Sources */,
+				97B1170023E07BAA00AEEFA6 /* Frameworks */,
+				97B1170123E07BAA00AEEFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adventure macOS";
+			productName = "Adventure macOS";
+			productReference = 97B1170323E07BAA00AEEFA6 /* Adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97B116BA23E07BA700AEEFA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "姜坤";
+				TargetAttributes = {
+					97B116C623E07BAA00AEEFA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					97B116D623E07BAA00AEEFA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					97B116E323E07BAA00AEEFA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					97B116F123E07BAA00AEEFA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					97B1170223E07BAA00AEEFA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 97B116BD23E07BA700AEEFA6 /* Build configuration list for PBXProject "Adventure" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97B116B923E07BA700AEEFA6;
+			productRefGroup = 97B116C823E07BAA00AEEFA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97B116C623E07BAA00AEEFA6 /* Adventure iOS */,
+				97B116D623E07BAA00AEEFA6 /* Adventure watchOS App */,
+				97B116E323E07BAA00AEEFA6 /* Adventure watchOS App Extension */,
+				97B116F123E07BAA00AEEFA6 /* Adventure tvOS */,
+				97B1170223E07BAA00AEEFA6 /* Adventure macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97B116C523E07BAA00AEEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1171023E07BAA00AEEFA6 /* GameScene.sks in Resources */,
+				97B117A823E07F5300AEEFA6 /* Assets in Resources */,
+				97B116D023E07BAA00AEEFA6 /* Main.storyboard in Resources */,
+				97B1170D23E07BAA00AEEFA6 /* Actions.sks in Resources */,
+				97B116D323E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */,
+				97B1171823E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116D523E07BAA00AEEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1171923E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
+				97B117AC23E07F6800AEEFA6 /* Assets in Resources */,
+				97B116DE23E07BAA00AEEFA6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116E223E07BAA00AEEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1171123E07BAA00AEEFA6 /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116F023E07BAA00AEEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1171223E07BAA00AEEFA6 /* GameScene.sks in Resources */,
+				97B117AA23E07F5300AEEFA6 /* Assets in Resources */,
+				97B116FA23E07BAA00AEEFA6 /* Main.storyboard in Resources */,
+				97B1170E23E07BAA00AEEFA6 /* Actions.sks in Resources */,
+				97B116FD23E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */,
+				97B1171A23E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B1170123E07BAA00AEEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B117AB23E07F5300AEEFA6 /* Assets in Resources */,
+				97B1170B23E07BAA00AEEFA6 /* Main.storyboard in Resources */,
+				97B1171323E07BAA00AEEFA6 /* GameScene.sks in Resources */,
+				97B1171B23E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
+				97B1170F23E07BAA00AEEFA6 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97B116C323E07BAA00AEEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1177723E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
+				97B1176F23E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
+				97B1178723E07ECB00AEEFA6 /* Goblin.swift in Sources */,
+				97B1179B23E07ECB00AEEFA6 /* Tree.swift in Sources */,
+				97B117A323E07ECB00AEEFA6 /* Archer.swift in Sources */,
+				97B1177F23E07ECB00AEEFA6 /* Warrior.swift in Sources */,
+				97B1179F23E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
+				97B1171423E07BAA00AEEFA6 /* GameScene.swift in Sources */,
+				97B1179723E07ECB00AEEFA6 /* Boss.swift in Sources */,
+				97B1177323E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
+				97B1178F23E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				97B116CD23E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
+				97B116CB23E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
+				97B1177B23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
+				97B1178B23E07ECB00AEEFA6 /* Character.swift in Sources */,
+				97B1179323E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
+				97B1175623E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
+				97B1175A23E07EAE00AEEFA6 /* Player.swift in Sources */,
+				97B1178323E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
+				97B1175223E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116E023E07BAA00AEEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1177823E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
+				97B1177023E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
+				97B1178823E07ECB00AEEFA6 /* Goblin.swift in Sources */,
+				97B1179C23E07ECB00AEEFA6 /* Tree.swift in Sources */,
+				97B117A423E07ECB00AEEFA6 /* Archer.swift in Sources */,
+				97B1178023E07ECB00AEEFA6 /* Warrior.swift in Sources */,
+				97B117A023E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
+				97B1171523E07BAA00AEEFA6 /* GameScene.swift in Sources */,
+				97B1179823E07ECB00AEEFA6 /* Boss.swift in Sources */,
+				97B1177423E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
+				97B1179023E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				97B116EC23E07BAA00AEEFA6 /* ExtensionDelegate.swift in Sources */,
+				97B116EA23E07BAA00AEEFA6 /* InterfaceController.swift in Sources */,
+				97B1177C23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
+				97B1178C23E07ECB00AEEFA6 /* Character.swift in Sources */,
+				97B1179423E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
+				97B1175723E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
+				97B1175B23E07EAE00AEEFA6 /* Player.swift in Sources */,
+				97B1178423E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
+				97B1175323E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116EE23E07BAA00AEEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1177923E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
+				97B1177123E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
+				97B1178923E07ECB00AEEFA6 /* Goblin.swift in Sources */,
+				97B1179D23E07ECB00AEEFA6 /* Tree.swift in Sources */,
+				97B117A523E07ECB00AEEFA6 /* Archer.swift in Sources */,
+				97B1178123E07ECB00AEEFA6 /* Warrior.swift in Sources */,
+				97B117A123E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
+				97B1171623E07BAA00AEEFA6 /* GameScene.swift in Sources */,
+				97B1179923E07ECB00AEEFA6 /* Boss.swift in Sources */,
+				97B1177523E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
+				97B1179123E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				97B116F723E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
+				97B116F523E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
+				97B1177D23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
+				97B1178D23E07ECB00AEEFA6 /* Character.swift in Sources */,
+				97B1179523E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
+				97B1175823E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
+				97B1175C23E07EAE00AEEFA6 /* Player.swift in Sources */,
+				97B1178523E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
+				97B1175423E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B116FF23E07BAA00AEEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B1177A23E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
+				97B1177223E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
+				97B1178A23E07ECB00AEEFA6 /* Goblin.swift in Sources */,
+				97B1179E23E07ECB00AEEFA6 /* Tree.swift in Sources */,
+				97B117A623E07ECB00AEEFA6 /* Archer.swift in Sources */,
+				97B1178223E07ECB00AEEFA6 /* Warrior.swift in Sources */,
+				97B117A223E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
+				97B1171723E07BAA00AEEFA6 /* GameScene.swift in Sources */,
+				97B1179A23E07ECB00AEEFA6 /* Boss.swift in Sources */,
+				97B1177623E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
+				97B1179223E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				97B1170823E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
+				97B1170623E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
+				97B1177E23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
+				97B1178E23E07ECB00AEEFA6 /* Character.swift in Sources */,
+				97B1179623E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
+				97B1175923E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
+				97B1175D23E07EAE00AEEFA6 /* Player.swift in Sources */,
+				97B1178623E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
+				97B1175523E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97B116DA23E07BAA00AEEFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97B116D623E07BAA00AEEFA6 /* Adventure watchOS App */;
+			targetProxy = 97B116D923E07BAA00AEEFA6 /* PBXContainerItemProxy */;
+		};
+		97B116E723E07BAA00AEEFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97B116E323E07BAA00AEEFA6 /* Adventure watchOS App Extension */;
+			targetProxy = 97B116E623E07BAA00AEEFA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97B116CE23E07BAA00AEEFA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B116CF23E07BAA00AEEFA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97B116D123E07BAA00AEEFA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B116D223E07BAA00AEEFA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		97B116DC23E07BAA00AEEFA6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B116DD23E07BAA00AEEFA6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		97B116F823E07BAA00AEEFA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B116F923E07BAA00AEEFA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97B116FB23E07BAA00AEEFA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B116FC23E07BAA00AEEFA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		97B1170923E07BAA00AEEFA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97B1170A23E07BAA00AEEFA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97B1171C23E07BAA00AEEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97B1171D23E07BAA00AEEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		97B1171F23E07BAA00AEEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Adventure watchOS App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Adventure Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		97B1172023E07BAA00AEEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Adventure watchOS App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Adventure Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		97B1172323E07BAA00AEEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Adventure_Extension;
+				INFOPLIST_FILE = "Adventure watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure.watchkitapp;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		97B1172423E07BAA00AEEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Adventure_Extension;
+				INFOPLIST_FILE = "Adventure watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure.watchkitapp;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		97B1172723E07BAA00AEEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Adventure iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97B1172823E07BAA00AEEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Adventure iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97B1172A23E07BAA00AEEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Adventure tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		97B1172B23E07BAA00AEEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Adventure tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97B1172D23E07BAA00AEEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Adventure macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97B1172E23E07BAA00AEEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Adventure macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ne81.Adventure;
+				PRODUCT_NAME = Adventure;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97B116BD23E07BA700AEEFA6 /* Build configuration list for PBXProject "Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B1171C23E07BAA00AEEFA6 /* Debug */,
+				97B1171D23E07BAA00AEEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B1171E23E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure watchOS App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B1171F23E07BAA00AEEFA6 /* Debug */,
+				97B1172023E07BAA00AEEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B1172223E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B1172323E07BAA00AEEFA6 /* Debug */,
+				97B1172423E07BAA00AEEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B1172623E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B1172723E07BAA00AEEFA6 /* Debug */,
+				97B1172823E07BAA00AEEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B1172923E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B1172A23E07BAA00AEEFA6 /* Debug */,
+				97B1172B23E07BAA00AEEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97B1172C23E07BAA00AEEFA6 /* Build configuration list for PBXNativeTarget "Adventure macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B1172D23E07BAA00AEEFA6 /* Debug */,
+				97B1172E23E07BAA00AEEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97B116BA23E07BA700AEEFA6 /* Project object */;
+}
