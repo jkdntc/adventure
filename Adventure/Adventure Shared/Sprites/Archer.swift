@@ -27,7 +27,7 @@ final class Archer: HeroCharacter, SharedAssetProvider {
         getHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_GetHit")
         deathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Archer_Death")
         
-        var archerProjectile = SKSpriteNode(color: SKColor.white, size: CGSize(width: 2.0, height: 24.0))
+        let archerProjectile = SKSpriteNode(color: SKColor.white, size: CGSize(width: 2.0, height: 24.0))
         archerProjectile.name = "Projectile"
         
         // Assign the physics body; unwrap the physics body to configure it.

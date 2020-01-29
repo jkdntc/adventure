@@ -37,7 +37,7 @@ class AdventureScene: SKScene, SKPhysicsContactDelegate {
         
         //static let backgroundQueue = dispatch_queue_create("com.example.apple-samplecode.Adventure.backgroundQueue", DISPATCH_QUEUE_SERIAL)
         static let backgroundQueue = DispatchQueue(
-        label: "com.example.apple-samplecode.Adventure.backgroundQueue",
+        label: "com.ne81.Adventure.backgroundQueue",
         attributes: .concurrent)
     }
     
@@ -324,8 +324,8 @@ var finishedMovingToView: () -> Void = {}
     }
 
     // MARK: SKPhysicsContactDelegate
-
-    func didBeginContact(contact: SKPhysicsContact) {
+    func didBegin(_ contact: SKPhysicsContact) {
+    //func didBeginContact(contact: SKPhysicsContact) {
         if let character = contact.bodyA.node as? Character {
             character.collidedWith(other: contact.bodyB)
         }
@@ -372,7 +372,7 @@ var finishedMovingToView: () -> Void = {}
     }
 
     // MARK: Character Support
-
+    // 遍历所有视野范围内物体是否有阻挡,用于判断是否让敌人向玩家发动进攻
     func canSee(point: CGPoint, from vantagePoint: CGPoint) -> Bool {
         let rayStart = vantagePoint
         let rayEnd = point
@@ -470,8 +470,8 @@ var finishedMovingToView: () -> Void = {}
         hud.name = Constants.hudNodeName
         hud.position = CGPoint(x: CGFloat(0 + Constants.hudWidth * index), y: frame.size.height)
         addChild(hud)
-        player.hudAvatar = hud.childNode(withName: Constants.hudAvatarName) as! SKSpriteNode
-        player.hudScore = hud.childNode(withName: Constants.hudScoreName) as! SKLabelNode
+        player.hudAvatar = (hud.childNode(withName: Constants.hudAvatarName) as! SKSpriteNode)
+        player.hudScore = (hud.childNode(withName: Constants.hudScoreName) as! SKLabelNode)
         hud.enumerateChildNodes(withName: Constants.hudHeartName) { node, stop in
             player.hudLifeHearts.append(node as! SKSpriteNode)
         }
@@ -503,7 +503,7 @@ var finishedMovingToView: () -> Void = {}
     func loadWorld() {
         physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         physicsWorld.contactDelegate = self
-        
+
         let scene = SKScene(fileNamed: "AdventureWorld")
         let templateWorld = scene!.children.first!.copy() as! SKNode
 

@@ -30,7 +30,7 @@ class HeroCharacter: Character {
         self.init(texture: texture, atPosition: position)
         self.player = player
         
-        zRotation = CGFloat(M_PI)
+        zRotation = CGFloat(Double.pi)
         zPosition = -0.25
         name = "Hero"
     }
@@ -76,7 +76,7 @@ class HeroCharacter: Character {
 
         if let enemy = other.node as? Character {
             if !enemy.isDying {
-                applyDamage(damage: 5.0)
+                applyDamage(damage: 0.0) //5.0
                 requestedAnimation = .GetHit
             }
         }
@@ -106,6 +106,6 @@ class HeroCharacter: Character {
         projectile.run(SKAction.sequence(sequence))
         projectile.run(projectileSoundAction)
 
-        projectile.userData = [Player.Keys.projectileUserDataPlayer: player]
+        projectile.userData = [Player.Keys.projectileUserDataPlayer: player!]
     }
 }

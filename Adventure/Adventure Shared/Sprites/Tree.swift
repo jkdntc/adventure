@@ -24,7 +24,7 @@ final class Tree: ParallaxSprite, SharedAssetProvider {
     // MARK: NSCopying
     
     override func copy(with zone: NSZone?) -> Any {
-        var tree = super.copy(with: zone) as! Tree
+        let tree = super.copy(with: zone) as! Tree
         tree.fadeAlpha = fadeAlpha
         return tree
     }

@@ -83,7 +83,7 @@ class ParallaxSprite: SKSpriteNode {
 
         let delta = parallaxOffset / CGFloat(children.count)
 
-        for (childNumber, child) in (children as! [SKNode]).enumerated() {
+        for (childNumber, child) in children.enumerated() {
             child.position = CGPoint(x: offsetX * delta * CGFloat(childNumber), y: offsetY * delta * CGFloat(childNumber))
         }
 

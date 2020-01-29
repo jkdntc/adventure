@@ -29,7 +29,7 @@ final class Warrior: HeroCharacter, SharedAssetProvider {
         getHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_GetHit")
         deathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Warrior_Death")
 
-        var warriorProjectile = SKSpriteNode(texture: atlas.textureNamed("warrior_throw_hammer.png"))
+        let warriorProjectile = SKSpriteNode(texture: atlas.textureNamed("warrior_throw_hammer.png"))
         warriorProjectile.name = "Projectile"
         
         // Assign the physics body; unwrap the physics body to configure it.

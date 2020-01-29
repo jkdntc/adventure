@@ -20,7 +20,7 @@ func unitRandom() -> CGFloat {
 
 // The assets are all facing Y down, so offset by half pi to get into X right facing
 func adjustAssetOrientation(r: CGFloat) -> CGFloat {
-    return r + (CGFloat(M_PI) * 0.5)
+    return r + (CGFloat(Double.pi) * 0.5)
 }
 
 extension CGPoint {

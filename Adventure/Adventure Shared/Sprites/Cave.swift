@@ -170,7 +170,7 @@ final class Cave: EnemyCharacter, SharedAssetProvider {
 
             goblin.addToScene(scene: characterScene)
 
-            goblin.zPosition = -1.0
+            goblin.zPosition = -0.25 //-1.0
 
             goblin.fadeIn(duration: 0.5)
 

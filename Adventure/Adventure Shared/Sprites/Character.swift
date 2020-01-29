@@ -192,7 +192,7 @@ class Character: ParallaxSprite {
     // MARK: NSCopying
     
     override func copy(with zone: NSZone?) -> Any {
-        var character = super.copy(with: zone) as! Character
+        let character = super.copy(with: zone) as! Character
         character.isDying = isDying
         character.isAttacking = isAttacking
         character.health = health
@@ -279,7 +279,7 @@ class Character: ParallaxSprite {
     // MARK: Character Animation
     
     func resolveRequestedAnimation() {
-        var (frames, key) = animationFramesAndKeyForState(state: requestedAnimation)
+        let (frames, key) = animationFramesAndKeyForState(state: requestedAnimation)
 
         fireAnimationForState(animationState: requestedAnimation, usingTextures: frames, withKey: key)
 

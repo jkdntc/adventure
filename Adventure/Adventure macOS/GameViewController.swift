@@ -69,7 +69,11 @@ class GameViewController: NSViewController,NSWindowDelegate {
                 self.archerButton.alphaValue = 1.0
                 self.warriorButton.alphaValue = 1.0
             }
-            
+            /* Sprite Kit applies additional optimizations to improve rendering performance */
+            self.skView.ignoresSiblingOrder = true
+
+            /* Set the scale mode to scale to fit the window */
+            self.scene.scaleMode = .resizeFill
             self.skView.presentScene(self.scene)
         }
 
