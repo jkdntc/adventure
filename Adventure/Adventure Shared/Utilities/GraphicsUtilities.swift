@@ -11,25 +11,26 @@
 import SpriteKit
 
 func createCGImageFromFile(path: String) -> CGImage! {
-#if os(iOS)
+#if os(iOS) || os(tvOS)
     if let image = UIImage(contentsOfFile: path) {
-        return image.CGImage
+        return image.cgImage
     } else {
         return nil
     }
-#else
+#elseif os(OSX)
     let nsimage = NSImage(contentsOfFile: path)
     //let destRect = NSZeroRect
     
     return nsimage!.cgImage(forProposedRect: nil, context: nil, hints: nil)  //.takeUnretainedValue()
 #endif
+    return nil
 }
 
 func getCGImageNamed(name: String) -> CGImage! {
 #if os(iOS)
-    let actualName = name.lastPathComponent
+    let actualName = NSString(string:name).lastPathComponent
     if let image = UIImage(named: actualName) {
-        return image.CGImage
+        return image.cgImage
     } else {
         return nil
     }
@@ -98,10 +99,10 @@ func createDataMap(mapName: String) -> UnsafeMutableRawPointer  {
 
 // The assets are all facing Y down, so offset by half pi to get into X right facing
 func adjustAssetOrientation(r: CGFloat) -> CGFloat {
-    return r + (CGFloat(M_PI) * 0.5)
+    return r + (CGFloat(Double.pi) * 0.5)
 }
 
-extension CGPoint : Equatable {
+extension CGPoint {
     func distanceTo(p : CGPoint) -> CGFloat {
         return hypot(self.x - p.x, self.y - p.y)
     }

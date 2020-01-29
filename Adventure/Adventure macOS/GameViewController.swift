@@ -12,6 +12,7 @@ import GameplayKit
 
 class GameViewController: NSViewController {
     var scene: AdventureScene!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        let scene = GameScene.newGameScene()

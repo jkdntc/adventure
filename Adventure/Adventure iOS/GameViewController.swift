@@ -11,14 +11,28 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    var scene: AdventureScene!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let scene = GameScene.newGameScene()
 
         // Present the scene
         let skView = self.view as! SKView
+        
+        AdventureScene.loadSceneAssetsWithCompletionHandler {
+            self.scene = AdventureScene(size: CGSize(width: 1024, height: 768))
+            self.scene.scaleMode = SKSceneScaleMode.aspectFit
+
+            skView.presentScene(self.scene)
+
+//            self.loadingProgressIndicator.stopAnimation(self)
+//            self.loadingProgressIndicator.hidden = true
+//
+//            self.archerButton.alphaValue = 1.0
+//            self.warriorButton.alphaValue = 1.0
+            self.scene.startLevel(charClass: CharacterClass.Archer)
+        }
+        
         skView.presentScene(scene)
         
         skView.ignoresSiblingOrder = true

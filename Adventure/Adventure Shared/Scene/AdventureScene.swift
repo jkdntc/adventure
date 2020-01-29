@@ -47,7 +47,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
 
         addBackgroundTiles()
         addSpawnPoints()
-        //addTrees()
+        //addTrees() //TODO addTrees?
         addCollisionWalls()
     }
 
@@ -124,10 +124,6 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
     func addCollisionWalls() {
         var filled = [UInt8](unsafeUninitializedCapacity: kLevelMapSize * kLevelMapSize)
         { buffer, initializedCount in
-//            for x in 1..<5 {
-//                buffer[x] = UInt8(x)
-//            }
-//            buffer[0] = 10
             initializedCount = kLevelMapSize * kLevelMapSize
         }
 
@@ -298,7 +294,7 @@ class AdventureScene: LayeredCharacterScene, SKPhysicsContactDelegate {
             var bossPosition = levelBoss!.position
             bossPosition.x += 128
             bossPosition.y += 512
-            defaultPlayer.hero!.position = bossPosition
+            //defaultPlayer.hero!.position = bossPosition
         }
     }
 

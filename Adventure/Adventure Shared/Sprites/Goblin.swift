@@ -37,7 +37,7 @@ class Goblin: EnemyCharacter {
         super.init(texture: atlasTexture, atPosition: position)
 
 		movementSpeed *= unitRandom()
-
+        //TODO Goblin Scale
 		self.setScale(kMinimumGoblinSize + (unitRandom() * kGoblinSizeVariance))
 		name = "Enemy"
 
@@ -111,7 +111,7 @@ class Goblin: EnemyCharacter {
 
         let splort = deathSplort().copy() as! SKSpriteNode
         splort.zPosition = -1.0
-        splort.zRotation = unitRandom() * CGFloat(M_PI)
+        splort.zRotation = unitRandom() * CGFloat(Double.pi)
         splort.position = position
         splort.alpha = 0.5
         characterScene.addNode(node: splort, atWorldLayer: .Ground)

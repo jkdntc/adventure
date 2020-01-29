@@ -174,7 +174,7 @@ class Character: ParallaxSprite {
 
 // ANIMATION
     func resolveRequestedAnimation() {
-        var (frames, key) = animationFramesAndKeyForState(state: requestedAnimation)
+        let (frames, key) = animationFramesAndKeyForState(state: requestedAnimation)
 
         fireAnimationForState(animationState: requestedAnimation, usingTextures: frames, withKey: key)
 

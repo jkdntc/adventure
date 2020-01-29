@@ -19,8 +19,8 @@ class ParallaxSprite: SKSpriteNode {
         super.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
     }
 
-    override init(texture: SKTexture?, color: NSColor?, size: CGSize) {
-        super.init(texture: texture, color:color ?? NSColor(), size:size)
+    override init(texture: SKTexture?, color: SKColor?, size: CGSize) {
+        super.init(texture: texture, color:color ?? SKColor(), size:size)
     }
     
     required init?(coder aDecoder: NSCoder) {

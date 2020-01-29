@@ -146,7 +146,7 @@ class LayeredCharacterScene: SKScene {
         
         #if os(iOS)
         // Disable touch movement, otherwise new hero will try to move to previously-touched location.
-        player.moveRequested = false
+        player!.moveRequested = false
         #endif
 
         let hero = addHeroForPlayer(player: player!)
@@ -268,14 +268,14 @@ class LayeredCharacterScene: SKScene {
         }
 
         #if os(iOS)
-        if defaultPlayer.targetLocation != CGPointZero {
+        if defaultPlayer.targetLocation != CGPoint.zero {
             if defaultPlayer.fireAction {
-                hero.faceTo(defaultPlayer.targetLocation)
+                hero.faceTo(position: defaultPlayer.targetLocation)
             }
             
             if defaultPlayer.moveRequested {
                 if defaultPlayer.targetLocation != hero.position {
-                    hero.moveTowards(defaultPlayer.targetLocation,
+                    hero.moveTowards(targetPosition: defaultPlayer.targetLocation,
                                      withTimeInterval: timeSinceLast)
                 } else {
                     defaultPlayer.moveRequested = false

@@ -24,7 +24,7 @@ class Player {
 
     #if os(iOS)
     var movementTouch: UITouch? = nil
-    var targetLocation = CGPointZero
+    var targetLocation = CGPoint.zero
     var moveRequested = false
     #endif
 }
