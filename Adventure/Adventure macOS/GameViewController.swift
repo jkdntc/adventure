@@ -21,7 +21,7 @@ class GameViewController: NSViewController {
         let skView = self.view as! SKView
         skView.presentScene(scene)
 //
-        skView.ignoresSiblingOrder = true
+        skView.ignoresSiblingOrder = false
 //
 //        skView.showsFPS = true
 //        skView.showsNodeCount = true
@@ -38,6 +38,10 @@ class GameViewController: NSViewController {
 //            self.archerButton.alphaValue = 1.0
 //            self.warriorButton.alphaValue = 1.0
             self.scene.startLevel(charClass: CharacterClass.Archer)
+            let image = SKSpriteNode(imageNamed: "archer_attack_0003.png")
+
+            // Add the image to the scene.
+            self.scene.addChild(image)
         }
 
         skView.showsFPS = true

@@ -330,6 +330,7 @@
 		97B11A3F23E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
 		97B11A4023E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
 		97B11A4123E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
+		97B11A4323E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B11A4223E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -476,6 +477,7 @@
 		97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Death.atlas; sourceTree = "<group>"; };
 		97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Attack.atlas; sourceTree = "<group>"; };
 		97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Walk.atlas; sourceTree = "<group>"; };
+		97B11A4223E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSLayeredCharacterSceneEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -534,7 +536,6 @@
 				97B116BF23E07BA800AEEFA6 /* Actions.sks */,
 				97B116C023E07BA800AEEFA6 /* GameScene.sks */,
 				97B116C123E07BA800AEEFA6 /* GameScene.swift */,
-				97B116C223E07BAA00AEEFA6 /* Assets.xcassets */,
 			);
 			path = "Adventure Shared";
 			sourceTree = "<group>";
@@ -554,6 +555,7 @@
 		97B116C923E07BAA00AEEFA6 /* Adventure iOS */ = {
 			isa = PBXGroup;
 			children = (
+				97B11A4223E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift */,
 				97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */,
 				97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */,
 				97B116CE23E07BAA00AEEFA6 /* Main.storyboard */,
@@ -646,6 +648,7 @@
 				97B1176C23E07ECB00AEEFA6 /* Tree.swift */,
 				97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */,
 				97B1176E23E07ECB00AEEFA6 /* Archer.swift */,
+				97B116C223E07BAA00AEEFA6 /* Assets.xcassets */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -1219,6 +1222,7 @@
 				97B1179723E07ECB00AEEFA6 /* Boss.swift in Sources */,
 				97B1177323E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
 				97B1178F23E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				97B11A4323E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift in Sources */,
 				97B116CD23E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
 				97B116CB23E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
 				97B1177B23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
