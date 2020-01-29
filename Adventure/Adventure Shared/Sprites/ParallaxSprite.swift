@@ -1,34 +1,50 @@
 /*
-  Copyright (C) 2014 Apple Inc. All Rights Reserved.
+  Copyright (C) 2015 Apple Inc. All Rights Reserved.
   See LICENSE.txt for this sample’s licensing information
   
   Abstract:
-  
-        Defines the parallax sprite class, which provides the parallax effect for the sprites in Adventure
-      
+  Defines the parallax sprite class, which provides the parallax effect for the sprites in Adventure.
 */
 
 import SpriteKit
 
 class ParallaxSprite: SKSpriteNode {
+    // MARK: Properties
+    
     var usesParallaxEffect = false
     var virtualZRotation = CGFloat(0)
     var parallaxOffset = CGFloat(0)
-
-    init () {
-        super.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
-    }
-
-    override init(texture: SKTexture?, color: SKColor?, size: CGSize) {
-        super.init(texture: texture, color:color ?? SKColor(), size:size)
-    }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override var zRotation: CGFloat {
+        get {
+            return super.zRotation
+        }
+        
+        set(rotation) {
+            if !usesParallaxEffect {
+                super.zRotation = rotation
+            }
+            
+            if rotation != 0.0 {
+                super.zRotation = 0.0
+                
+                for child in children {
+                    child.zRotation = rotation
+                }
+                
+                virtualZRotation = rotation
+            }
+        }
     }
 
-    init(sprites: [SKSpriteNode], usingOffset offset: CGFloat) {
-        super.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
+    // MARK: Initializers
+
+    convenience init () {
+        self.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
+    }
+
+    convenience init(sprites: [SKSpriteNode], usingOffset offset: CGFloat) {
+        self.init(texture: nil, color: SKColor.white, size: CGSize(width: 0, height: 0))
 
         usesParallaxEffect = true
 
@@ -42,7 +58,8 @@ class ParallaxSprite: SKSpriteNode {
 
         parallaxOffset = offset
     }
-
+    
+    // MARK: NSCopying
     override func copy(with zone: NSZone?) -> Any {
         let sprite = super.copy(with:zone) as! ParallaxSprite
 
@@ -52,31 +69,7 @@ class ParallaxSprite: SKSpriteNode {
         return sprite
     }
     
-    func copyWithZone(with zone: NSZone?) -> Any {
-        return copy(with: zone)
-    }
-
-    override var zRotation: CGFloat {
-        get {
-            return super.zRotation
-        }
-
-        set(rotation) {
-            if !usesParallaxEffect {
-                super.zRotation = rotation
-            }
-
-            if rotation > 0.0 {
-                super.zRotation = 0.0
-
-                for child in children as [SKNode] {
-                    child.zRotation = rotation
-                }
-
-                virtualZRotation = rotation
-            }
-        }
-    }
+    // MARK: Scene Processing Support
 
     func updateOffset() {
         if !usesParallaxEffect || parent == nil {
@@ -90,7 +83,7 @@ class ParallaxSprite: SKSpriteNode {
 
         let delta = parallaxOffset / CGFloat(children.count)
 
-        for (childNumber, child) in (children as [SKNode]).enumerated() {
+        for (childNumber, child) in (children as! [SKNode]).enumerated() {
             child.position = CGPoint(x: offsetX * delta * CGFloat(childNumber), y: offsetY * delta * CGFloat(childNumber))
         }
 

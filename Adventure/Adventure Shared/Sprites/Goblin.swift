@@ -1,70 +1,53 @@
 /*
-  Copyright (C) 2014 Apple Inc. All Rights Reserved.
+  Copyright (C) 2015 Apple Inc. All Rights Reserved.
   See LICENSE.txt for this sample’s licensing information
   
   Abstract:
-  
-        Defines the class for goblin enemies.
-      
+  Defines the class for goblin enemies.
 */
-
 
 import SpriteKit
 
-let kMinimumGoblinSize: CGFloat = 0.5
-let kGoblinSizeVariance: CGFloat = 0.350
-let kGoblinCollisionRadius: CGFloat = 40.0
+final class Goblin: EnemyCharacter, SharedAssetProvider {
+    // MARK: Types
+    
+    struct Constants {
+        static let minimumSize: CGFloat = 0.5
+        static let sizeVariance: CGFloat = 0.35
+    }
+    
+    // MARK: Properties
+    
+    weak var cave: Cave?
+    
+    // MARK: Initializers
 
-let kGoblinAttackFrames = 33
-let kGoblinDeathFrames = 31
-let kGoblinGetHitFrames = 25
-
-let kDefaultNumberOfIdleFrames = 28
-let kDefaultNumberOfWalkFrames = 28
-
-var sSharedGetHitAnimationFrames = [SKTexture]()
-var sSharedDeathAnimationFrames = [SKTexture]()
-
-var kLoadSharedGoblinAssetsOnceToken = 0
-
-class Goblin: EnemyCharacter {
-	var cave: Cave?
-
-    init(atPosition position: CGPoint) {
+    convenience init(atPosition position: CGPoint) {
         let atlas = SKTextureAtlas(named: "Goblin_Idle")
 		let atlasTexture = atlas.textureNamed("goblin_idle_0001.png")
 
-        super.init(texture: atlasTexture, atPosition: position)
+        self.init(texture: atlasTexture, atPosition: position)
 
 		movementSpeed *= unitRandom()
-        //TODO Goblin Scale
-		self.setScale(kMinimumGoblinSize + (unitRandom() * kGoblinSizeVariance))
+
+		self.setScale(Constants.minimumSize + (unitRandom() * Constants.sizeVariance))
 		name = "Enemy"
 
-		intelligence = ChaseAI(character: self, target: nil)
+		intelligence = ChaseArtificialIntelligence(character: self)
 	}
+
+    // MARK: Setup
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // Overridden methods
     override func configurePhysicsBody() {
         // Assign the physics body; unwrap the physics body to configure it.
-        physicsBody = SKPhysicsBody(circleOfRadius: kGoblinCollisionRadius)
+        physicsBody = SKPhysicsBody(circleOfRadius: collisionRadius)
         physicsBody!.categoryBitMask = ColliderType.GoblinOrBoss.rawValue
-        physicsBody!.collisionBitMask = ColliderType.GoblinOrBoss.rawValue | ColliderType.Hero.rawValue | ColliderType.Projectile.rawValue | ColliderType.Wall.rawValue //可穿越洞穴防止被洞穴卡住
+        physicsBody!.collisionBitMask = ColliderType.all
         physicsBody!.contactTestBitMask = ColliderType.Projectile.rawValue
     }
 
-    override func reset() {
-        super.reset()
-
-        alpha = 1
-        removeAllChildren()
-        configurePhysicsBody()
-    }
-
+    // MARK: Scene Processing Support
+    
     override func animationDidComplete(animation animationState: AnimationState) {
         super.animationDidComplete(animation: animationState)
 
@@ -86,13 +69,12 @@ class Goblin: EnemyCharacter {
     }
 
     override func collidedWith(other otherBody: SKPhysicsBody) {
-        if dying  {
+        if isDying  {
             return
         }
 
         if otherBody.categoryBitMask & ColliderType.Projectile.rawValue == ColliderType.Projectile.rawValue {
             // Apply random damage of either 100% or 50%
-
             requestedAnimation = .GetHit
             var damage = 100.0
             if arc4random_uniform(2) == 0 {
@@ -109,9 +91,9 @@ class Goblin: EnemyCharacter {
     override func performDeath() {
         removeAllActions()
 
-        let splort = deathSplort().copy() as! SKSpriteNode
+        let splort = Goblin.deathSplort.copy() as! SKSpriteNode
         splort.zPosition = -1.0
-        splort.zRotation = unitRandom() * CGFloat(Double.pi)
+        splort.zRotation = unitRandom() * CGFloat(M_PI)
         splort.position = position
         splort.alpha = 0.5
         characterScene.addNode(node: splort, atWorldLayer: .Ground)
@@ -125,79 +107,33 @@ class Goblin: EnemyCharacter {
         physicsBody = nil
     }
 
+    override func reset() {
+        super.reset()
+
+        alpha = 1
+        removeAllChildren()
+        configurePhysicsBody()
+    }
+
+    // MARK: Asset Pre-loading
+
     class func loadSharedAssets() {
-        //dispatch_once(&kLoadSharedGoblinAssetsOnceToken) {
-            let atlas = SKTextureAtlas(named: "Environment")
+        let atlas = SKTextureAtlas(named: "Environment")
 
-        sSharedGoblinIdleAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Idle", baseFileName: "goblin_idle_", numberOfFrames: kDefaultNumberOfIdleFrames)
+        idleAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Idle")
+        walkAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Walk")
+        attackAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Attack")
+        getHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_GetHit")
+        deathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Death")
+        damageEmitter = SKEmitterNode(fileNamed: "Damage")!
+        deathSplort = SKSpriteNode(texture: atlas.textureNamed("minionSplort.png"))
 
-        sSharedGoblinWalkAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Walk", baseFileName: "goblin_walk_", numberOfFrames: kDefaultNumberOfWalkFrames)
+        let actions = [
+            SKAction.colorize(with: SKColor.white, colorBlendFactor: 1.0, duration: 0.0),
+            SKAction.wait(forDuration: 0.75),
+            SKAction.colorize(withColorBlendFactor: 0.0, duration: 0.1)
+        ]
 
-        sSharedGoblinAttackAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Attack", baseFileName: "goblin_attack_", numberOfFrames: kGoblinAttackFrames)
-
-        sSharedGoblinGetHitAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_GetHit", baseFileName: "goblin_getHit_", numberOfFrames: kGoblinGetHitFrames)
-
-        sSharedGoblinDeathAnimationFrames = loadFramesFromAtlasWithName(atlasName: "Goblin_Death", baseFileName: "goblin_death_", numberOfFrames: kGoblinDeathFrames)
-
-        sSharedGoblinDamageEmitter = SKEmitterNode.emitterNodeWithName(name: "Damage")
-
-            sSharedGoblinDeathSplort = SKSpriteNode(texture: atlas.textureNamed("minionSplort.png"))
-
-            let actions = [
-                SKAction.colorize(with: SKColor.white, colorBlendFactor: 1.0, duration: 0.0),
-                SKAction.wait(forDuration: 0.75),
-                SKAction.colorize(withColorBlendFactor: 0.0, duration: 0.1)
-            ]
-
-            sSharedGoblinDamageAction = SKAction.sequence(actions)
-        //}
-    }
-
-    override func damageEmitter() -> SKEmitterNode {
-        return sSharedGoblinDamageEmitter
-    }
-
-    override func damageAction() -> SKAction {
-        return sSharedGoblinDamageAction
-    }
-
-    override func idleAnimationFrames() -> [SKTexture] {
-        return sSharedGoblinIdleAnimationFrames
-    }
-
-    override func walkAnimationFrames() -> [SKTexture] {
-        return sSharedGoblinWalkAnimationFrames
-    }
-
-    override func attackAnimationFrames() -> [SKTexture] {
-        return sSharedGoblinAttackAnimationFrames
-    }
-
-    override func getHitAnimationFrames() -> [SKTexture] {
-        return sSharedGoblinGetHitAnimationFrames
-    }
-
-    override func deathAnimationFrames() -> [SKTexture] {
-        return sSharedGoblinDeathAnimationFrames
-    }
-
-    func deathSplort() -> SKSpriteNode {
-        return sSharedGoblinDeathSplort
+        damageAction = SKAction.sequence(actions)
     }
 }
-
-func ==(x: Goblin, y: Goblin) -> Bool {
-  return (x as NSObject) == (y as NSObject)
-}
-
-var sSharedGoblinBase = SKSpriteNode()
-var sSharedGoblinTop = SKSpriteNode()
-var sSharedGoblinDeathSplort = SKSpriteNode()
-var sSharedGoblinDamageEmitter = SKEmitterNode()
-var sSharedGoblinDeathEmitter = SKEmitterNode()
-var sSharedGoblinDamageAction = SKAction()
-var sSharedGoblinIdleAnimationFrames = [SKTexture]()
-var sSharedGoblinWalkAnimationFrames = [SKTexture]()
-var sSharedGoblinAttackAnimationFrames = [SKTexture]()
-var sSharedGoblinGetHitAnimationFrames = [SKTexture]()
-var sSharedGoblinDeathAnimationFrames = [SKTexture]()

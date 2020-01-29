@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,9 +674,9 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
-                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Adventure" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
@@ -683,11 +684,14 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Adventure macOS" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Adventure macOS" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="AdventureWindow" customModule="Adventure" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="c8i-Qh-yIf"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -697,18 +701,89 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="GameViewController" customModuleProvider="target"  sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
+                <viewController id="XfG-lQ-9wD" customClass="GameViewController" customModule="Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <customView key="view" wantsLayer="YES" id="CA3-8b-hs2" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="Xtb-Wz-5KM">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </visualEffectView>
+                            <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wBw-zn-FV0">
+                                <rect key="frame" x="85" y="230" width="855" height="495"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="495" id="7Qf-NE-MCq"/>
+                                    <constraint firstAttribute="width" constant="855" id="BSp-Fa-RcW"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="MJV-Ve-LGO"/>
+                            </imageView>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="XCW-yJ-emd">
+                                <rect key="frame" x="504" y="183" width="16" height="16"/>
+                            </progressIndicator>
+                            <button wantsLayer="YES" alphaValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="18b-vb-0gO">
+                                <rect key="frame" x="105" y="152" width="315" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="AkC-OI-9vf"/>
+                                    <constraint firstAttribute="width" constant="315" id="C0V-TE-955"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="button_archer" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="7Ax-7L-Kel">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="chooseArcher:" target="XfG-lQ-9wD" id="5Yc-pW-jN0"/>
+                                </connections>
+                            </button>
+                            <button wantsLayer="YES" alphaValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Wki-iD-iLw">
+                                <rect key="frame" x="605" y="152" width="315" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="S4j-zw-ycJ"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="button_warrior" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="vxm-6Y-Chz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="chooseWarrior:" target="XfG-lQ-9wD" id="6mi-cU-06X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xtb-Wz-5KM" secondAttribute="bottom" id="0Av-IE-phe"/>
+                            <constraint firstItem="wBw-zn-FV0" firstAttribute="top" secondItem="CA3-8b-hs2" secondAttribute="top" constant="43" id="9gC-mC-XGJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Xtb-Wz-5KM" secondAttribute="trailing" id="Cq7-Av-D55"/>
+                            <constraint firstItem="18b-vb-0gO" firstAttribute="leading" secondItem="CA3-8b-hs2" secondAttribute="leading" constant="105" id="J6L-jL-sfT"/>
+                            <constraint firstItem="XCW-yJ-emd" firstAttribute="centerX" secondItem="wBw-zn-FV0" secondAttribute="centerX" id="N7j-DD-7kb"/>
+                            <constraint firstItem="Xtb-Wz-5KM" firstAttribute="top" secondItem="CA3-8b-hs2" secondAttribute="top" id="Owh-Y6-2Pf"/>
+                            <constraint firstItem="18b-vb-0gO" firstAttribute="top" secondItem="Wki-iD-iLw" secondAttribute="top" id="YBV-bS-98S"/>
+                            <constraint firstAttribute="trailing" secondItem="Wki-iD-iLw" secondAttribute="trailing" constant="104" id="YUc-zh-NCT"/>
+                            <constraint firstAttribute="bottom" secondItem="18b-vb-0gO" secondAttribute="bottom" constant="152" id="iBR-Nw-BOV"/>
+                            <constraint firstItem="XCW-yJ-emd" firstAttribute="centerY" secondItem="18b-vb-0gO" secondAttribute="centerY" id="kFN-9A-kaf"/>
+                            <constraint firstItem="Xtb-Wz-5KM" firstAttribute="leading" secondItem="CA3-8b-hs2" secondAttribute="leading" id="ogc-15-eIP"/>
+                            <constraint firstItem="18b-vb-0gO" firstAttribute="bottom" secondItem="Wki-iD-iLw" secondAttribute="bottom" id="pcc-tf-v7Z"/>
+                            <constraint firstItem="wBw-zn-FV0" firstAttribute="centerX" secondItem="CA3-8b-hs2" secondAttribute="centerX" id="uI1-kh-tnD"/>
+                        </constraints>
+                    </customView>
+                    <connections>
+                        <outlet property="archerButton" destination="18b-vb-0gO" id="QYo-yh-7gt"/>
+                        <outlet property="coverView" destination="Xtb-Wz-5KM" id="z7s-rg-64A"/>
+                        <outlet property="gameLogo" destination="wBw-zn-FV0" id="0H8-OE-YNU"/>
+                        <outlet property="loadingProgressIndicator" destination="XCW-yJ-emd" id="FHL-0n-nmf"/>
+                        <outlet property="skView" destination="CA3-8b-hs2" id="2aj-pj-Hch"/>
+                        <outlet property="warriorButton" destination="Wki-iD-iLw" id="WoB-Yz-7xw"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="817"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_archer" width="431" height="90"/>
+        <image name="button_warrior" width="431" height="90"/>
+        <image name="logo" width="1024" height="576"/>
+    </resources>
 </document>

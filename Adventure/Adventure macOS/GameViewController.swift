@@ -10,45 +10,108 @@ import Cocoa
 import SpriteKit
 import GameplayKit
 
-class GameViewController: NSViewController {
+class AdventureWindow: NSWindow {}
+
+class GameViewController: NSViewController,NSWindowDelegate {
+        // MARK: Properties
+
     var scene: AdventureScene!
     
+    @IBOutlet weak var coverView: NSView!
+    
+    @IBOutlet weak var skView: SKView!
+    
+    @IBOutlet weak var loadingProgressIndicator: NSProgressIndicator!
+    
+    @IBOutlet weak var gameLogo: NSImageView!
+    
+    @IBOutlet weak var archerButton: NSButton!
+    
+    @IBOutlet weak var warriorButton: NSButton!
+    
+    var adventureWindow: NSWindow {
+        let windows = NSApplication.shared.windows
+        
+        for window in windows {
+            if window is AdventureWindow {
+                return window
+            }
+        }
+        
+        fatalError("There should always be an Adventure window.")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let scene = GameScene.newGameScene()
-//
-//        // Present the scene
-        let skView = self.view as! SKView
-        skView.presentScene(scene)
-//
-        skView.ignoresSiblingOrder = false
-//
-//        skView.showsFPS = true
-//        skView.showsNodeCount = true
-        
-        AdventureScene.loadSceneAssetsWithCompletionHandler {
-            self.scene = AdventureScene(size: CGSize(width: 1024, height: 768))
-            self.scene.scaleMode = SKSceneScaleMode.aspectFit
 
-            skView.presentScene(self.scene)
+    }
+    
+    override func viewWillAppear() {
+        loadingProgressIndicator.startAnimation(self)
 
-//            self.loadingProgressIndicator.stopAnimation(self)
-//            self.loadingProgressIndicator.hidden = true
-//
-//            self.archerButton.alphaValue = 1.0
-//            self.warriorButton.alphaValue = 1.0
-            self.scene.startLevel(charClass: CharacterClass.Archer)
-            let image = SKSpriteNode(imageNamed: "archer_attack_0003.png")
-
-            // Add the image to the scene.
-            self.scene.addChild(image)
+        AdventureScene.loadSceneAssetsWithCompletionHandler { loadedScene in
+            let adventureWindow = self.adventureWindow
+            
+            adventureWindow.delegate = self
+            self.scene = loadedScene
+            
+            let windowRect = adventureWindow.contentRect(forFrameRect: adventureWindow.frame)
+            self.scene.size = windowRect.size
+            
+            self.scene.finishedMovingToView = {
+                // Remove the cover view so the user can see the scene.
+                self.coverView.removeFromSuperview()
+                
+                // Stop the loading indicator once the scene is completely loaded.
+                self.loadingProgressIndicator.stopAnimation(self)
+                self.loadingProgressIndicator.isHidden = true
+                
+                // Show the character selection buttons so the user can start playing.
+                self.archerButton.alphaValue = 1.0
+                self.warriorButton.alphaValue = 1.0
+            }
+            
+            self.skView.presentScene(self.scene)
         }
 
+        #if DEBUG
         skView.showsFPS = true
         skView.showsNodeCount = true
         skView.showsDrawCount = true
-        //scene.startLevel(charClass: CharacterClass.Archer)
+        #endif
+    }
+    // MARK: NSWindowDelegate
+    
+    func windowWillResize(sender: NSWindow, toSize frameSize: NSSize) -> NSSize {
+        scene.isPaused = true
+        return frameSize
+    }
+    
+    private func windowDidResize(notification: NSNotification) {
+        let window = notification.object as! NSWindow
+        let windowSize = window.contentRect(forFrameRect: window.frame)
+        
+        scene.size = CGSize(width: windowSize.width, height: windowSize.height)
+        view.frame.size = CGSize(width: windowSize.width, height: windowSize.height)
+        
+        scene.isPaused = false
+    }
+    
+    // MARK: IBActions
+
+    @IBAction func chooseArcher(_: AnyObject) {
+        scene.startLevel(heroType: .Archer)
+        gameLogo.isHidden = true
+
+        archerButton.alphaValue = 0.0
+        warriorButton.alphaValue = 0.0
     }
 
+    @IBAction func chooseWarrior(_: AnyObject) {
+        scene.startLevel(heroType: .Warrior)
+        gameLogo.isHidden = true
+
+        archerButton.alphaValue = 0.0
+        warriorButton.alphaValue = 0.0
+    }
 }
 

@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
+        <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="bNo-s9-wk6"/>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kj4-Bs-XUj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4z-ix-Ecn" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dh9-f2-Jam">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="amI-z8-swj">
+                                        <rect key="frame" x="97" y="-10" width="221" height="796"/>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-pG-NYj">
+                                        <rect key="frame" x="188.5" y="754" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpR-Rh-jaG">
+                                        <rect key="frame" x="52" y="814" width="187" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="187" id="TjB-iz-AGj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="button_archer.png">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseArcher:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zgr-VK-hYt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQg-QL-aVF">
+                                        <rect key="frame" x="189" y="814" width="187" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="187" id="KhL-4W-aWz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="button_warrior.png">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseWarrior:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ROk-pU-R13"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bpR-Rh-jaG" firstAttribute="leading" secondItem="j4z-ix-Ecn" secondAttribute="leading" constant="52" id="283-Bs-4j6"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQg-QL-aVF" secondAttribute="trailing" constant="38" id="2bI-Rl-lhn"/>
+                                    <constraint firstItem="Dh9-f2-Jam" firstAttribute="top" secondItem="j4z-ix-Ecn" secondAttribute="top" id="4iU-iL-wnG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dh9-f2-Jam" secondAttribute="bottom" id="7Qf-5Q-Xqg"/>
+                                    <constraint firstItem="amI-z8-swj" firstAttribute="leading" secondItem="j4z-ix-Ecn" secondAttribute="leading" constant="97" id="FfJ-H6-VZL"/>
+                                    <constraint firstAttribute="trailing" secondItem="amI-z8-swj" secondAttribute="trailing" constant="96" id="S5q-oc-jG3"/>
+                                    <constraint firstItem="bpR-Rh-jaG" firstAttribute="bottom" secondItem="bQg-QL-aVF" secondAttribute="bottom" id="deo-cI-Alg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dh9-f2-Jam" secondAttribute="trailing" id="eVi-CW-hR1"/>
+                                    <constraint firstAttribute="centerX" secondItem="qbZ-pG-NYj" secondAttribute="centerX" id="eix-Vt-ybL"/>
+                                    <constraint firstAttribute="bottom" secondItem="amI-z8-swj" secondAttribute="bottom" constant="110" id="ghe-jx-NTX"/>
+                                    <constraint firstItem="bpR-Rh-jaG" firstAttribute="top" secondItem="amI-z8-swj" secondAttribute="bottom" constant="28" id="l6T-oa-kqF"/>
+                                    <constraint firstItem="bpR-Rh-jaG" firstAttribute="top" secondItem="bQg-QL-aVF" secondAttribute="top" id="nNO-cM-G5G"/>
+                                    <constraint firstItem="amI-z8-swj" firstAttribute="top" secondItem="j4z-ix-Ecn" secondAttribute="top" constant="-10" id="rbE-cp-EfP"/>
+                                    <constraint firstAttribute="bottom" secondItem="qbZ-pG-NYj" secondAttribute="bottom" constant="105" id="tGd-FB-1lY"/>
+                                    <constraint firstItem="Dh9-f2-Jam" firstAttribute="leading" secondItem="j4z-ix-Ecn" secondAttribute="leading" id="vnh-ZQ-Vse"/>
+                                    <constraint firstAttribute="bottom" secondItem="bpR-Rh-jaG" secondAttribute="bottom" constant="26" id="vup-Rd-OMR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j4z-ix-Ecn" firstAttribute="leading" secondItem="kj4-Bs-XUj" secondAttribute="leading" id="6Ar-4d-mzE"/>
+                            <constraint firstAttribute="trailing" secondItem="j4z-ix-Ecn" secondAttribute="trailing" id="6RF-6t-Srs"/>
+                            <constraint firstAttribute="bottom" secondItem="j4z-ix-Ecn" secondAttribute="bottom" id="9Pf-qC-4J9"/>
+                            <constraint firstItem="j4z-ix-Ecn" firstAttribute="top" secondItem="kj4-Bs-XUj" secondAttribute="top" id="kKf-N1-CpJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bqD-rl-LiP"/>
                     </view>
+                    <connections>
+                        <outlet property="archerButton" destination="bpR-Rh-jaG" id="uxP-VN-H1r"/>
+                        <outlet property="coverView" destination="Dh9-f2-Jam" id="jij-Yj-3ZI"/>
+                        <outlet property="gameLogo" destination="amI-z8-swj" id="HVe-sr-Rqf"/>
+                        <outlet property="imageView" destination="amI-z8-swj" id="GIS-Kt-xjl"/>
+                        <outlet property="loadingProgressIndicator" destination="qbZ-pG-NYj" id="fCx-Mg-YFG"/>
+                        <outlet property="skView" destination="j4z-ix-Ecn" id="Vkf-3d-MxR"/>
+                        <outlet property="warriorButton" destination="bQg-QL-aVF" id="L4e-9p-1oK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_archer.png" width="431" height="90"/>
+        <image name="button_warrior.png" width="431" height="90"/>
+        <image name="logo.png" width="1024" height="576"/>
+    </resources>
 </document>

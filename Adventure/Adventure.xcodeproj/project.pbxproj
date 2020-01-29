@@ -7,8 +7,309 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9746E93223E1A47400A31297 /* AdventureHUD.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E91B23E1A47400A31297 /* AdventureHUD.sks */; };
+		9746E93323E1A47400A31297 /* AdventureHUD.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E91B23E1A47400A31297 /* AdventureHUD.sks */; };
+		9746E93423E1A47400A31297 /* AdventureHUD.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E91B23E1A47400A31297 /* AdventureHUD.sks */; };
+		9746E93523E1A47400A31297 /* AdventureHUD.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E91B23E1A47400A31297 /* AdventureHUD.sks */; };
+		9746E93623E1A47400A31297 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E91D23E1A47400A31297 /* GraphicsUtilities.swift */; };
+		9746E93723E1A47400A31297 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E91D23E1A47400A31297 /* GraphicsUtilities.swift */; };
+		9746E93823E1A47400A31297 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E91D23E1A47400A31297 /* GraphicsUtilities.swift */; };
+		9746E93923E1A47400A31297 /* SpawnArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E91F23E1A47400A31297 /* SpawnArtificialIntelligence.swift */; };
+		9746E93A23E1A47400A31297 /* SpawnArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E91F23E1A47400A31297 /* SpawnArtificialIntelligence.swift */; };
+		9746E93B23E1A47400A31297 /* SpawnArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E91F23E1A47400A31297 /* SpawnArtificialIntelligence.swift */; };
+		9746E93C23E1A47400A31297 /* ChaseArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92023E1A47400A31297 /* ChaseArtificialIntelligence.swift */; };
+		9746E93D23E1A47400A31297 /* ChaseArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92023E1A47400A31297 /* ChaseArtificialIntelligence.swift */; };
+		9746E93E23E1A47400A31297 /* ChaseArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92023E1A47400A31297 /* ChaseArtificialIntelligence.swift */; };
+		9746E93F23E1A47400A31297 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92123E1A47400A31297 /* ArtificialIntelligence.swift */; };
+		9746E94023E1A47400A31297 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92123E1A47400A31297 /* ArtificialIntelligence.swift */; };
+		9746E94123E1A47400A31297 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92123E1A47400A31297 /* ArtificialIntelligence.swift */; };
+		9746E94223E1A47400A31297 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92323E1A47400A31297 /* Warrior.swift */; };
+		9746E94323E1A47400A31297 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92323E1A47400A31297 /* Warrior.swift */; };
+		9746E94423E1A47400A31297 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92323E1A47400A31297 /* Warrior.swift */; };
+		9746E94523E1A47400A31297 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92423E1A47400A31297 /* EnemyCharacter.swift */; };
+		9746E94623E1A47400A31297 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92423E1A47400A31297 /* EnemyCharacter.swift */; };
+		9746E94723E1A47400A31297 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92423E1A47400A31297 /* EnemyCharacter.swift */; };
+		9746E94823E1A47400A31297 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92523E1A47400A31297 /* Goblin.swift */; };
+		9746E94923E1A47400A31297 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92523E1A47400A31297 /* Goblin.swift */; };
+		9746E94A23E1A47400A31297 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92523E1A47400A31297 /* Goblin.swift */; };
+		9746E94B23E1A47400A31297 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92623E1A47400A31297 /* Character.swift */; };
+		9746E94C23E1A47400A31297 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92623E1A47400A31297 /* Character.swift */; };
+		9746E94D23E1A47400A31297 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92623E1A47400A31297 /* Character.swift */; };
+		9746E94E23E1A47400A31297 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92723E1A47400A31297 /* Cave.swift */; };
+		9746E94F23E1A47400A31297 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92723E1A47400A31297 /* Cave.swift */; };
+		9746E95023E1A47400A31297 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92723E1A47400A31297 /* Cave.swift */; };
+		9746E95123E1A47400A31297 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92823E1A47400A31297 /* ParallaxSprite.swift */; };
+		9746E95223E1A47400A31297 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92823E1A47400A31297 /* ParallaxSprite.swift */; };
+		9746E95323E1A47400A31297 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92823E1A47400A31297 /* ParallaxSprite.swift */; };
+		9746E95423E1A47400A31297 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92923E1A47400A31297 /* Boss.swift */; };
+		9746E95523E1A47400A31297 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92923E1A47400A31297 /* Boss.swift */; };
+		9746E95623E1A47400A31297 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92923E1A47400A31297 /* Boss.swift */; };
+		9746E95723E1A47400A31297 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92A23E1A47400A31297 /* Tree.swift */; };
+		9746E95823E1A47400A31297 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92A23E1A47400A31297 /* Tree.swift */; };
+		9746E95923E1A47400A31297 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92A23E1A47400A31297 /* Tree.swift */; };
+		9746E95A23E1A47400A31297 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92B23E1A47400A31297 /* HeroCharacter.swift */; };
+		9746E95B23E1A47400A31297 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92B23E1A47400A31297 /* HeroCharacter.swift */; };
+		9746E95C23E1A47400A31297 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92B23E1A47400A31297 /* HeroCharacter.swift */; };
+		9746E95D23E1A47400A31297 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92C23E1A47400A31297 /* Archer.swift */; };
+		9746E95E23E1A47400A31297 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92C23E1A47400A31297 /* Archer.swift */; };
+		9746E95F23E1A47400A31297 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92C23E1A47400A31297 /* Archer.swift */; };
+		9746E96023E1A47400A31297 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92E23E1A47400A31297 /* AdventureScene.swift */; };
+		9746E96123E1A47400A31297 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92E23E1A47400A31297 /* AdventureScene.swift */; };
+		9746E96223E1A47400A31297 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92E23E1A47400A31297 /* AdventureScene.swift */; };
+		9746E96323E1A47400A31297 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92F23E1A47400A31297 /* Player.swift */; };
+		9746E96423E1A47400A31297 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92F23E1A47400A31297 /* Player.swift */; };
+		9746E96523E1A47400A31297 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E92F23E1A47400A31297 /* Player.swift */; };
+		9746E96623E1A47400A31297 /* SharedAssetManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E93023E1A47400A31297 /* SharedAssetManagement.swift */; };
+		9746E96723E1A47400A31297 /* SharedAssetManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E93023E1A47400A31297 /* SharedAssetManagement.swift */; };
+		9746E96823E1A47400A31297 /* SharedAssetManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746E93023E1A47400A31297 /* SharedAssetManagement.swift */; };
+		9746E96923E1A47400A31297 /* AdventureWorld.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E93123E1A47400A31297 /* AdventureWorld.sks */; };
+		9746E96A23E1A47400A31297 /* AdventureWorld.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E93123E1A47400A31297 /* AdventureWorld.sks */; };
+		9746E96B23E1A47400A31297 /* AdventureWorld.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E93123E1A47400A31297 /* AdventureWorld.sks */; };
+		9746E96C23E1A47400A31297 /* AdventureWorld.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E93123E1A47400A31297 /* AdventureWorld.sks */; };
+		9746E9B323E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E96F23E1A4AB00A31297 /* Assets - OS X.xcassets */; };
+		9746E9B423E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E96F23E1A4AB00A31297 /* Assets - OS X.xcassets */; };
+		9746E9B523E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E96F23E1A4AB00A31297 /* Assets - OS X.xcassets */; };
+		9746E9B623E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E96F23E1A4AB00A31297 /* Assets - OS X.xcassets */; };
+		9746E9B723E1A4AC00A31297 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97023E1A4AB00A31297 /* Default@2x.png */; };
+		9746E9B823E1A4AC00A31297 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97023E1A4AB00A31297 /* Default@2x.png */; };
+		9746E9B923E1A4AC00A31297 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97023E1A4AB00A31297 /* Default@2x.png */; };
+		9746E9BA23E1A4AC00A31297 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97023E1A4AB00A31297 /* Default@2x.png */; };
+		9746E9BB23E1A4AC00A31297 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97123E1A4AB00A31297 /* lives.png */; };
+		9746E9BC23E1A4AC00A31297 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97123E1A4AB00A31297 /* lives.png */; };
+		9746E9BD23E1A4AC00A31297 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97123E1A4AB00A31297 /* lives.png */; };
+		9746E9BE23E1A4AC00A31297 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97123E1A4AB00A31297 /* lives.png */; };
+		9746E9BF23E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97223E1A4AB00A31297 /* Assets - iOS.xcassets */; };
+		9746E9C023E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97223E1A4AB00A31297 /* Assets - iOS.xcassets */; };
+		9746E9C123E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97223E1A4AB00A31297 /* Assets - iOS.xcassets */; };
+		9746E9C223E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97223E1A4AB00A31297 /* Assets - iOS.xcassets */; };
+		9746E9C323E1A4AC00A31297 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97323E1A4AB00A31297 /* cover@2x.png */; };
+		9746E9C423E1A4AC00A31297 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97323E1A4AB00A31297 /* cover@2x.png */; };
+		9746E9C523E1A4AC00A31297 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97323E1A4AB00A31297 /* cover@2x.png */; };
+		9746E9C623E1A4AC00A31297 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97323E1A4AB00A31297 /* cover@2x.png */; };
+		9746E9C723E1A4AC00A31297 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97423E1A4AB00A31297 /* iconWarrior_pink.png */; };
+		9746E9C823E1A4AC00A31297 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97423E1A4AB00A31297 /* iconWarrior_pink.png */; };
+		9746E9C923E1A4AC00A31297 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97423E1A4AB00A31297 /* iconWarrior_pink.png */; };
+		9746E9CA23E1A4AC00A31297 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97423E1A4AB00A31297 /* iconWarrior_pink.png */; };
+		9746E9CB23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97523E1A4AB00A31297 /* iconWarrior_blue.png */; };
+		9746E9CC23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97523E1A4AB00A31297 /* iconWarrior_blue.png */; };
+		9746E9CD23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97523E1A4AB00A31297 /* iconWarrior_blue.png */; };
+		9746E9CE23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97523E1A4AB00A31297 /* iconWarrior_blue.png */; };
+		9746E9CF23E1A4AC00A31297 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97623E1A4AB00A31297 /* Default-568h@2x.png */; };
+		9746E9D023E1A4AC00A31297 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97623E1A4AB00A31297 /* Default-568h@2x.png */; };
+		9746E9D123E1A4AC00A31297 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97623E1A4AB00A31297 /* Default-568h@2x.png */; };
+		9746E9D223E1A4AC00A31297 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97623E1A4AB00A31297 /* Default-568h@2x.png */; };
+		9746E9D323E1A4AC00A31297 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97723E1A4AB00A31297 /* logo.png */; };
+		9746E9D423E1A4AC00A31297 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97723E1A4AB00A31297 /* logo.png */; };
+		9746E9D523E1A4AC00A31297 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97723E1A4AB00A31297 /* logo.png */; };
+		9746E9D623E1A4AC00A31297 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97723E1A4AB00A31297 /* logo.png */; };
+		9746E9D723E1A4AC00A31297 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97823E1A4AB00A31297 /* iconWarrior_red.png */; };
+		9746E9D823E1A4AC00A31297 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97823E1A4AB00A31297 /* iconWarrior_red.png */; };
+		9746E9D923E1A4AC00A31297 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97823E1A4AB00A31297 /* iconWarrior_red.png */; };
+		9746E9DA23E1A4AC00A31297 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97823E1A4AB00A31297 /* iconWarrior_red.png */; };
+		9746E9DB23E1A4AC00A31297 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97923E1A4AB00A31297 /* iconWarrior_green.png */; };
+		9746E9DC23E1A4AC00A31297 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97923E1A4AB00A31297 /* iconWarrior_green.png */; };
+		9746E9DD23E1A4AC00A31297 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97923E1A4AB00A31297 /* iconWarrior_green.png */; };
+		9746E9DE23E1A4AC00A31297 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97923E1A4AB00A31297 /* iconWarrior_green.png */; };
+		9746E9DF23E1A4AC00A31297 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97A23E1A4AB00A31297 /* button_archer.png */; };
+		9746E9E023E1A4AC00A31297 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97A23E1A4AB00A31297 /* button_archer.png */; };
+		9746E9E123E1A4AC00A31297 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97A23E1A4AB00A31297 /* button_archer.png */; };
+		9746E9E223E1A4AC00A31297 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97A23E1A4AB00A31297 /* button_archer.png */; };
+		9746E9E323E1A4AC00A31297 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97B23E1A4AB00A31297 /* Default.png */; };
+		9746E9E423E1A4AC00A31297 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97B23E1A4AB00A31297 /* Default.png */; };
+		9746E9E523E1A4AC00A31297 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97B23E1A4AB00A31297 /* Default.png */; };
+		9746E9E623E1A4AC00A31297 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97B23E1A4AB00A31297 /* Default.png */; };
+		9746E9E723E1A4AC00A31297 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97C23E1A4AB00A31297 /* button_warrior.png */; };
+		9746E9E823E1A4AC00A31297 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97C23E1A4AB00A31297 /* button_warrior.png */; };
+		9746E9E923E1A4AC00A31297 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97C23E1A4AB00A31297 /* button_warrior.png */; };
+		9746E9EA23E1A4AC00A31297 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97C23E1A4AB00A31297 /* button_warrior.png */; };
+		9746E9EB23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97F23E1A4AB00A31297 /* Archer_Walk.atlas */; };
+		9746E9EC23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97F23E1A4AB00A31297 /* Archer_Walk.atlas */; };
+		9746E9ED23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97F23E1A4AB00A31297 /* Archer_Walk.atlas */; };
+		9746E9EE23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E97F23E1A4AB00A31297 /* Archer_Walk.atlas */; };
+		9746E9EF23E1A4AC00A31297 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98023E1A4AB00A31297 /* Archer_Idle.atlas */; };
+		9746E9F023E1A4AC00A31297 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98023E1A4AB00A31297 /* Archer_Idle.atlas */; };
+		9746E9F123E1A4AC00A31297 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98023E1A4AB00A31297 /* Archer_Idle.atlas */; };
+		9746E9F223E1A4AC00A31297 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98023E1A4AB00A31297 /* Archer_Idle.atlas */; };
+		9746E9F323E1A4AC00A31297 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98123E1A4AB00A31297 /* Archer_Death.atlas */; };
+		9746E9F423E1A4AC00A31297 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98123E1A4AB00A31297 /* Archer_Death.atlas */; };
+		9746E9F523E1A4AC00A31297 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98123E1A4AB00A31297 /* Archer_Death.atlas */; };
+		9746E9F623E1A4AC00A31297 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98123E1A4AB00A31297 /* Archer_Death.atlas */; };
+		9746E9F723E1A4AC00A31297 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98223E1A4AC00A31297 /* Archer_Attack.atlas */; };
+		9746E9F823E1A4AC00A31297 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98223E1A4AC00A31297 /* Archer_Attack.atlas */; };
+		9746E9F923E1A4AC00A31297 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98223E1A4AC00A31297 /* Archer_Attack.atlas */; };
+		9746E9FA23E1A4AC00A31297 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98223E1A4AC00A31297 /* Archer_Attack.atlas */; };
+		9746E9FB23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98323E1A4AC00A31297 /* Archer_GetHit.atlas */; };
+		9746E9FC23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98323E1A4AC00A31297 /* Archer_GetHit.atlas */; };
+		9746E9FD23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98323E1A4AC00A31297 /* Archer_GetHit.atlas */; };
+		9746E9FE23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98323E1A4AC00A31297 /* Archer_GetHit.atlas */; };
+		9746E9FF23E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98523E1A4AC00A31297 /* Goblin_GetHit.atlas */; };
+		9746EA0023E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98523E1A4AC00A31297 /* Goblin_GetHit.atlas */; };
+		9746EA0123E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98523E1A4AC00A31297 /* Goblin_GetHit.atlas */; };
+		9746EA0223E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98523E1A4AC00A31297 /* Goblin_GetHit.atlas */; };
+		9746EA0323E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98623E1A4AC00A31297 /* Goblin_Attack.atlas */; };
+		9746EA0423E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98623E1A4AC00A31297 /* Goblin_Attack.atlas */; };
+		9746EA0523E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98623E1A4AC00A31297 /* Goblin_Attack.atlas */; };
+		9746EA0623E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98623E1A4AC00A31297 /* Goblin_Attack.atlas */; };
+		9746EA0723E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98723E1A4AC00A31297 /* Goblin_Walk.atlas */; };
+		9746EA0823E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98723E1A4AC00A31297 /* Goblin_Walk.atlas */; };
+		9746EA0923E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98723E1A4AC00A31297 /* Goblin_Walk.atlas */; };
+		9746EA0A23E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98723E1A4AC00A31297 /* Goblin_Walk.atlas */; };
+		9746EA0B23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98823E1A4AC00A31297 /* Goblin_Idle.atlas */; };
+		9746EA0C23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98823E1A4AC00A31297 /* Goblin_Idle.atlas */; };
+		9746EA0D23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98823E1A4AC00A31297 /* Goblin_Idle.atlas */; };
+		9746EA0E23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98823E1A4AC00A31297 /* Goblin_Idle.atlas */; };
+		9746EA0F23E1A4AC00A31297 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98923E1A4AC00A31297 /* Goblin_Death.atlas */; };
+		9746EA1023E1A4AC00A31297 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98923E1A4AC00A31297 /* Goblin_Death.atlas */; };
+		9746EA1123E1A4AC00A31297 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98923E1A4AC00A31297 /* Goblin_Death.atlas */; };
+		9746EA1223E1A4AC00A31297 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98923E1A4AC00A31297 /* Goblin_Death.atlas */; };
+		9746EA1323E1A4AC00A31297 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98A23E1A4AC00A31297 /* Environment.atlas */; };
+		9746EA1423E1A4AC00A31297 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98A23E1A4AC00A31297 /* Environment.atlas */; };
+		9746EA1523E1A4AC00A31297 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98A23E1A4AC00A31297 /* Environment.atlas */; };
+		9746EA1623E1A4AC00A31297 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98A23E1A4AC00A31297 /* Environment.atlas */; };
+		9746EA1723E1A4AC00A31297 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98B23E1A4AC00A31297 /* Tiles.atlas */; };
+		9746EA1823E1A4AC00A31297 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98B23E1A4AC00A31297 /* Tiles.atlas */; };
+		9746EA1923E1A4AC00A31297 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98B23E1A4AC00A31297 /* Tiles.atlas */; };
+		9746EA1A23E1A4AC00A31297 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98B23E1A4AC00A31297 /* Tiles.atlas */; };
+		9746EA1B23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98D23E1A4AC00A31297 /* Boss_Attack.atlas */; };
+		9746EA1C23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98D23E1A4AC00A31297 /* Boss_Attack.atlas */; };
+		9746EA1D23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98D23E1A4AC00A31297 /* Boss_Attack.atlas */; };
+		9746EA1E23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98D23E1A4AC00A31297 /* Boss_Attack.atlas */; };
+		9746EA1F23E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98E23E1A4AC00A31297 /* Boss_GetHit.atlas */; };
+		9746EA2023E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98E23E1A4AC00A31297 /* Boss_GetHit.atlas */; };
+		9746EA2123E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98E23E1A4AC00A31297 /* Boss_GetHit.atlas */; };
+		9746EA2223E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98E23E1A4AC00A31297 /* Boss_GetHit.atlas */; };
+		9746EA2323E1A4AC00A31297 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98F23E1A4AC00A31297 /* Boss_Death.atlas */; };
+		9746EA2423E1A4AC00A31297 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98F23E1A4AC00A31297 /* Boss_Death.atlas */; };
+		9746EA2523E1A4AC00A31297 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98F23E1A4AC00A31297 /* Boss_Death.atlas */; };
+		9746EA2623E1A4AC00A31297 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E98F23E1A4AC00A31297 /* Boss_Death.atlas */; };
+		9746EA2723E1A4AC00A31297 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99023E1A4AC00A31297 /* Boss_Walk.atlas */; };
+		9746EA2823E1A4AC00A31297 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99023E1A4AC00A31297 /* Boss_Walk.atlas */; };
+		9746EA2923E1A4AC00A31297 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99023E1A4AC00A31297 /* Boss_Walk.atlas */; };
+		9746EA2A23E1A4AC00A31297 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99023E1A4AC00A31297 /* Boss_Walk.atlas */; };
+		9746EA2B23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99123E1A4AC00A31297 /* Boss_Idle.atlas */; };
+		9746EA2C23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99123E1A4AC00A31297 /* Boss_Idle.atlas */; };
+		9746EA2D23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99123E1A4AC00A31297 /* Boss_Idle.atlas */; };
+		9746EA2E23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99123E1A4AC00A31297 /* Boss_Idle.atlas */; };
+		9746EA2F23E1A4AC00A31297 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99323E1A4AC00A31297 /* Warrior_Death.atlas */; };
+		9746EA3023E1A4AC00A31297 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99323E1A4AC00A31297 /* Warrior_Death.atlas */; };
+		9746EA3123E1A4AC00A31297 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99323E1A4AC00A31297 /* Warrior_Death.atlas */; };
+		9746EA3223E1A4AC00A31297 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99323E1A4AC00A31297 /* Warrior_Death.atlas */; };
+		9746EA3323E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99423E1A4AC00A31297 /* Warrior_Idle.atlas */; };
+		9746EA3423E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99423E1A4AC00A31297 /* Warrior_Idle.atlas */; };
+		9746EA3523E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99423E1A4AC00A31297 /* Warrior_Idle.atlas */; };
+		9746EA3623E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99423E1A4AC00A31297 /* Warrior_Idle.atlas */; };
+		9746EA3723E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99523E1A4AC00A31297 /* Warrior_Walk.atlas */; };
+		9746EA3823E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99523E1A4AC00A31297 /* Warrior_Walk.atlas */; };
+		9746EA3923E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99523E1A4AC00A31297 /* Warrior_Walk.atlas */; };
+		9746EA3A23E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99523E1A4AC00A31297 /* Warrior_Walk.atlas */; };
+		9746EA3B23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99623E1A4AC00A31297 /* Warrior_GetHit.atlas */; };
+		9746EA3C23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99623E1A4AC00A31297 /* Warrior_GetHit.atlas */; };
+		9746EA3D23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99623E1A4AC00A31297 /* Warrior_GetHit.atlas */; };
+		9746EA3E23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99623E1A4AC00A31297 /* Warrior_GetHit.atlas */; };
+		9746EA3F23E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99723E1A4AC00A31297 /* Warrior_Attack.atlas */; };
+		9746EA4023E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99723E1A4AC00A31297 /* Warrior_Attack.atlas */; };
+		9746EA4123E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99723E1A4AC00A31297 /* Warrior_Attack.atlas */; };
+		9746EA4223E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99723E1A4AC00A31297 /* Warrior_Attack.atlas */; };
+		9746EA4323E1A4AC00A31297 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99923E1A4AC00A31297 /* hardCircle.png */; };
+		9746EA4423E1A4AC00A31297 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99923E1A4AC00A31297 /* hardCircle.png */; };
+		9746EA4523E1A4AC00A31297 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99923E1A4AC00A31297 /* hardCircle.png */; };
+		9746EA4623E1A4AC00A31297 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99923E1A4AC00A31297 /* hardCircle.png */; };
+		9746EA4723E1A4AC00A31297 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99A23E1A4AC00A31297 /* CaveFire.sks */; };
+		9746EA4823E1A4AC00A31297 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99A23E1A4AC00A31297 /* CaveFire.sks */; };
+		9746EA4923E1A4AC00A31297 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99A23E1A4AC00A31297 /* CaveFire.sks */; };
+		9746EA4A23E1A4AC00A31297 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99A23E1A4AC00A31297 /* CaveFire.sks */; };
+		9746EA4B23E1A4AC00A31297 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99B23E1A4AC00A31297 /* Spawn.sks */; };
+		9746EA4C23E1A4AC00A31297 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99B23E1A4AC00A31297 /* Spawn.sks */; };
+		9746EA4D23E1A4AC00A31297 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99B23E1A4AC00A31297 /* Spawn.sks */; };
+		9746EA4E23E1A4AC00A31297 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99B23E1A4AC00A31297 /* Spawn.sks */; };
+		9746EA4F23E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99C23E1A4AC00A31297 /* CaveFireSmoke.sks */; };
+		9746EA5023E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99C23E1A4AC00A31297 /* CaveFireSmoke.sks */; };
+		9746EA5123E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99C23E1A4AC00A31297 /* CaveFireSmoke.sks */; };
+		9746EA5223E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99C23E1A4AC00A31297 /* CaveFireSmoke.sks */; };
+		9746EA5323E1A4AC00A31297 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99D23E1A4AC00A31297 /* Leaves_01.sks */; };
+		9746EA5423E1A4AC00A31297 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99D23E1A4AC00A31297 /* Leaves_01.sks */; };
+		9746EA5523E1A4AC00A31297 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99D23E1A4AC00A31297 /* Leaves_01.sks */; };
+		9746EA5623E1A4AC00A31297 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99D23E1A4AC00A31297 /* Leaves_01.sks */; };
+		9746EA5723E1A4AC00A31297 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99E23E1A4AC00A31297 /* Death.sks */; };
+		9746EA5823E1A4AC00A31297 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99E23E1A4AC00A31297 /* Death.sks */; };
+		9746EA5923E1A4AC00A31297 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99E23E1A4AC00A31297 /* Death.sks */; };
+		9746EA5A23E1A4AC00A31297 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99E23E1A4AC00A31297 /* Death.sks */; };
+		9746EA5B23E1A4AC00A31297 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99F23E1A4AC00A31297 /* Leaves_02.sks */; };
+		9746EA5C23E1A4AC00A31297 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99F23E1A4AC00A31297 /* Leaves_02.sks */; };
+		9746EA5D23E1A4AC00A31297 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99F23E1A4AC00A31297 /* Leaves_02.sks */; };
+		9746EA5E23E1A4AC00A31297 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E99F23E1A4AC00A31297 /* Leaves_02.sks */; };
+		9746EA5F23E1A4AC00A31297 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A023E1A4AC00A31297 /* spark.png */; };
+		9746EA6023E1A4AC00A31297 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A023E1A4AC00A31297 /* spark.png */; };
+		9746EA6123E1A4AC00A31297 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A023E1A4AC00A31297 /* spark.png */; };
+		9746EA6223E1A4AC00A31297 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A023E1A4AC00A31297 /* spark.png */; };
+		9746EA6323E1A4AC00A31297 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A123E1A4AC00A31297 /* Damage.sks */; };
+		9746EA6423E1A4AC00A31297 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A123E1A4AC00A31297 /* Damage.sks */; };
+		9746EA6523E1A4AC00A31297 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A123E1A4AC00A31297 /* Damage.sks */; };
+		9746EA6623E1A4AC00A31297 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A123E1A4AC00A31297 /* Damage.sks */; };
+		9746EA6723E1A4AC00A31297 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A223E1A4AC00A31297 /* ProjectileSplat.sks */; };
+		9746EA6823E1A4AC00A31297 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A223E1A4AC00A31297 /* ProjectileSplat.sks */; };
+		9746EA6923E1A4AC00A31297 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A223E1A4AC00A31297 /* ProjectileSplat.sks */; };
+		9746EA6A23E1A4AC00A31297 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A223E1A4AC00A31297 /* ProjectileSplat.sks */; };
+		9746EA6B23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A323E1A4AC00A31297 /* WarriorProjectile.sks */; };
+		9746EA6C23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A323E1A4AC00A31297 /* WarriorProjectile.sks */; };
+		9746EA6D23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A323E1A4AC00A31297 /* WarriorProjectile.sks */; };
+		9746EA6E23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A323E1A4AC00A31297 /* WarriorProjectile.sks */; };
+		9746EA6F23E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A423E1A4AC00A31297 /* CaveDeathSmoke.sks */; };
+		9746EA7023E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A423E1A4AC00A31297 /* CaveDeathSmoke.sks */; };
+		9746EA7123E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A423E1A4AC00A31297 /* CaveDeathSmoke.sks */; };
+		9746EA7223E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A423E1A4AC00A31297 /* CaveDeathSmoke.sks */; };
+		9746EA7323E1A4AC00A31297 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A523E1A4AC00A31297 /* BossDamage.sks */; };
+		9746EA7423E1A4AC00A31297 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A523E1A4AC00A31297 /* BossDamage.sks */; };
+		9746EA7523E1A4AC00A31297 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A523E1A4AC00A31297 /* BossDamage.sks */; };
+		9746EA7623E1A4AC00A31297 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A523E1A4AC00A31297 /* BossDamage.sks */; };
+		9746EA7723E1A4AC00A31297 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A623E1A4AC00A31297 /* CaveDamage.sks */; };
+		9746EA7823E1A4AC00A31297 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A623E1A4AC00A31297 /* CaveDamage.sks */; };
+		9746EA7923E1A4AC00A31297 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A623E1A4AC00A31297 /* CaveDamage.sks */; };
+		9746EA7A23E1A4AC00A31297 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A623E1A4AC00A31297 /* CaveDamage.sks */; };
+		9746EA7B23E1A4AC00A31297 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A723E1A4AC00A31297 /* leaf_02.png */; };
+		9746EA7C23E1A4AC00A31297 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A723E1A4AC00A31297 /* leaf_02.png */; };
+		9746EA7D23E1A4AC00A31297 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A723E1A4AC00A31297 /* leaf_02.png */; };
+		9746EA7E23E1A4AC00A31297 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A723E1A4AC00A31297 /* leaf_02.png */; };
+		9746EA7F23E1A4AC00A31297 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A823E1A4AC00A31297 /* star.png */; };
+		9746EA8023E1A4AC00A31297 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A823E1A4AC00A31297 /* star.png */; };
+		9746EA8123E1A4AC00A31297 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A823E1A4AC00A31297 /* star.png */; };
+		9746EA8223E1A4AC00A31297 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A823E1A4AC00A31297 /* star.png */; };
+		9746EA8323E1A4AC00A31297 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A923E1A4AC00A31297 /* ArcherProjectile.sks */; };
+		9746EA8423E1A4AC00A31297 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A923E1A4AC00A31297 /* ArcherProjectile.sks */; };
+		9746EA8523E1A4AC00A31297 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A923E1A4AC00A31297 /* ArcherProjectile.sks */; };
+		9746EA8623E1A4AC00A31297 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9A923E1A4AC00A31297 /* ArcherProjectile.sks */; };
+		9746EA8723E1A4AC00A31297 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AA23E1A4AC00A31297 /* leaf_00.png */; };
+		9746EA8823E1A4AC00A31297 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AA23E1A4AC00A31297 /* leaf_00.png */; };
+		9746EA8923E1A4AC00A31297 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AA23E1A4AC00A31297 /* leaf_00.png */; };
+		9746EA8A23E1A4AC00A31297 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AA23E1A4AC00A31297 /* leaf_00.png */; };
+		9746EA8B23E1A4AC00A31297 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AC23E1A4AC00A31297 /* magicmissile.caf */; };
+		9746EA8C23E1A4AC00A31297 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AC23E1A4AC00A31297 /* magicmissile.caf */; };
+		9746EA8D23E1A4AC00A31297 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AC23E1A4AC00A31297 /* magicmissile.caf */; };
+		9746EA8E23E1A4AC00A31297 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AC23E1A4AC00A31297 /* magicmissile.caf */; };
+		9746EA8F23E1A4AC00A31297 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AE23E1A4AC00A31297 /* map_level.png */; };
+		9746EA9023E1A4AC00A31297 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AE23E1A4AC00A31297 /* map_level.png */; };
+		9746EA9123E1A4AC00A31297 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AE23E1A4AC00A31297 /* map_level.png */; };
+		9746EA9223E1A4AC00A31297 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AE23E1A4AC00A31297 /* map_level.png */; };
+		9746EA9323E1A4AC00A31297 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AF23E1A4AC00A31297 /* map_trees.png */; };
+		9746EA9423E1A4AC00A31297 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AF23E1A4AC00A31297 /* map_trees.png */; };
+		9746EA9523E1A4AC00A31297 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AF23E1A4AC00A31297 /* map_trees.png */; };
+		9746EA9623E1A4AC00A31297 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9AF23E1A4AC00A31297 /* map_trees.png */; };
+		9746EA9723E1A4AC00A31297 /* map_level.new.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B023E1A4AC00A31297 /* map_level.new.png */; };
+		9746EA9823E1A4AC00A31297 /* map_level.new.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B023E1A4AC00A31297 /* map_level.new.png */; };
+		9746EA9923E1A4AC00A31297 /* map_level.new.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B023E1A4AC00A31297 /* map_level.new.png */; };
+		9746EA9A23E1A4AC00A31297 /* map_level.new.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B023E1A4AC00A31297 /* map_level.new.png */; };
+		9746EA9B23E1A4AC00A31297 /* map_level.old.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B123E1A4AC00A31297 /* map_level.old.png */; };
+		9746EA9C23E1A4AC00A31297 /* map_level.old.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B123E1A4AC00A31297 /* map_level.old.png */; };
+		9746EA9D23E1A4AC00A31297 /* map_level.old.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B123E1A4AC00A31297 /* map_level.old.png */; };
+		9746EA9E23E1A4AC00A31297 /* map_level.old.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B123E1A4AC00A31297 /* map_level.old.png */; };
+		9746EA9F23E1A4AC00A31297 /* editor_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B223E1A4AC00A31297 /* editor_background.png */; };
+		9746EAA023E1A4AC00A31297 /* editor_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B223E1A4AC00A31297 /* editor_background.png */; };
+		9746EAA123E1A4AC00A31297 /* editor_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B223E1A4AC00A31297 /* editor_background.png */; };
+		9746EAA223E1A4AC00A31297 /* editor_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746E9B223E1A4AC00A31297 /* editor_background.png */; };
+		9746EAA423E1A53600A31297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746EAA323E1A53600A31297 /* ViewController.swift */; };
+		9746EAA623E1AA4800A31297 /* AdventureSceneiOSEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746EAA523E1AA4800A31297 /* AdventureSceneiOSEvents.swift */; };
+		9746EAA823E1AA5D00A31297 /* AdventureSceneOSXEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9746EAA723E1AA5D00A31297 /* AdventureSceneOSXEvents.swift */; };
 		97B116CB23E07BAA00AEEFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */; };
-		97B116CD23E07BAA00AEEFA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */; };
 		97B116D023E07BAA00AEEFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116CE23E07BAA00AEEFA6 /* Main.storyboard */; };
 		97B116D323E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B116D123E07BAA00AEEFA6 /* LaunchScreen.storyboard */; };
 		97B116D823E07BAA00AEEFA6 /* Adventure.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 97B116D723E07BAA00AEEFA6 /* Adventure.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -23,314 +324,6 @@
 		97B1170623E07BAA00AEEFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1170523E07BAA00AEEFA6 /* AppDelegate.swift */; };
 		97B1170823E07BAA00AEEFA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1170723E07BAA00AEEFA6 /* GameViewController.swift */; };
 		97B1170B23E07BAA00AEEFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B1170923E07BAA00AEEFA6 /* Main.storyboard */; };
-		97B1170D23E07BAA00AEEFA6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116BF23E07BA800AEEFA6 /* Actions.sks */; };
-		97B1170E23E07BAA00AEEFA6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116BF23E07BA800AEEFA6 /* Actions.sks */; };
-		97B1170F23E07BAA00AEEFA6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116BF23E07BA800AEEFA6 /* Actions.sks */; };
-		97B1171023E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
-		97B1171123E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
-		97B1171223E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
-		97B1171323E07BAA00AEEFA6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C023E07BA800AEEFA6 /* GameScene.sks */; };
-		97B1171423E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
-		97B1171523E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
-		97B1171623E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
-		97B1171723E07BAA00AEEFA6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B116C123E07BA800AEEFA6 /* GameScene.swift */; };
-		97B1171823E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
-		97B1171923E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
-		97B1171A23E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
-		97B1171B23E07BAA00AEEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B116C223E07BAA00AEEFA6 /* Assets.xcassets */; };
-		97B1175223E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
-		97B1175323E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
-		97B1175423E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
-		97B1175523E07EAE00AEEFA6 /* AdventureScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */; };
-		97B1175623E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
-		97B1175723E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
-		97B1175823E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
-		97B1175923E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */; };
-		97B1175A23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
-		97B1175B23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
-		97B1175C23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
-		97B1175D23E07EAE00AEEFA6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175123E07EAE00AEEFA6 /* Player.swift */; };
-		97B1176F23E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
-		97B1177023E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
-		97B1177123E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
-		97B1177223E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */; };
-		97B1177323E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
-		97B1177423E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
-		97B1177523E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
-		97B1177623E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */; };
-		97B1177723E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
-		97B1177823E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
-		97B1177923E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
-		97B1177A23E07ECB00AEEFA6 /* SpawnAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */; };
-		97B1177B23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
-		97B1177C23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
-		97B1177D23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
-		97B1177E23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */; };
-		97B1177F23E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
-		97B1178023E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
-		97B1178123E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
-		97B1178223E07ECB00AEEFA6 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176523E07ECB00AEEFA6 /* Warrior.swift */; };
-		97B1178323E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
-		97B1178423E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
-		97B1178523E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
-		97B1178623E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */; };
-		97B1178723E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
-		97B1178823E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
-		97B1178923E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
-		97B1178A23E07ECB00AEEFA6 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176723E07ECB00AEEFA6 /* Goblin.swift */; };
-		97B1178B23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
-		97B1178C23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
-		97B1178D23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
-		97B1178E23E07ECB00AEEFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176823E07ECB00AEEFA6 /* Character.swift */; };
-		97B1178F23E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
-		97B1179023E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
-		97B1179123E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
-		97B1179223E07ECB00AEEFA6 /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176923E07ECB00AEEFA6 /* Cave.swift */; };
-		97B1179323E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
-		97B1179423E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
-		97B1179523E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
-		97B1179623E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */; };
-		97B1179723E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
-		97B1179823E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
-		97B1179923E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
-		97B1179A23E07ECB00AEEFA6 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176B23E07ECB00AEEFA6 /* Boss.swift */; };
-		97B1179B23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
-		97B1179C23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
-		97B1179D23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
-		97B1179E23E07ECB00AEEFA6 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176C23E07ECB00AEEFA6 /* Tree.swift */; };
-		97B1179F23E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
-		97B117A023E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
-		97B117A123E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
-		97B117A223E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */; };
-		97B117A323E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
-		97B117A423E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
-		97B117A523E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
-		97B117A623E07ECB00AEEFA6 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1176E23E07ECB00AEEFA6 /* Archer.swift */; };
-		97B1191123E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D123E133AD00AEEFA6 /* Assets - OS X.xcassets */; };
-		97B1191223E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D123E133AD00AEEFA6 /* Assets - OS X.xcassets */; };
-		97B1191323E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D123E133AD00AEEFA6 /* Assets - OS X.xcassets */; };
-		97B1191423E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D123E133AD00AEEFA6 /* Assets - OS X.xcassets */; };
-		97B1191523E133AD00AEEFA6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D223E133AD00AEEFA6 /* Default@2x.png */; };
-		97B1191623E133AD00AEEFA6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D223E133AD00AEEFA6 /* Default@2x.png */; };
-		97B1191723E133AD00AEEFA6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D223E133AD00AEEFA6 /* Default@2x.png */; };
-		97B1191823E133AD00AEEFA6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D223E133AD00AEEFA6 /* Default@2x.png */; };
-		97B1191923E133AD00AEEFA6 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D323E133AD00AEEFA6 /* lives.png */; };
-		97B1191A23E133AD00AEEFA6 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D323E133AD00AEEFA6 /* lives.png */; };
-		97B1191B23E133AD00AEEFA6 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D323E133AD00AEEFA6 /* lives.png */; };
-		97B1191C23E133AD00AEEFA6 /* lives.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D323E133AD00AEEFA6 /* lives.png */; };
-		97B1191D23E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D423E133AD00AEEFA6 /* Assets - iOS.xcassets */; };
-		97B1191E23E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D423E133AD00AEEFA6 /* Assets - iOS.xcassets */; };
-		97B1191F23E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D423E133AD00AEEFA6 /* Assets - iOS.xcassets */; };
-		97B1192023E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D423E133AD00AEEFA6 /* Assets - iOS.xcassets */; };
-		97B1192123E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D523E133AD00AEEFA6 /* iconWarrior_pink.png */; };
-		97B1192223E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D523E133AD00AEEFA6 /* iconWarrior_pink.png */; };
-		97B1192323E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D523E133AD00AEEFA6 /* iconWarrior_pink.png */; };
-		97B1192423E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D523E133AD00AEEFA6 /* iconWarrior_pink.png */; };
-		97B1192523E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D623E133AD00AEEFA6 /* iconWarrior_blue.png */; };
-		97B1192623E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D623E133AD00AEEFA6 /* iconWarrior_blue.png */; };
-		97B1192723E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D623E133AD00AEEFA6 /* iconWarrior_blue.png */; };
-		97B1192823E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D623E133AD00AEEFA6 /* iconWarrior_blue.png */; };
-		97B1192923E133AD00AEEFA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D723E133AD00AEEFA6 /* Default-568h@2x.png */; };
-		97B1192A23E133AD00AEEFA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D723E133AD00AEEFA6 /* Default-568h@2x.png */; };
-		97B1192B23E133AD00AEEFA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D723E133AD00AEEFA6 /* Default-568h@2x.png */; };
-		97B1192C23E133AD00AEEFA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D723E133AD00AEEFA6 /* Default-568h@2x.png */; };
-		97B1192D23E133AD00AEEFA6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D823E133AD00AEEFA6 /* logo.png */; };
-		97B1192E23E133AD00AEEFA6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D823E133AD00AEEFA6 /* logo.png */; };
-		97B1192F23E133AD00AEEFA6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D823E133AD00AEEFA6 /* logo.png */; };
-		97B1193023E133AD00AEEFA6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D823E133AD00AEEFA6 /* logo.png */; };
-		97B1193123E133AD00AEEFA6 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D923E133AD00AEEFA6 /* iconWarrior_red.png */; };
-		97B1193223E133AD00AEEFA6 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D923E133AD00AEEFA6 /* iconWarrior_red.png */; };
-		97B1193323E133AD00AEEFA6 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D923E133AD00AEEFA6 /* iconWarrior_red.png */; };
-		97B1193423E133AD00AEEFA6 /* iconWarrior_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118D923E133AD00AEEFA6 /* iconWarrior_red.png */; };
-		97B1193523E133AD00AEEFA6 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DA23E133AD00AEEFA6 /* iconWarrior_green.png */; };
-		97B1193623E133AD00AEEFA6 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DA23E133AD00AEEFA6 /* iconWarrior_green.png */; };
-		97B1193723E133AD00AEEFA6 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DA23E133AD00AEEFA6 /* iconWarrior_green.png */; };
-		97B1193823E133AD00AEEFA6 /* iconWarrior_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DA23E133AD00AEEFA6 /* iconWarrior_green.png */; };
-		97B1193923E133AD00AEEFA6 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DB23E133AD00AEEFA6 /* button_archer.png */; };
-		97B1193A23E133AD00AEEFA6 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DB23E133AD00AEEFA6 /* button_archer.png */; };
-		97B1193B23E133AD00AEEFA6 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DB23E133AD00AEEFA6 /* button_archer.png */; };
-		97B1193C23E133AD00AEEFA6 /* button_archer.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DB23E133AD00AEEFA6 /* button_archer.png */; };
-		97B1193D23E133AD00AEEFA6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DC23E133AD00AEEFA6 /* Default.png */; };
-		97B1193E23E133AD00AEEFA6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DC23E133AD00AEEFA6 /* Default.png */; };
-		97B1193F23E133AD00AEEFA6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DC23E133AD00AEEFA6 /* Default.png */; };
-		97B1194023E133AD00AEEFA6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DC23E133AD00AEEFA6 /* Default.png */; };
-		97B1194123E133AD00AEEFA6 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DD23E133AD00AEEFA6 /* button_warrior.png */; };
-		97B1194223E133AD00AEEFA6 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DD23E133AD00AEEFA6 /* button_warrior.png */; };
-		97B1194323E133AD00AEEFA6 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DD23E133AD00AEEFA6 /* button_warrior.png */; };
-		97B1194423E133AD00AEEFA6 /* button_warrior.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118DD23E133AD00AEEFA6 /* button_warrior.png */; };
-		97B1195923E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E623E133AD00AEEFA6 /* Goblin_GetHit.atlas */; };
-		97B1195A23E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E623E133AD00AEEFA6 /* Goblin_GetHit.atlas */; };
-		97B1195B23E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E623E133AD00AEEFA6 /* Goblin_GetHit.atlas */; };
-		97B1195C23E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E623E133AD00AEEFA6 /* Goblin_GetHit.atlas */; };
-		97B1195D23E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E723E133AD00AEEFA6 /* Goblin_Attack.atlas */; };
-		97B1195E23E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E723E133AD00AEEFA6 /* Goblin_Attack.atlas */; };
-		97B1195F23E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E723E133AD00AEEFA6 /* Goblin_Attack.atlas */; };
-		97B1196023E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E723E133AD00AEEFA6 /* Goblin_Attack.atlas */; };
-		97B1196123E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E823E133AD00AEEFA6 /* Goblin_Walk.atlas */; };
-		97B1196223E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E823E133AD00AEEFA6 /* Goblin_Walk.atlas */; };
-		97B1196323E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E823E133AD00AEEFA6 /* Goblin_Walk.atlas */; };
-		97B1196423E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E823E133AD00AEEFA6 /* Goblin_Walk.atlas */; };
-		97B1196523E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E923E133AD00AEEFA6 /* Goblin_Idle.atlas */; };
-		97B1196623E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E923E133AD00AEEFA6 /* Goblin_Idle.atlas */; };
-		97B1196723E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E923E133AD00AEEFA6 /* Goblin_Idle.atlas */; };
-		97B1196823E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118E923E133AD00AEEFA6 /* Goblin_Idle.atlas */; };
-		97B1196923E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EA23E133AD00AEEFA6 /* Goblin_Death.atlas */; };
-		97B1196A23E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EA23E133AD00AEEFA6 /* Goblin_Death.atlas */; };
-		97B1196B23E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EA23E133AD00AEEFA6 /* Goblin_Death.atlas */; };
-		97B1196C23E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EA23E133AD00AEEFA6 /* Goblin_Death.atlas */; };
-		97B1196D23E133AD00AEEFA6 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EB23E133AD00AEEFA6 /* Environment.atlas */; };
-		97B1196E23E133AD00AEEFA6 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EB23E133AD00AEEFA6 /* Environment.atlas */; };
-		97B1196F23E133AD00AEEFA6 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EB23E133AD00AEEFA6 /* Environment.atlas */; };
-		97B1197023E133AD00AEEFA6 /* Environment.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EB23E133AD00AEEFA6 /* Environment.atlas */; };
-		97B1197123E133AD00AEEFA6 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EC23E133AD00AEEFA6 /* Tiles.atlas */; };
-		97B1197223E133AD00AEEFA6 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EC23E133AD00AEEFA6 /* Tiles.atlas */; };
-		97B1197323E133AD00AEEFA6 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EC23E133AD00AEEFA6 /* Tiles.atlas */; };
-		97B1197423E133AD00AEEFA6 /* Tiles.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EC23E133AD00AEEFA6 /* Tiles.atlas */; };
-		97B1197523E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EE23E133AD00AEEFA6 /* Boss_Attack.atlas */; };
-		97B1197623E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EE23E133AD00AEEFA6 /* Boss_Attack.atlas */; };
-		97B1197723E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EE23E133AD00AEEFA6 /* Boss_Attack.atlas */; };
-		97B1197823E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EE23E133AD00AEEFA6 /* Boss_Attack.atlas */; };
-		97B1197923E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EF23E133AD00AEEFA6 /* Boss_GetHit.atlas */; };
-		97B1197A23E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EF23E133AD00AEEFA6 /* Boss_GetHit.atlas */; };
-		97B1197B23E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EF23E133AD00AEEFA6 /* Boss_GetHit.atlas */; };
-		97B1197C23E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118EF23E133AD00AEEFA6 /* Boss_GetHit.atlas */; };
-		97B1197D23E133AD00AEEFA6 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F023E133AD00AEEFA6 /* Boss_Death.atlas */; };
-		97B1197E23E133AD00AEEFA6 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F023E133AD00AEEFA6 /* Boss_Death.atlas */; };
-		97B1197F23E133AD00AEEFA6 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F023E133AD00AEEFA6 /* Boss_Death.atlas */; };
-		97B1198023E133AD00AEEFA6 /* Boss_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F023E133AD00AEEFA6 /* Boss_Death.atlas */; };
-		97B1198123E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F123E133AD00AEEFA6 /* Boss_Walk.atlas */; };
-		97B1198223E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F123E133AD00AEEFA6 /* Boss_Walk.atlas */; };
-		97B1198323E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F123E133AD00AEEFA6 /* Boss_Walk.atlas */; };
-		97B1198423E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F123E133AD00AEEFA6 /* Boss_Walk.atlas */; };
-		97B1198523E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F223E133AD00AEEFA6 /* Boss_Idle.atlas */; };
-		97B1198623E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F223E133AD00AEEFA6 /* Boss_Idle.atlas */; };
-		97B1198723E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F223E133AD00AEEFA6 /* Boss_Idle.atlas */; };
-		97B1198823E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F223E133AD00AEEFA6 /* Boss_Idle.atlas */; };
-		97B1198923E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F423E133AD00AEEFA6 /* Warrior_Death.atlas */; };
-		97B1198A23E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F423E133AD00AEEFA6 /* Warrior_Death.atlas */; };
-		97B1198B23E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F423E133AD00AEEFA6 /* Warrior_Death.atlas */; };
-		97B1198C23E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F423E133AD00AEEFA6 /* Warrior_Death.atlas */; };
-		97B1198D23E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F523E133AD00AEEFA6 /* Warrior_Idle.atlas */; };
-		97B1198E23E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F523E133AD00AEEFA6 /* Warrior_Idle.atlas */; };
-		97B1198F23E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F523E133AD00AEEFA6 /* Warrior_Idle.atlas */; };
-		97B1199023E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F523E133AD00AEEFA6 /* Warrior_Idle.atlas */; };
-		97B1199123E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F623E133AD00AEEFA6 /* Warrior_Walk.atlas */; };
-		97B1199223E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F623E133AD00AEEFA6 /* Warrior_Walk.atlas */; };
-		97B1199323E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F623E133AD00AEEFA6 /* Warrior_Walk.atlas */; };
-		97B1199423E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F623E133AD00AEEFA6 /* Warrior_Walk.atlas */; };
-		97B1199523E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F723E133AD00AEEFA6 /* Warrior_GetHit.atlas */; };
-		97B1199623E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F723E133AD00AEEFA6 /* Warrior_GetHit.atlas */; };
-		97B1199723E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F723E133AD00AEEFA6 /* Warrior_GetHit.atlas */; };
-		97B1199823E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F723E133AD00AEEFA6 /* Warrior_GetHit.atlas */; };
-		97B1199923E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F823E133AD00AEEFA6 /* Warrior_Attack.atlas */; };
-		97B1199A23E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F823E133AD00AEEFA6 /* Warrior_Attack.atlas */; };
-		97B1199B23E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F823E133AD00AEEFA6 /* Warrior_Attack.atlas */; };
-		97B1199C23E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B118F823E133AD00AEEFA6 /* Warrior_Attack.atlas */; };
-		97B1199D23E133AD00AEEFA6 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FA23E133AD00AEEFA6 /* hardCircle.png */; };
-		97B1199E23E133AD00AEEFA6 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FA23E133AD00AEEFA6 /* hardCircle.png */; };
-		97B1199F23E133AD00AEEFA6 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FA23E133AD00AEEFA6 /* hardCircle.png */; };
-		97B119A023E133AD00AEEFA6 /* hardCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FA23E133AD00AEEFA6 /* hardCircle.png */; };
-		97B119A123E133AD00AEEFA6 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FB23E133AD00AEEFA6 /* CaveFire.sks */; };
-		97B119A223E133AD00AEEFA6 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FB23E133AD00AEEFA6 /* CaveFire.sks */; };
-		97B119A323E133AD00AEEFA6 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FB23E133AD00AEEFA6 /* CaveFire.sks */; };
-		97B119A423E133AD00AEEFA6 /* CaveFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FB23E133AD00AEEFA6 /* CaveFire.sks */; };
-		97B119A523E133AD00AEEFA6 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FC23E133AD00AEEFA6 /* Spawn.sks */; };
-		97B119A623E133AD00AEEFA6 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FC23E133AD00AEEFA6 /* Spawn.sks */; };
-		97B119A723E133AD00AEEFA6 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FC23E133AD00AEEFA6 /* Spawn.sks */; };
-		97B119A823E133AD00AEEFA6 /* Spawn.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FC23E133AD00AEEFA6 /* Spawn.sks */; };
-		97B119A923E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FD23E133AD00AEEFA6 /* CaveFireSmoke.sks */; };
-		97B119AA23E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FD23E133AD00AEEFA6 /* CaveFireSmoke.sks */; };
-		97B119AB23E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FD23E133AD00AEEFA6 /* CaveFireSmoke.sks */; };
-		97B119AC23E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FD23E133AD00AEEFA6 /* CaveFireSmoke.sks */; };
-		97B119AD23E133AD00AEEFA6 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FE23E133AD00AEEFA6 /* Leaves_01.sks */; };
-		97B119AE23E133AD00AEEFA6 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FE23E133AD00AEEFA6 /* Leaves_01.sks */; };
-		97B119AF23E133AD00AEEFA6 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FE23E133AD00AEEFA6 /* Leaves_01.sks */; };
-		97B119B023E133AD00AEEFA6 /* Leaves_01.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FE23E133AD00AEEFA6 /* Leaves_01.sks */; };
-		97B119B123E133AD00AEEFA6 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FF23E133AD00AEEFA6 /* Death.sks */; };
-		97B119B223E133AD00AEEFA6 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FF23E133AD00AEEFA6 /* Death.sks */; };
-		97B119B323E133AD00AEEFA6 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FF23E133AD00AEEFA6 /* Death.sks */; };
-		97B119B423E133AD00AEEFA6 /* Death.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B118FF23E133AD00AEEFA6 /* Death.sks */; };
-		97B119B523E133AD00AEEFA6 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190023E133AD00AEEFA6 /* Leaves_02.sks */; };
-		97B119B623E133AD00AEEFA6 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190023E133AD00AEEFA6 /* Leaves_02.sks */; };
-		97B119B723E133AD00AEEFA6 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190023E133AD00AEEFA6 /* Leaves_02.sks */; };
-		97B119B823E133AD00AEEFA6 /* Leaves_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190023E133AD00AEEFA6 /* Leaves_02.sks */; };
-		97B119B923E133AD00AEEFA6 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190123E133AD00AEEFA6 /* spark.png */; };
-		97B119BA23E133AD00AEEFA6 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190123E133AD00AEEFA6 /* spark.png */; };
-		97B119BB23E133AD00AEEFA6 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190123E133AD00AEEFA6 /* spark.png */; };
-		97B119BC23E133AD00AEEFA6 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190123E133AD00AEEFA6 /* spark.png */; };
-		97B119BD23E133AD00AEEFA6 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190223E133AD00AEEFA6 /* Damage.sks */; };
-		97B119BE23E133AD00AEEFA6 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190223E133AD00AEEFA6 /* Damage.sks */; };
-		97B119BF23E133AD00AEEFA6 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190223E133AD00AEEFA6 /* Damage.sks */; };
-		97B119C023E133AD00AEEFA6 /* Damage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190223E133AD00AEEFA6 /* Damage.sks */; };
-		97B119C123E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190323E133AD00AEEFA6 /* ProjectileSplat.sks */; };
-		97B119C223E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190323E133AD00AEEFA6 /* ProjectileSplat.sks */; };
-		97B119C323E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190323E133AD00AEEFA6 /* ProjectileSplat.sks */; };
-		97B119C423E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190323E133AD00AEEFA6 /* ProjectileSplat.sks */; };
-		97B119C523E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190423E133AD00AEEFA6 /* WarriorProjectile.sks */; };
-		97B119C623E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190423E133AD00AEEFA6 /* WarriorProjectile.sks */; };
-		97B119C723E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190423E133AD00AEEFA6 /* WarriorProjectile.sks */; };
-		97B119C823E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190423E133AD00AEEFA6 /* WarriorProjectile.sks */; };
-		97B119C923E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190523E133AD00AEEFA6 /* CaveDeathSmoke.sks */; };
-		97B119CA23E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190523E133AD00AEEFA6 /* CaveDeathSmoke.sks */; };
-		97B119CB23E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190523E133AD00AEEFA6 /* CaveDeathSmoke.sks */; };
-		97B119CC23E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190523E133AD00AEEFA6 /* CaveDeathSmoke.sks */; };
-		97B119CD23E133AD00AEEFA6 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190623E133AD00AEEFA6 /* BossDamage.sks */; };
-		97B119CE23E133AD00AEEFA6 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190623E133AD00AEEFA6 /* BossDamage.sks */; };
-		97B119CF23E133AD00AEEFA6 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190623E133AD00AEEFA6 /* BossDamage.sks */; };
-		97B119D023E133AD00AEEFA6 /* BossDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190623E133AD00AEEFA6 /* BossDamage.sks */; };
-		97B119D123E133AD00AEEFA6 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190723E133AD00AEEFA6 /* CaveDamage.sks */; };
-		97B119D223E133AD00AEEFA6 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190723E133AD00AEEFA6 /* CaveDamage.sks */; };
-		97B119D323E133AD00AEEFA6 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190723E133AD00AEEFA6 /* CaveDamage.sks */; };
-		97B119D423E133AD00AEEFA6 /* CaveDamage.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190723E133AD00AEEFA6 /* CaveDamage.sks */; };
-		97B119D523E133AD00AEEFA6 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190823E133AD00AEEFA6 /* leaf_02.png */; };
-		97B119D623E133AD00AEEFA6 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190823E133AD00AEEFA6 /* leaf_02.png */; };
-		97B119D723E133AD00AEEFA6 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190823E133AD00AEEFA6 /* leaf_02.png */; };
-		97B119D823E133AD00AEEFA6 /* leaf_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190823E133AD00AEEFA6 /* leaf_02.png */; };
-		97B119D923E133AD00AEEFA6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190923E133AD00AEEFA6 /* star.png */; };
-		97B119DA23E133AD00AEEFA6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190923E133AD00AEEFA6 /* star.png */; };
-		97B119DB23E133AD00AEEFA6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190923E133AD00AEEFA6 /* star.png */; };
-		97B119DC23E133AD00AEEFA6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190923E133AD00AEEFA6 /* star.png */; };
-		97B119DD23E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190A23E133AD00AEEFA6 /* ArcherProjectile.sks */; };
-		97B119DE23E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190A23E133AD00AEEFA6 /* ArcherProjectile.sks */; };
-		97B119DF23E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190A23E133AD00AEEFA6 /* ArcherProjectile.sks */; };
-		97B119E023E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190A23E133AD00AEEFA6 /* ArcherProjectile.sks */; };
-		97B119E123E133AD00AEEFA6 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190B23E133AD00AEEFA6 /* leaf_00.png */; };
-		97B119E223E133AD00AEEFA6 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190B23E133AD00AEEFA6 /* leaf_00.png */; };
-		97B119E323E133AD00AEEFA6 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190B23E133AD00AEEFA6 /* leaf_00.png */; };
-		97B119E423E133AD00AEEFA6 /* leaf_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190B23E133AD00AEEFA6 /* leaf_00.png */; };
-		97B119E523E133AD00AEEFA6 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190D23E133AD00AEEFA6 /* magicmissile.caf */; };
-		97B119E623E133AD00AEEFA6 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190D23E133AD00AEEFA6 /* magicmissile.caf */; };
-		97B119E723E133AD00AEEFA6 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190D23E133AD00AEEFA6 /* magicmissile.caf */; };
-		97B119E823E133AD00AEEFA6 /* magicmissile.caf in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190D23E133AD00AEEFA6 /* magicmissile.caf */; };
-		97B119E923E133AD00AEEFA6 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190F23E133AD00AEEFA6 /* map_level.png */; };
-		97B119EA23E133AD00AEEFA6 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190F23E133AD00AEEFA6 /* map_level.png */; };
-		97B119EB23E133AD00AEEFA6 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190F23E133AD00AEEFA6 /* map_level.png */; };
-		97B119EC23E133AD00AEEFA6 /* map_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1190F23E133AD00AEEFA6 /* map_level.png */; };
-		97B119ED23E133AD00AEEFA6 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1191023E133AD00AEEFA6 /* map_trees.png */; };
-		97B119EE23E133AD00AEEFA6 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1191023E133AD00AEEFA6 /* map_trees.png */; };
-		97B119EF23E133AD00AEEFA6 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1191023E133AD00AEEFA6 /* map_trees.png */; };
-		97B119F023E133AD00AEEFA6 /* map_trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1191023E133AD00AEEFA6 /* map_trees.png */; };
-		97B11A2E23E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2923E1359C00AEEFA6 /* Archer_Idle.atlas */; };
-		97B11A2F23E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2923E1359C00AEEFA6 /* Archer_Idle.atlas */; };
-		97B11A3023E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2923E1359C00AEEFA6 /* Archer_Idle.atlas */; };
-		97B11A3123E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2923E1359C00AEEFA6 /* Archer_Idle.atlas */; };
-		97B11A3223E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2A23E1359C00AEEFA6 /* Archer_GetHit.atlas */; };
-		97B11A3323E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2A23E1359C00AEEFA6 /* Archer_GetHit.atlas */; };
-		97B11A3423E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2A23E1359C00AEEFA6 /* Archer_GetHit.atlas */; };
-		97B11A3523E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2A23E1359C00AEEFA6 /* Archer_GetHit.atlas */; };
-		97B11A3623E1359C00AEEFA6 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */; };
-		97B11A3723E1359C00AEEFA6 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */; };
-		97B11A3823E1359C00AEEFA6 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */; };
-		97B11A3923E1359C00AEEFA6 /* Archer_Death.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */; };
-		97B11A3A23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */; };
-		97B11A3B23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */; };
-		97B11A3C23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */; };
-		97B11A3D23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */; };
-		97B11A3E23E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
-		97B11A3F23E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
-		97B11A4023E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
-		97B11A4123E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */; };
-		97B11A4323E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B11A4223E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,13 +369,90 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		97B116BF23E07BA800AEEFA6 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		97B116C023E07BA800AEEFA6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		97B116C123E07BA800AEEFA6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		97B116C223E07BAA00AEEFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9746E91B23E1A47400A31297 /* AdventureHUD.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AdventureHUD.sks; sourceTree = "<group>"; };
+		9746E91D23E1A47400A31297 /* GraphicsUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicsUtilities.swift; sourceTree = "<group>"; };
+		9746E91F23E1A47400A31297 /* SpawnArtificialIntelligence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpawnArtificialIntelligence.swift; sourceTree = "<group>"; };
+		9746E92023E1A47400A31297 /* ChaseArtificialIntelligence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseArtificialIntelligence.swift; sourceTree = "<group>"; };
+		9746E92123E1A47400A31297 /* ArtificialIntelligence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtificialIntelligence.swift; sourceTree = "<group>"; };
+		9746E92323E1A47400A31297 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		9746E92423E1A47400A31297 /* EnemyCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyCharacter.swift; sourceTree = "<group>"; };
+		9746E92523E1A47400A31297 /* Goblin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goblin.swift; sourceTree = "<group>"; };
+		9746E92623E1A47400A31297 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		9746E92723E1A47400A31297 /* Cave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
+		9746E92823E1A47400A31297 /* ParallaxSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxSprite.swift; sourceTree = "<group>"; };
+		9746E92923E1A47400A31297 /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
+		9746E92A23E1A47400A31297 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		9746E92B23E1A47400A31297 /* HeroCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCharacter.swift; sourceTree = "<group>"; };
+		9746E92C23E1A47400A31297 /* Archer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
+		9746E92E23E1A47400A31297 /* AdventureScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureScene.swift; sourceTree = "<group>"; };
+		9746E92F23E1A47400A31297 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9746E93023E1A47400A31297 /* SharedAssetManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedAssetManagement.swift; sourceTree = "<group>"; };
+		9746E93123E1A47400A31297 /* AdventureWorld.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AdventureWorld.sks; sourceTree = "<group>"; };
+		9746E96F23E1A4AB00A31297 /* Assets - OS X.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets - OS X.xcassets"; sourceTree = "<group>"; };
+		9746E97023E1A4AB00A31297 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9746E97123E1A4AB00A31297 /* lives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lives.png; sourceTree = "<group>"; };
+		9746E97223E1A4AB00A31297 /* Assets - iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets - iOS.xcassets"; sourceTree = "<group>"; };
+		9746E97323E1A4AB00A31297 /* cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@2x.png"; sourceTree = "<group>"; };
+		9746E97423E1A4AB00A31297 /* iconWarrior_pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_pink.png; sourceTree = "<group>"; };
+		9746E97523E1A4AB00A31297 /* iconWarrior_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_blue.png; sourceTree = "<group>"; };
+		9746E97623E1A4AB00A31297 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9746E97723E1A4AB00A31297 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9746E97823E1A4AB00A31297 /* iconWarrior_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_red.png; sourceTree = "<group>"; };
+		9746E97923E1A4AB00A31297 /* iconWarrior_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_green.png; sourceTree = "<group>"; };
+		9746E97A23E1A4AB00A31297 /* button_archer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_archer.png; sourceTree = "<group>"; };
+		9746E97B23E1A4AB00A31297 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9746E97C23E1A4AB00A31297 /* button_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_warrior.png; sourceTree = "<group>"; };
+		9746E97F23E1A4AB00A31297 /* Archer_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Walk.atlas; sourceTree = "<group>"; };
+		9746E98023E1A4AB00A31297 /* Archer_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Idle.atlas; sourceTree = "<group>"; };
+		9746E98123E1A4AB00A31297 /* Archer_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Death.atlas; sourceTree = "<group>"; };
+		9746E98223E1A4AC00A31297 /* Archer_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Attack.atlas; sourceTree = "<group>"; };
+		9746E98323E1A4AC00A31297 /* Archer_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_GetHit.atlas; sourceTree = "<group>"; };
+		9746E98523E1A4AC00A31297 /* Goblin_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_GetHit.atlas; sourceTree = "<group>"; };
+		9746E98623E1A4AC00A31297 /* Goblin_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Attack.atlas; sourceTree = "<group>"; };
+		9746E98723E1A4AC00A31297 /* Goblin_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Walk.atlas; sourceTree = "<group>"; };
+		9746E98823E1A4AC00A31297 /* Goblin_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Idle.atlas; sourceTree = "<group>"; };
+		9746E98923E1A4AC00A31297 /* Goblin_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Death.atlas; sourceTree = "<group>"; };
+		9746E98A23E1A4AC00A31297 /* Environment.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Environment.atlas; sourceTree = "<group>"; };
+		9746E98B23E1A4AC00A31297 /* Tiles.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Tiles.atlas; sourceTree = "<group>"; };
+		9746E98D23E1A4AC00A31297 /* Boss_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Attack.atlas; sourceTree = "<group>"; };
+		9746E98E23E1A4AC00A31297 /* Boss_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_GetHit.atlas; sourceTree = "<group>"; };
+		9746E98F23E1A4AC00A31297 /* Boss_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Death.atlas; sourceTree = "<group>"; };
+		9746E99023E1A4AC00A31297 /* Boss_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Walk.atlas; sourceTree = "<group>"; };
+		9746E99123E1A4AC00A31297 /* Boss_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Idle.atlas; sourceTree = "<group>"; };
+		9746E99323E1A4AC00A31297 /* Warrior_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Death.atlas; sourceTree = "<group>"; };
+		9746E99423E1A4AC00A31297 /* Warrior_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Idle.atlas; sourceTree = "<group>"; };
+		9746E99523E1A4AC00A31297 /* Warrior_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Walk.atlas; sourceTree = "<group>"; };
+		9746E99623E1A4AC00A31297 /* Warrior_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_GetHit.atlas; sourceTree = "<group>"; };
+		9746E99723E1A4AC00A31297 /* Warrior_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Attack.atlas; sourceTree = "<group>"; };
+		9746E99923E1A4AC00A31297 /* hardCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hardCircle.png; sourceTree = "<group>"; };
+		9746E99A23E1A4AC00A31297 /* CaveFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveFire.sks; sourceTree = "<group>"; };
+		9746E99B23E1A4AC00A31297 /* Spawn.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spawn.sks; sourceTree = "<group>"; };
+		9746E99C23E1A4AC00A31297 /* CaveFireSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveFireSmoke.sks; sourceTree = "<group>"; };
+		9746E99D23E1A4AC00A31297 /* Leaves_01.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Leaves_01.sks; sourceTree = "<group>"; };
+		9746E99E23E1A4AC00A31297 /* Death.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Death.sks; sourceTree = "<group>"; };
+		9746E99F23E1A4AC00A31297 /* Leaves_02.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Leaves_02.sks; sourceTree = "<group>"; };
+		9746E9A023E1A4AC00A31297 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		9746E9A123E1A4AC00A31297 /* Damage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Damage.sks; sourceTree = "<group>"; };
+		9746E9A223E1A4AC00A31297 /* ProjectileSplat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ProjectileSplat.sks; sourceTree = "<group>"; };
+		9746E9A323E1A4AC00A31297 /* WarriorProjectile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WarriorProjectile.sks; sourceTree = "<group>"; };
+		9746E9A423E1A4AC00A31297 /* CaveDeathSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveDeathSmoke.sks; sourceTree = "<group>"; };
+		9746E9A523E1A4AC00A31297 /* BossDamage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BossDamage.sks; sourceTree = "<group>"; };
+		9746E9A623E1A4AC00A31297 /* CaveDamage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveDamage.sks; sourceTree = "<group>"; };
+		9746E9A723E1A4AC00A31297 /* leaf_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf_02.png; sourceTree = "<group>"; };
+		9746E9A823E1A4AC00A31297 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		9746E9A923E1A4AC00A31297 /* ArcherProjectile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ArcherProjectile.sks; sourceTree = "<group>"; };
+		9746E9AA23E1A4AC00A31297 /* leaf_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf_00.png; sourceTree = "<group>"; };
+		9746E9AC23E1A4AC00A31297 /* magicmissile.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = magicmissile.caf; sourceTree = "<group>"; };
+		9746E9AE23E1A4AC00A31297 /* map_level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_level.png; sourceTree = "<group>"; };
+		9746E9AF23E1A4AC00A31297 /* map_trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_trees.png; sourceTree = "<group>"; };
+		9746E9B023E1A4AC00A31297 /* map_level.new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_level.new.png; sourceTree = "<group>"; };
+		9746E9B123E1A4AC00A31297 /* map_level.old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_level.old.png; sourceTree = "<group>"; };
+		9746E9B223E1A4AC00A31297 /* editor_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editor_background.png; sourceTree = "<group>"; };
+		9746EAA323E1A53600A31297 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9746EAA523E1AA4800A31297 /* AdventureSceneiOSEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureSceneiOSEvents.swift; sourceTree = "<group>"; };
+		9746EAA723E1AA5D00A31297 /* AdventureSceneOSXEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureSceneOSXEvents.swift; sourceTree = "<group>"; };
 		97B116C723E07BAA00AEEFA6 /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		97B116CF23E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97B116D223E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97B116D423E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -404,80 +474,6 @@
 		97B1170723E07BAA00AEEFA6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		97B1170A23E07BAA00AEEFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97B1170C23E07BAA00AEEFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdventureScene.swift; sourceTree = "<group>"; };
-		97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayeredCharacterScene.swift; sourceTree = "<group>"; };
-		97B1175123E07EAE00AEEFA6 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicsUtilities.swift; sourceTree = "<group>"; };
-		97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtificialIntelligence.swift; sourceTree = "<group>"; };
-		97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpawnAI.swift; sourceTree = "<group>"; };
-		97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaseAI.swift; sourceTree = "<group>"; };
-		97B1176523E07ECB00AEEFA6 /* Warrior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
-		97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyCharacter.swift; sourceTree = "<group>"; };
-		97B1176723E07ECB00AEEFA6 /* Goblin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goblin.swift; sourceTree = "<group>"; };
-		97B1176823E07ECB00AEEFA6 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		97B1176923E07ECB00AEEFA6 /* Cave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
-		97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxSprite.swift; sourceTree = "<group>"; };
-		97B1176B23E07ECB00AEEFA6 /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
-		97B1176C23E07ECB00AEEFA6 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
-		97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCharacter.swift; sourceTree = "<group>"; };
-		97B1176E23E07ECB00AEEFA6 /* Archer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
-		97B118D123E133AD00AEEFA6 /* Assets - OS X.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets - OS X.xcassets"; sourceTree = "<group>"; };
-		97B118D223E133AD00AEEFA6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		97B118D323E133AD00AEEFA6 /* lives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lives.png; sourceTree = "<group>"; };
-		97B118D423E133AD00AEEFA6 /* Assets - iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets - iOS.xcassets"; sourceTree = "<group>"; };
-		97B118D523E133AD00AEEFA6 /* iconWarrior_pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_pink.png; sourceTree = "<group>"; };
-		97B118D623E133AD00AEEFA6 /* iconWarrior_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_blue.png; sourceTree = "<group>"; };
-		97B118D723E133AD00AEEFA6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		97B118D823E133AD00AEEFA6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		97B118D923E133AD00AEEFA6 /* iconWarrior_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_red.png; sourceTree = "<group>"; };
-		97B118DA23E133AD00AEEFA6 /* iconWarrior_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconWarrior_green.png; sourceTree = "<group>"; };
-		97B118DB23E133AD00AEEFA6 /* button_archer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_archer.png; sourceTree = "<group>"; };
-		97B118DC23E133AD00AEEFA6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		97B118DD23E133AD00AEEFA6 /* button_warrior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_warrior.png; sourceTree = "<group>"; };
-		97B118E623E133AD00AEEFA6 /* Goblin_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_GetHit.atlas; sourceTree = "<group>"; };
-		97B118E723E133AD00AEEFA6 /* Goblin_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Attack.atlas; sourceTree = "<group>"; };
-		97B118E823E133AD00AEEFA6 /* Goblin_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Walk.atlas; sourceTree = "<group>"; };
-		97B118E923E133AD00AEEFA6 /* Goblin_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Idle.atlas; sourceTree = "<group>"; };
-		97B118EA23E133AD00AEEFA6 /* Goblin_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Goblin_Death.atlas; sourceTree = "<group>"; };
-		97B118EB23E133AD00AEEFA6 /* Environment.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Environment.atlas; sourceTree = "<group>"; };
-		97B118EC23E133AD00AEEFA6 /* Tiles.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Tiles.atlas; sourceTree = "<group>"; };
-		97B118EE23E133AD00AEEFA6 /* Boss_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Attack.atlas; sourceTree = "<group>"; };
-		97B118EF23E133AD00AEEFA6 /* Boss_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_GetHit.atlas; sourceTree = "<group>"; };
-		97B118F023E133AD00AEEFA6 /* Boss_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Death.atlas; sourceTree = "<group>"; };
-		97B118F123E133AD00AEEFA6 /* Boss_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Walk.atlas; sourceTree = "<group>"; };
-		97B118F223E133AD00AEEFA6 /* Boss_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Boss_Idle.atlas; sourceTree = "<group>"; };
-		97B118F423E133AD00AEEFA6 /* Warrior_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Death.atlas; sourceTree = "<group>"; };
-		97B118F523E133AD00AEEFA6 /* Warrior_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Idle.atlas; sourceTree = "<group>"; };
-		97B118F623E133AD00AEEFA6 /* Warrior_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Walk.atlas; sourceTree = "<group>"; };
-		97B118F723E133AD00AEEFA6 /* Warrior_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_GetHit.atlas; sourceTree = "<group>"; };
-		97B118F823E133AD00AEEFA6 /* Warrior_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Warrior_Attack.atlas; sourceTree = "<group>"; };
-		97B118FA23E133AD00AEEFA6 /* hardCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hardCircle.png; sourceTree = "<group>"; };
-		97B118FB23E133AD00AEEFA6 /* CaveFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveFire.sks; sourceTree = "<group>"; };
-		97B118FC23E133AD00AEEFA6 /* Spawn.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spawn.sks; sourceTree = "<group>"; };
-		97B118FD23E133AD00AEEFA6 /* CaveFireSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveFireSmoke.sks; sourceTree = "<group>"; };
-		97B118FE23E133AD00AEEFA6 /* Leaves_01.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Leaves_01.sks; sourceTree = "<group>"; };
-		97B118FF23E133AD00AEEFA6 /* Death.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Death.sks; sourceTree = "<group>"; };
-		97B1190023E133AD00AEEFA6 /* Leaves_02.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Leaves_02.sks; sourceTree = "<group>"; };
-		97B1190123E133AD00AEEFA6 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		97B1190223E133AD00AEEFA6 /* Damage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Damage.sks; sourceTree = "<group>"; };
-		97B1190323E133AD00AEEFA6 /* ProjectileSplat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ProjectileSplat.sks; sourceTree = "<group>"; };
-		97B1190423E133AD00AEEFA6 /* WarriorProjectile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WarriorProjectile.sks; sourceTree = "<group>"; };
-		97B1190523E133AD00AEEFA6 /* CaveDeathSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveDeathSmoke.sks; sourceTree = "<group>"; };
-		97B1190623E133AD00AEEFA6 /* BossDamage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BossDamage.sks; sourceTree = "<group>"; };
-		97B1190723E133AD00AEEFA6 /* CaveDamage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CaveDamage.sks; sourceTree = "<group>"; };
-		97B1190823E133AD00AEEFA6 /* leaf_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf_02.png; sourceTree = "<group>"; };
-		97B1190923E133AD00AEEFA6 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		97B1190A23E133AD00AEEFA6 /* ArcherProjectile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ArcherProjectile.sks; sourceTree = "<group>"; };
-		97B1190B23E133AD00AEEFA6 /* leaf_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf_00.png; sourceTree = "<group>"; };
-		97B1190D23E133AD00AEEFA6 /* magicmissile.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = magicmissile.caf; sourceTree = "<group>"; };
-		97B1190F23E133AD00AEEFA6 /* map_level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_level.png; sourceTree = "<group>"; };
-		97B1191023E133AD00AEEFA6 /* map_trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_trees.png; sourceTree = "<group>"; };
-		97B11A2923E1359C00AEEFA6 /* Archer_Idle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Idle.atlas; sourceTree = "<group>"; };
-		97B11A2A23E1359C00AEEFA6 /* Archer_GetHit.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_GetHit.atlas; sourceTree = "<group>"; };
-		97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Death.atlas; sourceTree = "<group>"; };
-		97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Attack.atlas; sourceTree = "<group>"; };
-		97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Archer_Walk.atlas; sourceTree = "<group>"; };
-		97B11A4223E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSLayeredCharacterSceneEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -512,10 +508,208 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9746E91A23E1A47400A31297 /* Adventure Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9746E91B23E1A47400A31297 /* AdventureHUD.sks */,
+				9746E91C23E1A47400A31297 /* Utilities */,
+				9746E91E23E1A47400A31297 /* AI */,
+				9746E92223E1A47400A31297 /* Sprites */,
+				9746E92D23E1A47400A31297 /* Scene */,
+				9746E93123E1A47400A31297 /* AdventureWorld.sks */,
+			);
+			path = "Adventure Shared";
+			sourceTree = "<group>";
+		};
+		9746E91C23E1A47400A31297 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9746E91D23E1A47400A31297 /* GraphicsUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9746E91E23E1A47400A31297 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				9746E91F23E1A47400A31297 /* SpawnArtificialIntelligence.swift */,
+				9746E92023E1A47400A31297 /* ChaseArtificialIntelligence.swift */,
+				9746E92123E1A47400A31297 /* ArtificialIntelligence.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		9746E92223E1A47400A31297 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				9746E92323E1A47400A31297 /* Warrior.swift */,
+				9746E92423E1A47400A31297 /* EnemyCharacter.swift */,
+				9746E92523E1A47400A31297 /* Goblin.swift */,
+				9746E92623E1A47400A31297 /* Character.swift */,
+				9746E92723E1A47400A31297 /* Cave.swift */,
+				9746E92823E1A47400A31297 /* ParallaxSprite.swift */,
+				9746E92923E1A47400A31297 /* Boss.swift */,
+				9746E92A23E1A47400A31297 /* Tree.swift */,
+				9746E92B23E1A47400A31297 /* HeroCharacter.swift */,
+				9746E92C23E1A47400A31297 /* Archer.swift */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		9746E92D23E1A47400A31297 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				9746E92E23E1A47400A31297 /* AdventureScene.swift */,
+				9746E92F23E1A47400A31297 /* Player.swift */,
+				9746E93023E1A47400A31297 /* SharedAssetManagement.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		9746E96D23E1A4AB00A31297 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9746E96E23E1A4AB00A31297 /* UI */,
+				9746E97D23E1A4AB00A31297 /* Texture Atlases */,
+				9746E99823E1A4AC00A31297 /* Particles */,
+				9746E9AB23E1A4AC00A31297 /* Sounds */,
+				9746E9AD23E1A4AC00A31297 /* Environment */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9746E96E23E1A4AB00A31297 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9746E96F23E1A4AB00A31297 /* Assets - OS X.xcassets */,
+				9746E97023E1A4AB00A31297 /* Default@2x.png */,
+				9746E97123E1A4AB00A31297 /* lives.png */,
+				9746E97223E1A4AB00A31297 /* Assets - iOS.xcassets */,
+				9746E97323E1A4AB00A31297 /* cover@2x.png */,
+				9746E97423E1A4AB00A31297 /* iconWarrior_pink.png */,
+				9746E97523E1A4AB00A31297 /* iconWarrior_blue.png */,
+				9746E97623E1A4AB00A31297 /* Default-568h@2x.png */,
+				9746E97723E1A4AB00A31297 /* logo.png */,
+				9746E97823E1A4AB00A31297 /* iconWarrior_red.png */,
+				9746E97923E1A4AB00A31297 /* iconWarrior_green.png */,
+				9746E97A23E1A4AB00A31297 /* button_archer.png */,
+				9746E97B23E1A4AB00A31297 /* Default.png */,
+				9746E97C23E1A4AB00A31297 /* button_warrior.png */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9746E97D23E1A4AB00A31297 /* Texture Atlases */ = {
+			isa = PBXGroup;
+			children = (
+				9746E97E23E1A4AB00A31297 /* Archer */,
+				9746E98423E1A4AC00A31297 /* Goblin */,
+				9746E98A23E1A4AC00A31297 /* Environment.atlas */,
+				9746E98B23E1A4AC00A31297 /* Tiles.atlas */,
+				9746E98C23E1A4AC00A31297 /* Boss */,
+				9746E99223E1A4AC00A31297 /* Warrior */,
+			);
+			path = "Texture Atlases";
+			sourceTree = "<group>";
+		};
+		9746E97E23E1A4AB00A31297 /* Archer */ = {
+			isa = PBXGroup;
+			children = (
+				9746E97F23E1A4AB00A31297 /* Archer_Walk.atlas */,
+				9746E98023E1A4AB00A31297 /* Archer_Idle.atlas */,
+				9746E98123E1A4AB00A31297 /* Archer_Death.atlas */,
+				9746E98223E1A4AC00A31297 /* Archer_Attack.atlas */,
+				9746E98323E1A4AC00A31297 /* Archer_GetHit.atlas */,
+			);
+			path = Archer;
+			sourceTree = "<group>";
+		};
+		9746E98423E1A4AC00A31297 /* Goblin */ = {
+			isa = PBXGroup;
+			children = (
+				9746E98523E1A4AC00A31297 /* Goblin_GetHit.atlas */,
+				9746E98623E1A4AC00A31297 /* Goblin_Attack.atlas */,
+				9746E98723E1A4AC00A31297 /* Goblin_Walk.atlas */,
+				9746E98823E1A4AC00A31297 /* Goblin_Idle.atlas */,
+				9746E98923E1A4AC00A31297 /* Goblin_Death.atlas */,
+			);
+			path = Goblin;
+			sourceTree = "<group>";
+		};
+		9746E98C23E1A4AC00A31297 /* Boss */ = {
+			isa = PBXGroup;
+			children = (
+				9746E98D23E1A4AC00A31297 /* Boss_Attack.atlas */,
+				9746E98E23E1A4AC00A31297 /* Boss_GetHit.atlas */,
+				9746E98F23E1A4AC00A31297 /* Boss_Death.atlas */,
+				9746E99023E1A4AC00A31297 /* Boss_Walk.atlas */,
+				9746E99123E1A4AC00A31297 /* Boss_Idle.atlas */,
+			);
+			path = Boss;
+			sourceTree = "<group>";
+		};
+		9746E99223E1A4AC00A31297 /* Warrior */ = {
+			isa = PBXGroup;
+			children = (
+				9746E99323E1A4AC00A31297 /* Warrior_Death.atlas */,
+				9746E99423E1A4AC00A31297 /* Warrior_Idle.atlas */,
+				9746E99523E1A4AC00A31297 /* Warrior_Walk.atlas */,
+				9746E99623E1A4AC00A31297 /* Warrior_GetHit.atlas */,
+				9746E99723E1A4AC00A31297 /* Warrior_Attack.atlas */,
+			);
+			path = Warrior;
+			sourceTree = "<group>";
+		};
+		9746E99823E1A4AC00A31297 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				9746E99923E1A4AC00A31297 /* hardCircle.png */,
+				9746E99A23E1A4AC00A31297 /* CaveFire.sks */,
+				9746E99B23E1A4AC00A31297 /* Spawn.sks */,
+				9746E99C23E1A4AC00A31297 /* CaveFireSmoke.sks */,
+				9746E99D23E1A4AC00A31297 /* Leaves_01.sks */,
+				9746E99E23E1A4AC00A31297 /* Death.sks */,
+				9746E99F23E1A4AC00A31297 /* Leaves_02.sks */,
+				9746E9A023E1A4AC00A31297 /* spark.png */,
+				9746E9A123E1A4AC00A31297 /* Damage.sks */,
+				9746E9A223E1A4AC00A31297 /* ProjectileSplat.sks */,
+				9746E9A323E1A4AC00A31297 /* WarriorProjectile.sks */,
+				9746E9A423E1A4AC00A31297 /* CaveDeathSmoke.sks */,
+				9746E9A523E1A4AC00A31297 /* BossDamage.sks */,
+				9746E9A623E1A4AC00A31297 /* CaveDamage.sks */,
+				9746E9A723E1A4AC00A31297 /* leaf_02.png */,
+				9746E9A823E1A4AC00A31297 /* star.png */,
+				9746E9A923E1A4AC00A31297 /* ArcherProjectile.sks */,
+				9746E9AA23E1A4AC00A31297 /* leaf_00.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		9746E9AB23E1A4AC00A31297 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9746E9AC23E1A4AC00A31297 /* magicmissile.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9746E9AD23E1A4AC00A31297 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				9746E9AE23E1A4AC00A31297 /* map_level.png */,
+				9746E9AF23E1A4AC00A31297 /* map_trees.png */,
+				9746E9B023E1A4AC00A31297 /* map_level.new.png */,
+				9746E9B123E1A4AC00A31297 /* map_level.old.png */,
+				9746E9B223E1A4AC00A31297 /* editor_background.png */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		97B116B923E07BA700AEEFA6 = {
 			isa = PBXGroup;
 			children = (
-				97B116BE23E07BA800AEEFA6 /* Adventure Shared */,
+				9746E96D23E1A4AB00A31297 /* Assets */,
+				9746E91A23E1A47400A31297 /* Adventure Shared */,
 				97B116C923E07BAA00AEEFA6 /* Adventure iOS */,
 				97B116DB23E07BAA00AEEFA6 /* Adventure watchOS App */,
 				97B116E823E07BAA00AEEFA6 /* Adventure watchOS App Extension */,
@@ -523,21 +717,6 @@
 				97B1170423E07BAA00AEEFA6 /* Adventure macOS */,
 				97B116C823E07BAA00AEEFA6 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		97B116BE23E07BA800AEEFA6 /* Adventure Shared */ = {
-			isa = PBXGroup;
-			children = (
-				97B118CF23E133AD00AEEFA6 /* Assets */,
-				97B1176023E07ECB00AEEFA6 /* AI */,
-				97B1176423E07ECB00AEEFA6 /* Sprites */,
-				97B1175E23E07ECB00AEEFA6 /* Utilities */,
-				97B1174E23E07EAE00AEEFA6 /* Scene */,
-				97B116BF23E07BA800AEEFA6 /* Actions.sks */,
-				97B116C023E07BA800AEEFA6 /* GameScene.sks */,
-				97B116C123E07BA800AEEFA6 /* GameScene.swift */,
-			);
-			path = "Adventure Shared";
 			sourceTree = "<group>";
 		};
 		97B116C823E07BAA00AEEFA6 /* Products */ = {
@@ -555,9 +734,9 @@
 		97B116C923E07BAA00AEEFA6 /* Adventure iOS */ = {
 			isa = PBXGroup;
 			children = (
-				97B11A4223E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift */,
+				9746EAA523E1AA4800A31297 /* AdventureSceneiOSEvents.swift */,
+				9746EAA323E1A53600A31297 /* ViewController.swift */,
 				97B116CA23E07BAA00AEEFA6 /* AppDelegate.swift */,
-				97B116CC23E07BAA00AEEFA6 /* GameViewController.swift */,
 				97B116CE23E07BAA00AEEFA6 /* Main.storyboard */,
 				97B116D123E07BAA00AEEFA6 /* LaunchScreen.storyboard */,
 				97B116D423E07BAA00AEEFA6 /* Info.plist */,
@@ -599,193 +778,13 @@
 		97B1170423E07BAA00AEEFA6 /* Adventure macOS */ = {
 			isa = PBXGroup;
 			children = (
+				9746EAA723E1AA5D00A31297 /* AdventureSceneOSXEvents.swift */,
 				97B1170523E07BAA00AEEFA6 /* AppDelegate.swift */,
 				97B1170723E07BAA00AEEFA6 /* GameViewController.swift */,
 				97B1170923E07BAA00AEEFA6 /* Main.storyboard */,
 				97B1170C23E07BAA00AEEFA6 /* Info.plist */,
 			);
 			path = "Adventure macOS";
-			sourceTree = "<group>";
-		};
-		97B1174E23E07EAE00AEEFA6 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				97B1174F23E07EAE00AEEFA6 /* AdventureScene.swift */,
-				97B1175023E07EAE00AEEFA6 /* LayeredCharacterScene.swift */,
-				97B1175123E07EAE00AEEFA6 /* Player.swift */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
-		97B1175E23E07ECB00AEEFA6 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				97B1175F23E07ECB00AEEFA6 /* GraphicsUtilities.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		97B1176023E07ECB00AEEFA6 /* AI */ = {
-			isa = PBXGroup;
-			children = (
-				97B1176123E07ECB00AEEFA6 /* ArtificialIntelligence.swift */,
-				97B1176223E07ECB00AEEFA6 /* SpawnAI.swift */,
-				97B1176323E07ECB00AEEFA6 /* ChaseAI.swift */,
-			);
-			path = AI;
-			sourceTree = "<group>";
-		};
-		97B1176423E07ECB00AEEFA6 /* Sprites */ = {
-			isa = PBXGroup;
-			children = (
-				97B1176523E07ECB00AEEFA6 /* Warrior.swift */,
-				97B1176623E07ECB00AEEFA6 /* EnemyCharacter.swift */,
-				97B1176723E07ECB00AEEFA6 /* Goblin.swift */,
-				97B1176823E07ECB00AEEFA6 /* Character.swift */,
-				97B1176923E07ECB00AEEFA6 /* Cave.swift */,
-				97B1176A23E07ECB00AEEFA6 /* ParallaxSprite.swift */,
-				97B1176B23E07ECB00AEEFA6 /* Boss.swift */,
-				97B1176C23E07ECB00AEEFA6 /* Tree.swift */,
-				97B1176D23E07ECB00AEEFA6 /* HeroCharacter.swift */,
-				97B1176E23E07ECB00AEEFA6 /* Archer.swift */,
-				97B116C223E07BAA00AEEFA6 /* Assets.xcassets */,
-			);
-			path = Sprites;
-			sourceTree = "<group>";
-		};
-		97B118CF23E133AD00AEEFA6 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				97B118D023E133AD00AEEFA6 /* UI */,
-				97B118DE23E133AD00AEEFA6 /* Texture Atlases */,
-				97B118F923E133AD00AEEFA6 /* Particles */,
-				97B1190C23E133AD00AEEFA6 /* Sounds */,
-				97B1190E23E133AD00AEEFA6 /* Environment */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		97B118D023E133AD00AEEFA6 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				97B118D123E133AD00AEEFA6 /* Assets - OS X.xcassets */,
-				97B118D223E133AD00AEEFA6 /* Default@2x.png */,
-				97B118D323E133AD00AEEFA6 /* lives.png */,
-				97B118D423E133AD00AEEFA6 /* Assets - iOS.xcassets */,
-				97B118D523E133AD00AEEFA6 /* iconWarrior_pink.png */,
-				97B118D623E133AD00AEEFA6 /* iconWarrior_blue.png */,
-				97B118D723E133AD00AEEFA6 /* Default-568h@2x.png */,
-				97B118D823E133AD00AEEFA6 /* logo.png */,
-				97B118D923E133AD00AEEFA6 /* iconWarrior_red.png */,
-				97B118DA23E133AD00AEEFA6 /* iconWarrior_green.png */,
-				97B118DB23E133AD00AEEFA6 /* button_archer.png */,
-				97B118DC23E133AD00AEEFA6 /* Default.png */,
-				97B118DD23E133AD00AEEFA6 /* button_warrior.png */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		97B118DE23E133AD00AEEFA6 /* Texture Atlases */ = {
-			isa = PBXGroup;
-			children = (
-				97B118DF23E133AD00AEEFA6 /* Archer */,
-				97B118E523E133AD00AEEFA6 /* Goblin */,
-				97B118EB23E133AD00AEEFA6 /* Environment.atlas */,
-				97B118EC23E133AD00AEEFA6 /* Tiles.atlas */,
-				97B118ED23E133AD00AEEFA6 /* Boss */,
-				97B118F323E133AD00AEEFA6 /* Warrior */,
-			);
-			path = "Texture Atlases";
-			sourceTree = "<group>";
-		};
-		97B118DF23E133AD00AEEFA6 /* Archer */ = {
-			isa = PBXGroup;
-			children = (
-				97B11A2C23E1359C00AEEFA6 /* Archer_Attack.atlas */,
-				97B11A2B23E1359C00AEEFA6 /* Archer_Death.atlas */,
-				97B11A2A23E1359C00AEEFA6 /* Archer_GetHit.atlas */,
-				97B11A2923E1359C00AEEFA6 /* Archer_Idle.atlas */,
-				97B11A2D23E1359C00AEEFA6 /* Archer_Walk.atlas */,
-			);
-			path = Archer;
-			sourceTree = "<group>";
-		};
-		97B118E523E133AD00AEEFA6 /* Goblin */ = {
-			isa = PBXGroup;
-			children = (
-				97B118E623E133AD00AEEFA6 /* Goblin_GetHit.atlas */,
-				97B118E723E133AD00AEEFA6 /* Goblin_Attack.atlas */,
-				97B118E823E133AD00AEEFA6 /* Goblin_Walk.atlas */,
-				97B118E923E133AD00AEEFA6 /* Goblin_Idle.atlas */,
-				97B118EA23E133AD00AEEFA6 /* Goblin_Death.atlas */,
-			);
-			path = Goblin;
-			sourceTree = "<group>";
-		};
-		97B118ED23E133AD00AEEFA6 /* Boss */ = {
-			isa = PBXGroup;
-			children = (
-				97B118EE23E133AD00AEEFA6 /* Boss_Attack.atlas */,
-				97B118EF23E133AD00AEEFA6 /* Boss_GetHit.atlas */,
-				97B118F023E133AD00AEEFA6 /* Boss_Death.atlas */,
-				97B118F123E133AD00AEEFA6 /* Boss_Walk.atlas */,
-				97B118F223E133AD00AEEFA6 /* Boss_Idle.atlas */,
-			);
-			path = Boss;
-			sourceTree = "<group>";
-		};
-		97B118F323E133AD00AEEFA6 /* Warrior */ = {
-			isa = PBXGroup;
-			children = (
-				97B118F423E133AD00AEEFA6 /* Warrior_Death.atlas */,
-				97B118F523E133AD00AEEFA6 /* Warrior_Idle.atlas */,
-				97B118F623E133AD00AEEFA6 /* Warrior_Walk.atlas */,
-				97B118F723E133AD00AEEFA6 /* Warrior_GetHit.atlas */,
-				97B118F823E133AD00AEEFA6 /* Warrior_Attack.atlas */,
-			);
-			path = Warrior;
-			sourceTree = "<group>";
-		};
-		97B118F923E133AD00AEEFA6 /* Particles */ = {
-			isa = PBXGroup;
-			children = (
-				97B118FA23E133AD00AEEFA6 /* hardCircle.png */,
-				97B118FB23E133AD00AEEFA6 /* CaveFire.sks */,
-				97B118FC23E133AD00AEEFA6 /* Spawn.sks */,
-				97B118FD23E133AD00AEEFA6 /* CaveFireSmoke.sks */,
-				97B118FE23E133AD00AEEFA6 /* Leaves_01.sks */,
-				97B118FF23E133AD00AEEFA6 /* Death.sks */,
-				97B1190023E133AD00AEEFA6 /* Leaves_02.sks */,
-				97B1190123E133AD00AEEFA6 /* spark.png */,
-				97B1190223E133AD00AEEFA6 /* Damage.sks */,
-				97B1190323E133AD00AEEFA6 /* ProjectileSplat.sks */,
-				97B1190423E133AD00AEEFA6 /* WarriorProjectile.sks */,
-				97B1190523E133AD00AEEFA6 /* CaveDeathSmoke.sks */,
-				97B1190623E133AD00AEEFA6 /* BossDamage.sks */,
-				97B1190723E133AD00AEEFA6 /* CaveDamage.sks */,
-				97B1190823E133AD00AEEFA6 /* leaf_02.png */,
-				97B1190923E133AD00AEEFA6 /* star.png */,
-				97B1190A23E133AD00AEEFA6 /* ArcherProjectile.sks */,
-				97B1190B23E133AD00AEEFA6 /* leaf_00.png */,
-			);
-			path = Particles;
-			sourceTree = "<group>";
-		};
-		97B1190C23E133AD00AEEFA6 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				97B1190D23E133AD00AEEFA6 /* magicmissile.caf */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
-		97B1190E23E133AD00AEEFA6 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				97B1190F23E133AD00AEEFA6 /* map_level.png */,
-				97B1191023E133AD00AEEFA6 /* map_trees.png */,
-			);
-			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -932,67 +931,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1199523E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */,
-				97B1195D23E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */,
-				97B119CD23E133AD00AEEFA6 /* BossDamage.sks in Resources */,
-				97B1194123E133AD00AEEFA6 /* button_warrior.png in Resources */,
-				97B1198D23E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */,
-				97B11A3223E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */,
-				97B119E923E133AD00AEEFA6 /* map_level.png in Resources */,
-				97B1192D23E133AD00AEEFA6 /* logo.png in Resources */,
-				97B119AD23E133AD00AEEFA6 /* Leaves_01.sks in Resources */,
-				97B119B523E133AD00AEEFA6 /* Leaves_02.sks in Resources */,
-				97B119BD23E133AD00AEEFA6 /* Damage.sks in Resources */,
-				97B1199D23E133AD00AEEFA6 /* hardCircle.png in Resources */,
-				97B119A123E133AD00AEEFA6 /* CaveFire.sks in Resources */,
-				97B1197523E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */,
-				97B1193123E133AD00AEEFA6 /* iconWarrior_red.png in Resources */,
-				97B119B923E133AD00AEEFA6 /* spark.png in Resources */,
-				97B119A523E133AD00AEEFA6 /* Spawn.sks in Resources */,
-				97B1198123E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */,
-				97B1196523E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */,
-				97B1199923E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */,
-				97B119A923E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */,
-				97B1171023E07BAA00AEEFA6 /* GameScene.sks in Resources */,
-				97B119D123E133AD00AEEFA6 /* CaveDamage.sks in Resources */,
-				97B119E523E133AD00AEEFA6 /* magicmissile.caf in Resources */,
-				97B1191D23E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */,
-				97B1193923E133AD00AEEFA6 /* button_archer.png in Resources */,
-				97B11A3A23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */,
-				97B1198923E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */,
+				9746EA3B23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */,
+				9746EA0323E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */,
+				9746EA7323E1A4AC00A31297 /* BossDamage.sks in Resources */,
+				9746E9E723E1A4AC00A31297 /* button_warrior.png in Resources */,
+				9746EA3323E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */,
+				9746EA8F23E1A4AC00A31297 /* map_level.png in Resources */,
+				9746E9D323E1A4AC00A31297 /* logo.png in Resources */,
+				9746EA5323E1A4AC00A31297 /* Leaves_01.sks in Resources */,
+				9746E9EF23E1A4AC00A31297 /* Archer_Idle.atlas in Resources */,
+				9746EA5B23E1A4AC00A31297 /* Leaves_02.sks in Resources */,
+				9746E9FB23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */,
+				9746EA6323E1A4AC00A31297 /* Damage.sks in Resources */,
+				9746EA4323E1A4AC00A31297 /* hardCircle.png in Resources */,
+				9746EA4723E1A4AC00A31297 /* CaveFire.sks in Resources */,
+				9746EA9F23E1A4AC00A31297 /* editor_background.png in Resources */,
+				9746EA1B23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */,
+				9746E9D723E1A4AC00A31297 /* iconWarrior_red.png in Resources */,
+				9746EA5F23E1A4AC00A31297 /* spark.png in Resources */,
+				9746EA4B23E1A4AC00A31297 /* Spawn.sks in Resources */,
+				9746EA2723E1A4AC00A31297 /* Boss_Walk.atlas in Resources */,
+				9746EA0B23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */,
+				9746E9F723E1A4AC00A31297 /* Archer_Attack.atlas in Resources */,
+				9746EA3F23E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */,
+				9746EA4F23E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */,
+				9746E9B723E1A4AC00A31297 /* Default@2x.png in Resources */,
+				9746EA7723E1A4AC00A31297 /* CaveDamage.sks in Resources */,
+				9746EA8B23E1A4AC00A31297 /* magicmissile.caf in Resources */,
 				97B116D023E07BAA00AEEFA6 /* Main.storyboard in Resources */,
-				97B1198523E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */,
-				97B1193523E133AD00AEEFA6 /* iconWarrior_green.png in Resources */,
-				97B1193D23E133AD00AEEFA6 /* Default.png in Resources */,
-				97B1197923E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */,
-				97B1192523E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */,
-				97B1191123E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */,
-				97B1192923E133AD00AEEFA6 /* Default-568h@2x.png in Resources */,
-				97B119C123E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */,
-				97B11A3E23E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */,
-				97B119D523E133AD00AEEFA6 /* leaf_02.png in Resources */,
-				97B1197123E133AD00AEEFA6 /* Tiles.atlas in Resources */,
-				97B1170D23E07BAA00AEEFA6 /* Actions.sks in Resources */,
-				97B119E123E133AD00AEEFA6 /* leaf_00.png in Resources */,
-				97B119DD23E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */,
+				9746E9DF23E1A4AC00A31297 /* button_archer.png in Resources */,
+				9746EA2F23E1A4AC00A31297 /* Warrior_Death.atlas in Resources */,
+				9746E9B323E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */,
+				9746EA2B23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */,
+				9746E9DB23E1A4AC00A31297 /* iconWarrior_green.png in Resources */,
+				9746E9E323E1A4AC00A31297 /* Default.png in Resources */,
+				9746EA1F23E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */,
+				9746EA9B23E1A4AC00A31297 /* map_level.old.png in Resources */,
+				9746E9CB23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */,
 				97B116D323E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */,
-				97B1196923E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */,
-				97B119B123E133AD00AEEFA6 /* Death.sks in Resources */,
-				97B1199123E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */,
-				97B1197D23E133AD00AEEFA6 /* Boss_Death.atlas in Resources */,
-				97B1191523E133AD00AEEFA6 /* Default@2x.png in Resources */,
-				97B1196123E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */,
-				97B119ED23E133AD00AEEFA6 /* map_trees.png in Resources */,
-				97B119C923E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */,
-				97B1196D23E133AD00AEEFA6 /* Environment.atlas in Resources */,
-				97B1192123E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */,
-				97B1195923E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */,
-				97B1171823E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
-				97B11A3623E1359C00AEEFA6 /* Archer_Death.atlas in Resources */,
-				97B119D923E133AD00AEEFA6 /* star.png in Resources */,
-				97B1191923E133AD00AEEFA6 /* lives.png in Resources */,
-				97B119C523E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */,
-				97B11A2E23E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */,
+				9746E9CF23E1A4AC00A31297 /* Default-568h@2x.png in Resources */,
+				9746EA6723E1A4AC00A31297 /* ProjectileSplat.sks in Resources */,
+				9746EA7B23E1A4AC00A31297 /* leaf_02.png in Resources */,
+				9746EA1723E1A4AC00A31297 /* Tiles.atlas in Resources */,
+				9746E9EB23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */,
+				9746E9C323E1A4AC00A31297 /* cover@2x.png in Resources */,
+				9746E9F323E1A4AC00A31297 /* Archer_Death.atlas in Resources */,
+				9746EA8723E1A4AC00A31297 /* leaf_00.png in Resources */,
+				9746EA8323E1A4AC00A31297 /* ArcherProjectile.sks in Resources */,
+				9746E9BF23E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */,
+				9746EA0F23E1A4AC00A31297 /* Goblin_Death.atlas in Resources */,
+				9746EA5723E1A4AC00A31297 /* Death.sks in Resources */,
+				9746EA3723E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */,
+				9746EA2323E1A4AC00A31297 /* Boss_Death.atlas in Resources */,
+				9746E93223E1A47400A31297 /* AdventureHUD.sks in Resources */,
+				9746EA0723E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */,
+				9746EA9323E1A4AC00A31297 /* map_trees.png in Resources */,
+				9746EA6F23E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */,
+				9746EA1323E1A4AC00A31297 /* Environment.atlas in Resources */,
+				9746E9C723E1A4AC00A31297 /* iconWarrior_pink.png in Resources */,
+				9746E9FF23E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */,
+				9746E9BB23E1A4AC00A31297 /* lives.png in Resources */,
+				9746EA7F23E1A4AC00A31297 /* star.png in Resources */,
+				9746E96923E1A47400A31297 /* AdventureWorld.sks in Resources */,
+				9746EA6B23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */,
+				9746EA9723E1A4AC00A31297 /* map_level.new.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,8 +1002,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1171923E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
+				9746E93323E1A47400A31297 /* AdventureHUD.sks in Resources */,
 				97B116DE23E07BAA00AEEFA6 /* Interface.storyboard in Resources */,
+				9746E96A23E1A47400A31297 /* AdventureWorld.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,63 +1012,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1191E23E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */,
-				97B119E223E133AD00AEEFA6 /* leaf_00.png in Resources */,
-				97B11A3B23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */,
-				97B119B623E133AD00AEEFA6 /* Leaves_02.sks in Resources */,
-				97B119CE23E133AD00AEEFA6 /* BossDamage.sks in Resources */,
-				97B1199623E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */,
-				97B11A3323E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */,
-				97B119C223E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */,
-				97B1198A23E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */,
-				97B1191623E133AD00AEEFA6 /* Default@2x.png in Resources */,
-				97B119AA23E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */,
-				97B1197E23E133AD00AEEFA6 /* Boss_Death.atlas in Resources */,
-				97B11A3F23E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */,
-				97B119DA23E133AD00AEEFA6 /* star.png in Resources */,
-				97B1199E23E133AD00AEEFA6 /* hardCircle.png in Resources */,
-				97B11A2F23E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */,
-				97B1197223E133AD00AEEFA6 /* Tiles.atlas in Resources */,
-				97B1198623E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */,
-				97B1199223E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */,
-				97B1192E23E133AD00AEEFA6 /* logo.png in Resources */,
-				97B1191223E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */,
-				97B1196223E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */,
-				97B119B223E133AD00AEEFA6 /* Death.sks in Resources */,
-				97B1194223E133AD00AEEFA6 /* button_warrior.png in Resources */,
-				97B119EA23E133AD00AEEFA6 /* map_level.png in Resources */,
-				97B1171123E07BAA00AEEFA6 /* GameScene.sks in Resources */,
-				97B1198E23E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */,
-				97B119D223E133AD00AEEFA6 /* CaveDamage.sks in Resources */,
-				97B1195E23E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */,
-				97B1195A23E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */,
-				97B119A623E133AD00AEEFA6 /* Spawn.sks in Resources */,
-				97B119AE23E133AD00AEEFA6 /* Leaves_01.sks in Resources */,
-				97B119A223E133AD00AEEFA6 /* CaveFire.sks in Resources */,
-				97B1192623E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */,
-				97B1196A23E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */,
-				97B1192A23E133AD00AEEFA6 /* Default-568h@2x.png in Resources */,
-				97B1197623E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */,
-				97B1199A23E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */,
-				97B119BE23E133AD00AEEFA6 /* Damage.sks in Resources */,
-				97B119DE23E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */,
-				97B1196E23E133AD00AEEFA6 /* Environment.atlas in Resources */,
-				97B119D623E133AD00AEEFA6 /* leaf_02.png in Resources */,
-				97B119C623E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */,
-				97B119BA23E133AD00AEEFA6 /* spark.png in Resources */,
-				97B11A3723E1359C00AEEFA6 /* Archer_Death.atlas in Resources */,
-				97B119EE23E133AD00AEEFA6 /* map_trees.png in Resources */,
-				97B119CA23E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */,
-				97B1193E23E133AD00AEEFA6 /* Default.png in Resources */,
-				97B1193623E133AD00AEEFA6 /* iconWarrior_green.png in Resources */,
-				97B1198223E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */,
-				97B1193A23E133AD00AEEFA6 /* button_archer.png in Resources */,
-				97B1197A23E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */,
-				97B1191A23E133AD00AEEFA6 /* lives.png in Resources */,
-				97B1196623E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */,
-				97B1192223E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */,
-				97B119E623E133AD00AEEFA6 /* magicmissile.caf in Resources */,
-				97B1193223E133AD00AEEFA6 /* iconWarrior_red.png in Resources */,
+				9746E9C423E1A4AC00A31297 /* cover@2x.png in Resources */,
+				9746EA8823E1A4AC00A31297 /* leaf_00.png in Resources */,
+				9746EA5C23E1A4AC00A31297 /* Leaves_02.sks in Resources */,
+				9746EA7423E1A4AC00A31297 /* BossDamage.sks in Resources */,
+				9746EA3C23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */,
+				9746EA6823E1A4AC00A31297 /* ProjectileSplat.sks in Resources */,
+				9746EA3023E1A4AC00A31297 /* Warrior_Death.atlas in Resources */,
+				9746E9C023E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */,
+				9746EA9C23E1A4AC00A31297 /* map_level.old.png in Resources */,
+				9746EA5023E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */,
+				9746EA2423E1A4AC00A31297 /* Boss_Death.atlas in Resources */,
+				9746EA8023E1A4AC00A31297 /* star.png in Resources */,
+				9746EA4423E1A4AC00A31297 /* hardCircle.png in Resources */,
+				9746E9F823E1A4AC00A31297 /* Archer_Attack.atlas in Resources */,
+				9746EA1823E1A4AC00A31297 /* Tiles.atlas in Resources */,
+				9746EA2C23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */,
+				9746EA3823E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */,
+				9746E9D423E1A4AC00A31297 /* logo.png in Resources */,
+				9746EAA023E1A4AC00A31297 /* editor_background.png in Resources */,
+				9746E9B823E1A4AC00A31297 /* Default@2x.png in Resources */,
+				9746EA0823E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */,
+				9746EA5823E1A4AC00A31297 /* Death.sks in Resources */,
+				9746E9E823E1A4AC00A31297 /* button_warrior.png in Resources */,
+				9746EA9023E1A4AC00A31297 /* map_level.png in Resources */,
+				9746E9B423E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */,
+				9746EA3423E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */,
+				9746EA7823E1A4AC00A31297 /* CaveDamage.sks in Resources */,
+				9746EA0423E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */,
+				9746E9F023E1A4AC00A31297 /* Archer_Idle.atlas in Resources */,
+				9746E9EC23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */,
+				9746EA0023E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */,
+				9746EA9823E1A4AC00A31297 /* map_level.new.png in Resources */,
+				9746EA4C23E1A4AC00A31297 /* Spawn.sks in Resources */,
+				9746EA5423E1A4AC00A31297 /* Leaves_01.sks in Resources */,
+				9746EA4823E1A4AC00A31297 /* CaveFire.sks in Resources */,
+				9746E9CC23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */,
+				9746EA1023E1A4AC00A31297 /* Goblin_Death.atlas in Resources */,
+				9746E9D023E1A4AC00A31297 /* Default-568h@2x.png in Resources */,
+				9746E9F423E1A4AC00A31297 /* Archer_Death.atlas in Resources */,
+				9746EA1C23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */,
+				9746EA4023E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */,
+				9746EA6423E1A4AC00A31297 /* Damage.sks in Resources */,
+				9746EA8423E1A4AC00A31297 /* ArcherProjectile.sks in Resources */,
+				9746EA1423E1A4AC00A31297 /* Environment.atlas in Resources */,
+				9746EA7C23E1A4AC00A31297 /* leaf_02.png in Resources */,
+				9746EA6C23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */,
+				9746EA6023E1A4AC00A31297 /* spark.png in Resources */,
+				9746EA9423E1A4AC00A31297 /* map_trees.png in Resources */,
+				9746EA7023E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */,
+				9746E9E423E1A4AC00A31297 /* Default.png in Resources */,
+				9746E9FC23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */,
+				9746E9DC23E1A4AC00A31297 /* iconWarrior_green.png in Resources */,
+				9746EA2823E1A4AC00A31297 /* Boss_Walk.atlas in Resources */,
+				9746E9E023E1A4AC00A31297 /* button_archer.png in Resources */,
+				9746EA2023E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */,
+				9746E9BC23E1A4AC00A31297 /* lives.png in Resources */,
+				9746EA0C23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */,
+				9746E9C823E1A4AC00A31297 /* iconWarrior_pink.png in Resources */,
+				9746EA8C23E1A4AC00A31297 /* magicmissile.caf in Resources */,
+				9746E9D823E1A4AC00A31297 /* iconWarrior_red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1073,67 +1079,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1199723E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */,
-				97B1195F23E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */,
-				97B119CF23E133AD00AEEFA6 /* BossDamage.sks in Resources */,
-				97B1194323E133AD00AEEFA6 /* button_warrior.png in Resources */,
-				97B1198F23E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */,
-				97B11A3423E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */,
-				97B119EB23E133AD00AEEFA6 /* map_level.png in Resources */,
-				97B1192F23E133AD00AEEFA6 /* logo.png in Resources */,
-				97B119AF23E133AD00AEEFA6 /* Leaves_01.sks in Resources */,
-				97B119B723E133AD00AEEFA6 /* Leaves_02.sks in Resources */,
-				97B119BF23E133AD00AEEFA6 /* Damage.sks in Resources */,
-				97B1199F23E133AD00AEEFA6 /* hardCircle.png in Resources */,
-				97B119A323E133AD00AEEFA6 /* CaveFire.sks in Resources */,
-				97B1197723E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */,
-				97B1193323E133AD00AEEFA6 /* iconWarrior_red.png in Resources */,
-				97B119BB23E133AD00AEEFA6 /* spark.png in Resources */,
-				97B119A723E133AD00AEEFA6 /* Spawn.sks in Resources */,
-				97B1198323E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */,
-				97B1196723E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */,
-				97B1199B23E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */,
-				97B119AB23E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */,
-				97B1171223E07BAA00AEEFA6 /* GameScene.sks in Resources */,
-				97B119D323E133AD00AEEFA6 /* CaveDamage.sks in Resources */,
-				97B119E723E133AD00AEEFA6 /* magicmissile.caf in Resources */,
-				97B1191F23E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */,
-				97B1193B23E133AD00AEEFA6 /* button_archer.png in Resources */,
-				97B11A3C23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */,
-				97B1198B23E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */,
+				9746EA3D23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */,
+				9746EA0523E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */,
+				9746EA7523E1A4AC00A31297 /* BossDamage.sks in Resources */,
+				9746E9E923E1A4AC00A31297 /* button_warrior.png in Resources */,
+				9746EA3523E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */,
+				9746EA9123E1A4AC00A31297 /* map_level.png in Resources */,
+				9746E9D523E1A4AC00A31297 /* logo.png in Resources */,
+				9746EA5523E1A4AC00A31297 /* Leaves_01.sks in Resources */,
+				9746E9F123E1A4AC00A31297 /* Archer_Idle.atlas in Resources */,
+				9746EA5D23E1A4AC00A31297 /* Leaves_02.sks in Resources */,
+				9746E9FD23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */,
+				9746EA6523E1A4AC00A31297 /* Damage.sks in Resources */,
+				9746EA4523E1A4AC00A31297 /* hardCircle.png in Resources */,
+				9746EA4923E1A4AC00A31297 /* CaveFire.sks in Resources */,
+				9746EAA123E1A4AC00A31297 /* editor_background.png in Resources */,
+				9746EA1D23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */,
+				9746E9D923E1A4AC00A31297 /* iconWarrior_red.png in Resources */,
+				9746EA6123E1A4AC00A31297 /* spark.png in Resources */,
+				9746EA4D23E1A4AC00A31297 /* Spawn.sks in Resources */,
+				9746EA2923E1A4AC00A31297 /* Boss_Walk.atlas in Resources */,
+				9746EA0D23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */,
+				9746E9F923E1A4AC00A31297 /* Archer_Attack.atlas in Resources */,
+				9746EA4123E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */,
+				9746EA5123E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */,
+				9746E9B923E1A4AC00A31297 /* Default@2x.png in Resources */,
+				9746EA7923E1A4AC00A31297 /* CaveDamage.sks in Resources */,
+				9746EA8D23E1A4AC00A31297 /* magicmissile.caf in Resources */,
 				97B116FA23E07BAA00AEEFA6 /* Main.storyboard in Resources */,
-				97B1198723E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */,
-				97B1193723E133AD00AEEFA6 /* iconWarrior_green.png in Resources */,
-				97B1193F23E133AD00AEEFA6 /* Default.png in Resources */,
-				97B1197B23E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */,
-				97B1192723E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */,
-				97B1191323E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */,
-				97B1192B23E133AD00AEEFA6 /* Default-568h@2x.png in Resources */,
-				97B119C323E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */,
-				97B11A4023E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */,
-				97B119D723E133AD00AEEFA6 /* leaf_02.png in Resources */,
-				97B1197323E133AD00AEEFA6 /* Tiles.atlas in Resources */,
-				97B1170E23E07BAA00AEEFA6 /* Actions.sks in Resources */,
-				97B119E323E133AD00AEEFA6 /* leaf_00.png in Resources */,
-				97B119DF23E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */,
+				9746E9E123E1A4AC00A31297 /* button_archer.png in Resources */,
+				9746EA3123E1A4AC00A31297 /* Warrior_Death.atlas in Resources */,
+				9746E9B523E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */,
+				9746EA2D23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */,
+				9746E9DD23E1A4AC00A31297 /* iconWarrior_green.png in Resources */,
+				9746E9E523E1A4AC00A31297 /* Default.png in Resources */,
+				9746EA2123E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */,
+				9746EA9D23E1A4AC00A31297 /* map_level.old.png in Resources */,
+				9746E9CD23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */,
 				97B116FD23E07BAA00AEEFA6 /* LaunchScreen.storyboard in Resources */,
-				97B1196B23E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */,
-				97B119B323E133AD00AEEFA6 /* Death.sks in Resources */,
-				97B1199323E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */,
-				97B1197F23E133AD00AEEFA6 /* Boss_Death.atlas in Resources */,
-				97B1191723E133AD00AEEFA6 /* Default@2x.png in Resources */,
-				97B1196323E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */,
-				97B119EF23E133AD00AEEFA6 /* map_trees.png in Resources */,
-				97B119CB23E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */,
-				97B1196F23E133AD00AEEFA6 /* Environment.atlas in Resources */,
-				97B1192323E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */,
-				97B1195B23E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */,
-				97B1171A23E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
-				97B11A3823E1359C00AEEFA6 /* Archer_Death.atlas in Resources */,
-				97B119DB23E133AD00AEEFA6 /* star.png in Resources */,
-				97B1191B23E133AD00AEEFA6 /* lives.png in Resources */,
-				97B119C723E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */,
-				97B11A3023E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */,
+				9746E9D123E1A4AC00A31297 /* Default-568h@2x.png in Resources */,
+				9746EA6923E1A4AC00A31297 /* ProjectileSplat.sks in Resources */,
+				9746EA7D23E1A4AC00A31297 /* leaf_02.png in Resources */,
+				9746EA1923E1A4AC00A31297 /* Tiles.atlas in Resources */,
+				9746E9ED23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */,
+				9746E9C523E1A4AC00A31297 /* cover@2x.png in Resources */,
+				9746E9F523E1A4AC00A31297 /* Archer_Death.atlas in Resources */,
+				9746EA8923E1A4AC00A31297 /* leaf_00.png in Resources */,
+				9746EA8523E1A4AC00A31297 /* ArcherProjectile.sks in Resources */,
+				9746E9C123E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */,
+				9746EA1123E1A4AC00A31297 /* Goblin_Death.atlas in Resources */,
+				9746EA5923E1A4AC00A31297 /* Death.sks in Resources */,
+				9746EA3923E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */,
+				9746EA2523E1A4AC00A31297 /* Boss_Death.atlas in Resources */,
+				9746E93423E1A47400A31297 /* AdventureHUD.sks in Resources */,
+				9746EA0923E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */,
+				9746EA9523E1A4AC00A31297 /* map_trees.png in Resources */,
+				9746EA7123E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */,
+				9746EA1523E1A4AC00A31297 /* Environment.atlas in Resources */,
+				9746E9C923E1A4AC00A31297 /* iconWarrior_pink.png in Resources */,
+				9746EA0123E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */,
+				9746E9BD23E1A4AC00A31297 /* lives.png in Resources */,
+				9746EA8123E1A4AC00A31297 /* star.png in Resources */,
+				9746E96B23E1A47400A31297 /* AdventureWorld.sks in Resources */,
+				9746EA6D23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */,
+				9746EA9923E1A4AC00A31297 /* map_level.new.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,66 +1150,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B119AC23E133AD00AEEFA6 /* CaveFireSmoke.sks in Resources */,
-				97B1194423E133AD00AEEFA6 /* button_warrior.png in Resources */,
-				97B1191823E133AD00AEEFA6 /* Default@2x.png in Resources */,
-				97B1198C23E133AD00AEEFA6 /* Warrior_Death.atlas in Resources */,
-				97B119B423E133AD00AEEFA6 /* Death.sks in Resources */,
-				97B1196423E133AD00AEEFA6 /* Goblin_Walk.atlas in Resources */,
-				97B119D023E133AD00AEEFA6 /* BossDamage.sks in Resources */,
-				97B119F023E133AD00AEEFA6 /* map_trees.png in Resources */,
-				97B1195C23E133AD00AEEFA6 /* Goblin_GetHit.atlas in Resources */,
-				97B119C023E133AD00AEEFA6 /* Damage.sks in Resources */,
-				97B1192C23E133AD00AEEFA6 /* Default-568h@2x.png in Resources */,
-				97B1199823E133AD00AEEFA6 /* Warrior_GetHit.atlas in Resources */,
-				97B1199423E133AD00AEEFA6 /* Warrior_Walk.atlas in Resources */,
-				97B119C423E133AD00AEEFA6 /* ProjectileSplat.sks in Resources */,
-				97B1198823E133AD00AEEFA6 /* Boss_Idle.atlas in Resources */,
-				97B1193C23E133AD00AEEFA6 /* button_archer.png in Resources */,
-				97B1197823E133AD00AEEFA6 /* Boss_Attack.atlas in Resources */,
-				97B1196823E133AD00AEEFA6 /* Goblin_Idle.atlas in Resources */,
-				97B1194023E133AD00AEEFA6 /* Default.png in Resources */,
-				97B1197C23E133AD00AEEFA6 /* Boss_GetHit.atlas in Resources */,
-				97B1197423E133AD00AEEFA6 /* Tiles.atlas in Resources */,
+				9746EA5223E1A4AC00A31297 /* CaveFireSmoke.sks in Resources */,
+				9746E9EA23E1A4AC00A31297 /* button_warrior.png in Resources */,
+				9746E9C623E1A4AC00A31297 /* cover@2x.png in Resources */,
+				9746EAA223E1A4AC00A31297 /* editor_background.png in Resources */,
+				9746EA3223E1A4AC00A31297 /* Warrior_Death.atlas in Resources */,
+				9746E9FA23E1A4AC00A31297 /* Archer_Attack.atlas in Resources */,
+				9746EA5A23E1A4AC00A31297 /* Death.sks in Resources */,
+				9746EA0A23E1A4AC00A31297 /* Goblin_Walk.atlas in Resources */,
+				9746EA7623E1A4AC00A31297 /* BossDamage.sks in Resources */,
+				9746EA9623E1A4AC00A31297 /* map_trees.png in Resources */,
+				9746EA0223E1A4AC00A31297 /* Goblin_GetHit.atlas in Resources */,
+				9746EA6623E1A4AC00A31297 /* Damage.sks in Resources */,
+				9746E9D223E1A4AC00A31297 /* Default-568h@2x.png in Resources */,
+				9746EA3E23E1A4AC00A31297 /* Warrior_GetHit.atlas in Resources */,
+				9746EA3A23E1A4AC00A31297 /* Warrior_Walk.atlas in Resources */,
+				9746EA6A23E1A4AC00A31297 /* ProjectileSplat.sks in Resources */,
+				9746EA2E23E1A4AC00A31297 /* Boss_Idle.atlas in Resources */,
+				9746E9EE23E1A4AC00A31297 /* Archer_Walk.atlas in Resources */,
+				9746E9E223E1A4AC00A31297 /* button_archer.png in Resources */,
+				9746EA1E23E1A4AC00A31297 /* Boss_Attack.atlas in Resources */,
+				9746EA0E23E1A4AC00A31297 /* Goblin_Idle.atlas in Resources */,
+				9746E9E623E1A4AC00A31297 /* Default.png in Resources */,
+				9746E9FE23E1A4AC00A31297 /* Archer_GetHit.atlas in Resources */,
+				9746EA2223E1A4AC00A31297 /* Boss_GetHit.atlas in Resources */,
+				9746EA1A23E1A4AC00A31297 /* Tiles.atlas in Resources */,
+				9746E9B623E1A4AC00A31297 /* Assets - OS X.xcassets in Resources */,
+				9746EA9223E1A4AC00A31297 /* map_level.png in Resources */,
+				9746EA2623E1A4AC00A31297 /* Boss_Death.atlas in Resources */,
+				9746E9F623E1A4AC00A31297 /* Archer_Death.atlas in Resources */,
+				9746EA1623E1A4AC00A31297 /* Environment.atlas in Resources */,
+				9746EA9A23E1A4AC00A31297 /* map_level.new.png in Resources */,
+				9746E9DA23E1A4AC00A31297 /* iconWarrior_red.png in Resources */,
+				9746EA5E23E1A4AC00A31297 /* Leaves_02.sks in Resources */,
+				9746EA7223E1A4AC00A31297 /* CaveDeathSmoke.sks in Resources */,
+				9746EA5623E1A4AC00A31297 /* Leaves_01.sks in Resources */,
+				9746EA8223E1A4AC00A31297 /* star.png in Resources */,
+				9746EA7E23E1A4AC00A31297 /* leaf_02.png in Resources */,
+				9746E9CA23E1A4AC00A31297 /* iconWarrior_pink.png in Resources */,
+				9746E9CE23E1A4AC00A31297 /* iconWarrior_blue.png in Resources */,
+				9746E93523E1A47400A31297 /* AdventureHUD.sks in Resources */,
+				9746EA4623E1A4AC00A31297 /* hardCircle.png in Resources */,
+				9746EA9E23E1A4AC00A31297 /* map_level.old.png in Resources */,
+				9746EA3623E1A4AC00A31297 /* Warrior_Idle.atlas in Resources */,
+				9746E9BA23E1A4AC00A31297 /* Default@2x.png in Resources */,
+				9746EA2A23E1A4AC00A31297 /* Boss_Walk.atlas in Resources */,
+				9746EA0623E1A4AC00A31297 /* Goblin_Attack.atlas in Resources */,
+				9746EA8623E1A4AC00A31297 /* ArcherProjectile.sks in Resources */,
+				9746EA4223E1A4AC00A31297 /* Warrior_Attack.atlas in Resources */,
+				9746EA1223E1A4AC00A31297 /* Goblin_Death.atlas in Resources */,
+				9746EA6E23E1A4AC00A31297 /* WarriorProjectile.sks in Resources */,
 				97B1170B23E07BAA00AEEFA6 /* Main.storyboard in Resources */,
-				97B119EC23E133AD00AEEFA6 /* map_level.png in Resources */,
-				97B1198023E133AD00AEEFA6 /* Boss_Death.atlas in Resources */,
-				97B1197023E133AD00AEEFA6 /* Environment.atlas in Resources */,
-				97B1193423E133AD00AEEFA6 /* iconWarrior_red.png in Resources */,
-				97B119B823E133AD00AEEFA6 /* Leaves_02.sks in Resources */,
-				97B119CC23E133AD00AEEFA6 /* CaveDeathSmoke.sks in Resources */,
-				97B119B023E133AD00AEEFA6 /* Leaves_01.sks in Resources */,
-				97B119DC23E133AD00AEEFA6 /* star.png in Resources */,
-				97B11A3123E1359C00AEEFA6 /* Archer_Idle.atlas in Resources */,
-				97B119D823E133AD00AEEFA6 /* leaf_02.png in Resources */,
-				97B11A3523E1359C00AEEFA6 /* Archer_GetHit.atlas in Resources */,
-				97B1192423E133AD00AEEFA6 /* iconWarrior_pink.png in Resources */,
-				97B1192823E133AD00AEEFA6 /* iconWarrior_blue.png in Resources */,
-				97B1191423E133AD00AEEFA6 /* Assets - OS X.xcassets in Resources */,
-				97B119A023E133AD00AEEFA6 /* hardCircle.png in Resources */,
-				97B1199023E133AD00AEEFA6 /* Warrior_Idle.atlas in Resources */,
-				97B1171323E07BAA00AEEFA6 /* GameScene.sks in Resources */,
-				97B1198423E133AD00AEEFA6 /* Boss_Walk.atlas in Resources */,
-				97B1196023E133AD00AEEFA6 /* Goblin_Attack.atlas in Resources */,
-				97B119E023E133AD00AEEFA6 /* ArcherProjectile.sks in Resources */,
-				97B1199C23E133AD00AEEFA6 /* Warrior_Attack.atlas in Resources */,
-				97B1196C23E133AD00AEEFA6 /* Goblin_Death.atlas in Resources */,
-				97B119C823E133AD00AEEFA6 /* WarriorProjectile.sks in Resources */,
-				97B1192023E133AD00AEEFA6 /* Assets - iOS.xcassets in Resources */,
-				97B1193023E133AD00AEEFA6 /* logo.png in Resources */,
-				97B11A3D23E1359C00AEEFA6 /* Archer_Attack.atlas in Resources */,
-				97B1171B23E07BAA00AEEFA6 /* Assets.xcassets in Resources */,
-				97B119A423E133AD00AEEFA6 /* CaveFire.sks in Resources */,
-				97B119E823E133AD00AEEFA6 /* magicmissile.caf in Resources */,
-				97B11A4123E1359C00AEEFA6 /* Archer_Walk.atlas in Resources */,
-				97B119E423E133AD00AEEFA6 /* leaf_00.png in Resources */,
-				97B11A3923E1359C00AEEFA6 /* Archer_Death.atlas in Resources */,
-				97B1193823E133AD00AEEFA6 /* iconWarrior_green.png in Resources */,
-				97B1191C23E133AD00AEEFA6 /* lives.png in Resources */,
-				97B119BC23E133AD00AEEFA6 /* spark.png in Resources */,
-				97B1170F23E07BAA00AEEFA6 /* Actions.sks in Resources */,
-				97B119D423E133AD00AEEFA6 /* CaveDamage.sks in Resources */,
-				97B119A823E133AD00AEEFA6 /* Spawn.sks in Resources */,
+				9746E9D623E1A4AC00A31297 /* logo.png in Resources */,
+				9746E9C223E1A4AC00A31297 /* Assets - iOS.xcassets in Resources */,
+				9746EA4A23E1A4AC00A31297 /* CaveFire.sks in Resources */,
+				9746EA8E23E1A4AC00A31297 /* magicmissile.caf in Resources */,
+				9746EA8A23E1A4AC00A31297 /* leaf_00.png in Resources */,
+				9746E9DE23E1A4AC00A31297 /* iconWarrior_green.png in Resources */,
+				9746E96C23E1A47400A31297 /* AdventureWorld.sks in Resources */,
+				9746EA6223E1A4AC00A31297 /* spark.png in Resources */,
+				9746E9BE23E1A4AC00A31297 /* lives.png in Resources */,
+				9746E9F223E1A4AC00A31297 /* Archer_Idle.atlas in Resources */,
+				9746EA7A23E1A4AC00A31297 /* CaveDamage.sks in Resources */,
+				9746EA4E23E1A4AC00A31297 /* Spawn.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,27 +1223,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1177723E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
-				97B1176F23E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
-				97B1178723E07ECB00AEEFA6 /* Goblin.swift in Sources */,
-				97B1179B23E07ECB00AEEFA6 /* Tree.swift in Sources */,
-				97B117A323E07ECB00AEEFA6 /* Archer.swift in Sources */,
-				97B1177F23E07ECB00AEEFA6 /* Warrior.swift in Sources */,
-				97B1179F23E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
-				97B1171423E07BAA00AEEFA6 /* GameScene.swift in Sources */,
-				97B1179723E07ECB00AEEFA6 /* Boss.swift in Sources */,
-				97B1177323E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
-				97B1178F23E07ECB00AEEFA6 /* Cave.swift in Sources */,
-				97B11A4323E1851C00AEEFA6 /* iOSLayeredCharacterSceneEvents.swift in Sources */,
-				97B116CD23E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
+				9746E95723E1A47400A31297 /* Tree.swift in Sources */,
+				9746E94E23E1A47400A31297 /* Cave.swift in Sources */,
+				9746E96623E1A47400A31297 /* SharedAssetManagement.swift in Sources */,
+				9746E96023E1A47400A31297 /* AdventureScene.swift in Sources */,
+				9746EAA623E1AA4800A31297 /* AdventureSceneiOSEvents.swift in Sources */,
+				9746E95D23E1A47400A31297 /* Archer.swift in Sources */,
+				9746E95423E1A47400A31297 /* Boss.swift in Sources */,
+				9746E93F23E1A47400A31297 /* ArtificialIntelligence.swift in Sources */,
+				9746E94B23E1A47400A31297 /* Character.swift in Sources */,
+				9746E93C23E1A47400A31297 /* ChaseArtificialIntelligence.swift in Sources */,
+				9746E93923E1A47400A31297 /* SpawnArtificialIntelligence.swift in Sources */,
+				9746E94523E1A47400A31297 /* EnemyCharacter.swift in Sources */,
+				9746E95A23E1A47400A31297 /* HeroCharacter.swift in Sources */,
+				9746E94823E1A47400A31297 /* Goblin.swift in Sources */,
 				97B116CB23E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
-				97B1177B23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
-				97B1178B23E07ECB00AEEFA6 /* Character.swift in Sources */,
-				97B1179323E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
-				97B1175623E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
-				97B1175A23E07EAE00AEEFA6 /* Player.swift in Sources */,
-				97B1178323E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
-				97B1175223E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
+				9746E94223E1A47400A31297 /* Warrior.swift in Sources */,
+				9746E96323E1A47400A31297 /* Player.swift in Sources */,
+				9746EAA423E1A53600A31297 /* ViewController.swift in Sources */,
+				9746E93623E1A47400A31297 /* GraphicsUtilities.swift in Sources */,
+				9746E95123E1A47400A31297 /* ParallaxSprite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1239,26 +1250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1177823E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
-				97B1177023E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
-				97B1178823E07ECB00AEEFA6 /* Goblin.swift in Sources */,
-				97B1179C23E07ECB00AEEFA6 /* Tree.swift in Sources */,
-				97B117A423E07ECB00AEEFA6 /* Archer.swift in Sources */,
-				97B1178023E07ECB00AEEFA6 /* Warrior.swift in Sources */,
-				97B117A023E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
-				97B1171523E07BAA00AEEFA6 /* GameScene.swift in Sources */,
-				97B1179823E07ECB00AEEFA6 /* Boss.swift in Sources */,
-				97B1177423E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
-				97B1179023E07ECB00AEEFA6 /* Cave.swift in Sources */,
 				97B116EC23E07BAA00AEEFA6 /* ExtensionDelegate.swift in Sources */,
 				97B116EA23E07BAA00AEEFA6 /* InterfaceController.swift in Sources */,
-				97B1177C23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
-				97B1178C23E07ECB00AEEFA6 /* Character.swift in Sources */,
-				97B1179423E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
-				97B1175723E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
-				97B1175B23E07EAE00AEEFA6 /* Player.swift in Sources */,
-				97B1178423E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
-				97B1175323E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1266,26 +1259,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1177923E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
-				97B1177123E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
-				97B1178923E07ECB00AEEFA6 /* Goblin.swift in Sources */,
-				97B1179D23E07ECB00AEEFA6 /* Tree.swift in Sources */,
-				97B117A523E07ECB00AEEFA6 /* Archer.swift in Sources */,
-				97B1178123E07ECB00AEEFA6 /* Warrior.swift in Sources */,
-				97B117A123E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
-				97B1171623E07BAA00AEEFA6 /* GameScene.swift in Sources */,
-				97B1179923E07ECB00AEEFA6 /* Boss.swift in Sources */,
-				97B1177523E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
-				97B1179123E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				9746E94F23E1A47400A31297 /* Cave.swift in Sources */,
+				9746E95B23E1A47400A31297 /* HeroCharacter.swift in Sources */,
+				9746E94323E1A47400A31297 /* Warrior.swift in Sources */,
+				9746E93A23E1A47400A31297 /* SpawnArtificialIntelligence.swift in Sources */,
+				9746E94623E1A47400A31297 /* EnemyCharacter.swift in Sources */,
+				9746E93D23E1A47400A31297 /* ChaseArtificialIntelligence.swift in Sources */,
+				9746E93723E1A47400A31297 /* GraphicsUtilities.swift in Sources */,
+				9746E96123E1A47400A31297 /* AdventureScene.swift in Sources */,
 				97B116F723E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
+				9746E95823E1A47400A31297 /* Tree.swift in Sources */,
+				9746E95223E1A47400A31297 /* ParallaxSprite.swift in Sources */,
+				9746E95523E1A47400A31297 /* Boss.swift in Sources */,
+				9746E94923E1A47400A31297 /* Goblin.swift in Sources */,
+				9746E95E23E1A47400A31297 /* Archer.swift in Sources */,
+				9746E94C23E1A47400A31297 /* Character.swift in Sources */,
+				9746E94023E1A47400A31297 /* ArtificialIntelligence.swift in Sources */,
+				9746E96423E1A47400A31297 /* Player.swift in Sources */,
+				9746E96723E1A47400A31297 /* SharedAssetManagement.swift in Sources */,
 				97B116F523E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
-				97B1177D23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
-				97B1178D23E07ECB00AEEFA6 /* Character.swift in Sources */,
-				97B1179523E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
-				97B1175823E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
-				97B1175C23E07EAE00AEEFA6 /* Player.swift in Sources */,
-				97B1178523E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
-				97B1175423E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1293,26 +1285,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B1177A23E07ECB00AEEFA6 /* SpawnAI.swift in Sources */,
-				97B1177223E07ECB00AEEFA6 /* GraphicsUtilities.swift in Sources */,
-				97B1178A23E07ECB00AEEFA6 /* Goblin.swift in Sources */,
-				97B1179E23E07ECB00AEEFA6 /* Tree.swift in Sources */,
-				97B117A623E07ECB00AEEFA6 /* Archer.swift in Sources */,
-				97B1178223E07ECB00AEEFA6 /* Warrior.swift in Sources */,
-				97B117A223E07ECB00AEEFA6 /* HeroCharacter.swift in Sources */,
-				97B1171723E07BAA00AEEFA6 /* GameScene.swift in Sources */,
-				97B1179A23E07ECB00AEEFA6 /* Boss.swift in Sources */,
-				97B1177623E07ECB00AEEFA6 /* ArtificialIntelligence.swift in Sources */,
-				97B1179223E07ECB00AEEFA6 /* Cave.swift in Sources */,
+				9746E95023E1A47400A31297 /* Cave.swift in Sources */,
+				9746E95C23E1A47400A31297 /* HeroCharacter.swift in Sources */,
+				9746E94423E1A47400A31297 /* Warrior.swift in Sources */,
+				9746E93B23E1A47400A31297 /* SpawnArtificialIntelligence.swift in Sources */,
+				9746E94723E1A47400A31297 /* EnemyCharacter.swift in Sources */,
+				9746E93E23E1A47400A31297 /* ChaseArtificialIntelligence.swift in Sources */,
+				9746E93823E1A47400A31297 /* GraphicsUtilities.swift in Sources */,
+				9746E96223E1A47400A31297 /* AdventureScene.swift in Sources */,
 				97B1170823E07BAA00AEEFA6 /* GameViewController.swift in Sources */,
+				9746E95923E1A47400A31297 /* Tree.swift in Sources */,
+				9746E95323E1A47400A31297 /* ParallaxSprite.swift in Sources */,
+				9746EAA823E1AA5D00A31297 /* AdventureSceneOSXEvents.swift in Sources */,
+				9746E95623E1A47400A31297 /* Boss.swift in Sources */,
+				9746E94A23E1A47400A31297 /* Goblin.swift in Sources */,
+				9746E95F23E1A47400A31297 /* Archer.swift in Sources */,
+				9746E94D23E1A47400A31297 /* Character.swift in Sources */,
+				9746E94123E1A47400A31297 /* ArtificialIntelligence.swift in Sources */,
+				9746E96523E1A47400A31297 /* Player.swift in Sources */,
+				9746E96823E1A47400A31297 /* SharedAssetManagement.swift in Sources */,
 				97B1170623E07BAA00AEEFA6 /* AppDelegate.swift in Sources */,
-				97B1177E23E07ECB00AEEFA6 /* ChaseAI.swift in Sources */,
-				97B1178E23E07ECB00AEEFA6 /* Character.swift in Sources */,
-				97B1179623E07ECB00AEEFA6 /* ParallaxSprite.swift in Sources */,
-				97B1175923E07EAE00AEEFA6 /* LayeredCharacterScene.swift in Sources */,
-				97B1175D23E07EAE00AEEFA6 /* Player.swift in Sources */,
-				97B1178623E07ECB00AEEFA6 /* EnemyCharacter.swift in Sources */,
-				97B1175523E07EAE00AEEFA6 /* AdventureScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
